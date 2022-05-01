@@ -1,0 +1,173 @@
+/* CSS Document */
+body {
+  font-family: 'Montserrat', sans-serif !important;
+	background: #f9f9f9 !important;
+}
+.header {
+  background: #1ea8e7;
+  padding-top: 0px;
+  margin-bottom: 30px;
+	 border-radius: 0px 0px 40px 40px!important;
+}
+
+.navbar {
+     margin-bottom: 0px !important; 
+}
+
+.branco { padding: 30px;
+ border-radius: 40px !important;
+	background: #FFF;
+}
+
+@media only screen and (max-width : 600px) {
+  .logo {
+    text-align: center !important;
+  }
+}
+.titulo {
+  text-transform: uppercase;
+  padding: 5px;
+  font-weight: 900;
+  font-size: 18px;
+  padding-top: 100px;
+}
+.titulo::after {
+  content: '';
+  position: relative;
+  display: block;
+  height: 1px;
+  width: 35px;
+  margin-top: 15px;
+  border-bottom: 3px solid #1ea8e7;
+}
+.info {
+  background: #d2f4ea;
+  border: 2px solid #20c997 !important;
+  border-radius: 5px 5px 5px 5px !important;
+  padding: 30px;
+	margin-bottom: 20px;
+}
+
+.info h2 {
+  text-transform: uppercase;
+  padding: 5px;
+  font-weight: 900;
+  font-size: 14px;
+}
+.info p {
+  font-size: 14px !important;
+}
+.destaqueperfil {
+  background: #cff4fc;
+  border: 2px solid #eeaf9 !important;
+  border-radius: 5px 5px 5px 5px !important;
+  padding: 30px;
+}
+.destaqueperfil h1 {
+  font-size: 18px;
+}
+.destaqueperfil p {
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 0;
+}
+
+
+.destaqueperfil h2 {
+  text-transform: uppercase;
+  padding: 5px;
+  font-weight: 900;
+  font-size: 18px;
+
+}
+.destaqueperfil h2::after {
+  content: '';
+  position: relative;
+  display: block;
+  height: 1px;
+  width: 35px;
+  margin-top: 15px;
+  border-bottom: 3px solid #1ea8e7;
+}
+
+.destaquetexto {
+  font-size: 2.5em;
+  color: #1ea8e7;
+  padding-bottom: 50px;
+}
+
+
+
+.nomecondominio {
+  font-size: 2.5em;
+  color: #1ea8e7;
+  padding-bottom: 50px;
+}
+.form-control {
+  border: 2px solid #1ea8e7 !important;
+  border-radius: 5px 5px 5px 5px !important;
+}
+.camposform select {
+  border: 2px solid #1ea8e7 !important;
+  border-radius: 5px 5px 5px 5px !important;
+}
+.camposform label {
+  text-transform: uppercase;
+  padding: 5px;
+  font-weight: 900;
+  font-size: 16px;
+}
+.diasemana {
+  border: 2px solid #1ea8e7 !important;
+  border-radius: 5px 5px 5px 5px !important;
+}
+.logotexto {
+  display: inline;
+  color: #fff;
+  font-size: 18px;
+  padding-left: 10px;
+}
+.logo {
+  display: inline;
+  width: 30px;
+}
+.bgcinza {
+  background-color: #868686 !important;
+  border-color: #868686 !important;
+}
+.btbusca {
+  display: block !important;
+  width: 100%;
+}
+.camposform {
+  margin-bottom: 20px;
+}
+.esqueci {
+  font-size: 12px;
+}
+.esqueci span {
+  padding: 20px 10px;
+}
+.fontepreta {
+  color: #000 !important;
+}
+.fontebranca {
+  color: #fff !important;
+}
+.recomendacoes { 
+	background: #f2f2f2;
+ border-radius: 20px !important;
+	padding: 40px;
+}
+td {
+  vertical-align: middle !important;
+}
+th {
+  background-color: #0d6efd !important;
+  color: white;
+
+}
+tr:hover {
+  background-color: #0d6efd !important;
+  color: #fff !important;
+}
