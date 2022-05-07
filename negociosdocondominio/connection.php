@@ -20,9 +20,8 @@ try {
   $result = $stmt->fetchAll();
 
   if ( count($result) ) {
-    foreach($result as $row) {
-      print_r($row);
-    }
+   $read_file = 'http://localhost/negociosdocondominio/negociosdocondominio/consulta-morador.php';
+   header('Location : ' .$read_file);
   } else {
     echo "Nennhum resultado retornado.";
   }
