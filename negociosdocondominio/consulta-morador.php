@@ -8,7 +8,7 @@ include "header.php"
 <div class="row">
 <h1 class="titulo">Consulta Morador</h1>
 <h2 class="nomecondominio">Nome Condominio</h2>
-<form>
+<form action="pesquisar.php" method="POST">
 <div class="row">
   <div class="col-sm-12">
     <div class="mb-4 camposform">

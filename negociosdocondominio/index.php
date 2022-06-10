@@ -1,3 +1,4 @@
-<?php 
-    var_dump('ola');
+<?php
+    header('Location: login.php ' . $url, true, $statusCode);
+    die();
 ?>
