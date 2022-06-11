@@ -3,22 +3,21 @@
 include "header.php"
 
 ?>
-
 <div class="container">
 <div class="row">
 <h1 class="titulo">Consulta Morador</h1>
 <h2 class="nomecondominio">Nome Condominio</h2>
-<form action="pesquisar.php" method="POST">
+<form action="../negociosdocondominio/controller/pesquisar.php" method="POST">
 <div class="row">
   <div class="col-sm-12">
     <div class="mb-4 camposform">
       <label for="disabledTextInput" class="form-label">Destinatário</label>
-      <input type="text" id="disabledTextInput" class="form-control" placeholder="Nome do Destinatário">
+      <input type="text" id="nome" name="nome" class="form-control" placeholder="Nome do Destinatário" value="" />
     </div>
   </div>
   <div class="col-sm-5 camposform">
-    <label for="torre" class="form-label">Bloco / torre</label>
-    <select class="form-select  " >
+    <label for="torre" class="form-label" >Bloco / torre</label>
+    <select class="form-select  " name="bloco" id="bloco">
       <option selected>Selecionar</option>
       <option value="1">One</option>
       <option value="2">Two</option>
@@ -27,7 +26,7 @@ include "header.php"
   </div>
   <div class="col-sm-5 camposform">
     <label for="unidade" class="form-label">Unidade / Apartamento</label>
-    <select class="form-select " aria-label=".form-select-lg example">
+    <select class="form-select " id="torre" name="torre" aria-label=".form-select-lg example">
       <option selected>Selecionar</option>
       <option value="1">One</option>
       <option value="2">Two</option>
@@ -37,7 +36,7 @@ include "header.php"
   <div class="col-sm-2 camposform">
     <label for="consulta" class="form-label">Consultar</label>
     <br>
-    <button type="button" class="btn btn-primary btbusca">
+    <button type="button" class="btn btn-primary btbusca" onclick="pesquisar()">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
       <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
     </svg>
@@ -46,31 +45,8 @@ include "header.php"
 </div>
 <div class="row">
   <div class="col-sm-12">
-    <div class="table-responsive">
-      <table class="table table-striped table-sm">
-        <thead>
-          <tr>
-            <th scope="col">Nome</th>
-            <th scope="col">E-mail</th>
-            <th scope="col">Telefone</th>
-            <th scope="col">Ação</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Julia</td>
-            <td>julia@julia.com.br</td>
-            <td>+55 11 1234 1234</td>
-            <td><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deletarmorador">Deletar</button></td>
-          </tr>
-          <tr>
-            <td>Roberto</td>
-            <td>roberto@roberto.com.br</td>
-            <td>+55 11 1234 1234</td>
-            <td><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deletarmorador">Deletar</button></td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="table-responsive" id="result">
+     
     </div>
   </div>
 </div>
@@ -117,3 +93,69 @@ include "header.php"
 include "footer.php"
 
 ?>
+ <script type="text/javascript" >
+
+  /**
+  * Função para criar um objeto XMLHTTPRequest
+  */
+ function CriaRequest() {
+     try{
+         request = new XMLHttpRequest();
+     }catch (IEAtual){
+
+         try{
+             request = new ActiveXObject("Msxml2.XMLHTTP");
+         }catch(IEAntigo){
+
+             try{
+                 request = new ActiveXObject("Microsoft.XMLHTTP");
+             }catch(falha){
+                 request = false;
+             }
+         }
+     }
+
+     if (!request)
+         alert("Seu Navegador não suporta Ajax!");
+     else
+         return request;
+ }
+
+ /**
+  * Função para enviar os dados
+  */
+ function pesquisar() {
+
+     // Declaração de Variáveis
+     var nome = document.getElementById("nome").value;
+    //  nome = nome.valeu;
+     var bloco = document.getElementById("bloco");
+     bloco = bloco.value;
+     var torre = document.getElementById("torre");
+     torre = torre.value;
+     console.log(nome, bloco, torre)
+     var xmlreq = CriaRequest();
+
+     // Exibi a imagem de progresso
+     result.innerHTML = '<img src="Progresso1.gif"/>';
+
+     // Iniciar uma requisição
+     xmlreq.open("GET", "../negociosdocondominio/controller/pesquisar.php?destinatario="+nome+"&bloco="+bloco+"&torre="+torre, true);
+
+     // Atribui uma função para ser executada sempre que houver uma mudança de ado
+     xmlreq.onreadystatechange = function(){
+
+         // Verifica se foi concluído com sucesso e a conexão fechada (readyState=4)
+         if (xmlreq.readyState == 4) {
+
+             // Verifica se o arquivo foi encontrado com sucesso
+             if (xmlreq.status == 200) {
+                 result.innerHTML = xmlreq.responseText;
+             }else{
+                 result.innerHTML = "Erro: " + xmlreq.statusText;
+             }
+         }
+     };
+     xmlreq.send(null);
+ }
+ </script>
