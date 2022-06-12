@@ -26,7 +26,7 @@ try {
   header('Location: ../consulta-morador.php ' . $url, true, $statusCode);
   die();
   } else {
-    echo "Nennhum resultado retornado.";
+    header("Location: ../login.php?erro=dadoserrado");
   }
 } catch(PDOException $e) {
     echo 'ERROR: ' . $e->getMessage();
