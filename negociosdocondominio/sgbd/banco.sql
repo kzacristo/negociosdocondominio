@@ -26,11 +26,12 @@ CREATE TABLE morador(
   PRIMARY KEY (id),
   FOREIGN KEY (idcadastro) REFERENCES cadastros(id)
 );
-INSERT INTO `morador`(`bloco`, `torre`, `nome`, `email`, `data_nascimento`) VALUES (1,2,'julia','julia@julia.com','1989-10-12')
+INSERT INTO `morador`(`bloco`, `torre`, `nome`, `email`, `data_nascimento`) VALUES (1,2,'julia','julia@julia.com','1989-10-12');
 
 CREATE TABLE servicos(
   id bigint AUTO_INCREMENT,
   area_de_atuacao VARCHAR(50),
+  outra_area VARCHAR(50),
   atendimento VARCHAR(255),
   servicos_ofertados TEXT,
   dia_semana VARCHAR(25),
@@ -38,9 +39,12 @@ CREATE TABLE servicos(
   data_atendimento DATE,
   titulo_anuncio VARCHAR(255),
   text_experiencia TEXT,
-  sobre_vode TEXT,
+  redes_socieais VARCHAR(255),
+  sobre_voce TEXT,
+  sobre_oque_faz  TEXT,
   valor FLOAT,
   tipo_valor INT,
+  imagem VARCHAR(255),
 
   PRIMARY KEY (id)
 );

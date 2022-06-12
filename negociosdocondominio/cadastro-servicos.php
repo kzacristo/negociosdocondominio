@@ -6,11 +6,11 @@ include "header.php"
 <div class="container">
   <div class="row">
     <h1 class="titulo">Cadastro de serviços</h1>
-  
+  <form action="../controller/cadastrosemservico.php" method="post">
       <div class="row">
         <div class="col-sm-6 camposform ">
           <label for="bloco" class="form-label">Área de atuação</label>
-          <select class="form-select" required >
+          <select class="form-select" required name="areadeatuacao">
             <option value="0">Selecionar</option>
             <option value="1">Administrativo e Financeiro</option>
             <option value="2">Análise e Gestão de Dados</option>
@@ -37,11 +37,11 @@ include "header.php"
         </div>
         <div class="col-sm-3 camposform ">
           <label for="destinatario" class="form-label">Outra área de atuação</label>
-          <input type="text" class="form-control"  value="">
+          <input type="text" class="form-control" name="outraarea"  value="">
         </div>
         <div class="col-sm-3 camposform">
           <label for="sobrenome" class="form-label" required >Tipo de atendimento</label>
-          <select class="form-select" >
+          <select class="form-select" name="tipodeatendimento">
             <option selected>Selecionar</option>
             <option value="1">Presencial</option>
             <option value="2">Online</option>
@@ -58,63 +58,63 @@ include "header.php"
       <div class="row">
         <div class="col-sm-12 camposform ">
           <label for="descricao_ecomenda" class="form-label">Quais serviços você oferece? <span style="color: crimson; text-transform: lowercase">Separar por ;</span></label>
-          <textarea class="form-control" aria-label="With textarea" ></textarea>
+          <textarea class="form-control" name="servicos_ofertados" aria-label="With textarea" ></textarea>
         </div>
       </div>
       <div class="row">
         <div class="col-sm-6 camposform">
           <label for="destinatario" class="form-label camposform">Horário de atendimento</label>
           <div class="form-check">
-            <input class="form-check-input checkmark" type="checkbox" value="" id="flexCheckDefault">
+            <input class="form-check-input checkmark" type="checkbox" value="1" id="flexCheckDefault" name="horario1">
             <label class="form-check-label " for="flexCheckDefault"> Segunda-feira das </label>
-            <input type="time">
+            <input type="time" class="form-control" name="time" value="" >
             às
-            <input type="time">
+            <input type="time" class="form-control" name="time" value="" >
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <input class="form-check-input" type="checkbox" value="2" id="flexCheckDefault" name="horario2">
             <label class="form-check-label " for="flexCheckDefault"> Terça-feira das </label>
-            <input type="time">
+            <input type="time" class="form-control" name="time" value="" >
             às
-            <input type="time">
+            <input type="time" class="form-control" name="time" value="" >
           </div>
           <div class="form-check ">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <input class="form-check-input" type="checkbox" value="3" id="flexCheckDefault" name="horario3">
             <label class="form-check-label " for="flexCheckDefault"> Quarta-feira das </label>
-            <input type="time">
+            <input type="time" class="form-control" name="time" value="" >
             às
-            <input type="time">
+            <input type="time" class="form-control" name="time" value="" >
           </div>
           <div class="form-check ">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <input class="form-check-input" type="checkbox" value="4" id="flexCheckDefault" name="horario4">
             <label class="form-check-label " for="flexCheckDefault"> Quinta-feira das </label>
-            <input type="time">
+            <input type="time" class="form-control" name="time" value="">
             às
-            <input type="time">
+            <input type="time" class="form-control" name="time" value="" >
           </div>
           <div class="form-check ">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <input class="form-check-input" type="checkbox" value="5" id="flexCheckDefault" name="horario"5>
             <label class="form-check-label " for="flexCheckDefault"> Sexta-feira das </label>
-            <input type="time">
+            <input type="time" class="form-control" name="time" value="" >
             às
-            <input type="time">
+            <input type="time" class="form-control" name="time" value="" >
           </div>
           <div class="form-check ">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <input class="form-check-input" type="checkbox" value="6" id="flexCheckDefault" name="horario6">
             <label class="form-check-label " for="flexCheckDefault"> Sabádo das </label>
-            <input type="time">
+            <input type="time" class="form-control" name="time" value="" >
             às
-            <input type="time">
+            <input type="time" class="form-control" name="time" value="" >
           </div>
           <div class="form-check ">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <input class="form-check-input" type="checkbox" value="7" id="flexCheckDefault" name="horario7">
             <label class="form-check-label " for="flexCheckDefault"> Domingo das </label>
-            <input type="time">
+            <input type="time" class="form-control" name="time" value="" >
             às
-            <input type="time">
+            <input type="time" class="form-control" name="time" value="" >
           </div>
           <div class="form-check ">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <input class="form-check-input" type="checkbox" value="8" id="flexCheckDefault" name="horario8">
             <label class="form-check-label " for="flexCheckDefault"> A combinar</label>
           </div>
           <br>
@@ -122,22 +122,22 @@ include "header.php"
         <div class="col-sm-6 camposform">
           <label for="destinatario" class="form-label camposform">Redes Sociais</label>
           <div class="input-group input-group-sm mb-3"> <span class="input-group-text" id="inputGroup-sizing-sm">LinkedIn</span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            <input type="text" name="linckdin" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
           </div>
           <div class="input-group input-group-sm mb-3"> <span class="input-group-text" id="inputGroup-sizing-sm">Facebook</span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            <input type="text" name="facebook" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
           </div>
           <div class="input-group input-group-sm mb-3"> <span class="input-group-text" id="inputGroup-sizing-sm">Twitter</span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            <input type="text" name="twitter" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
           </div>
           <div class="input-group input-group-sm mb-3"> <span class="input-group-text" id="inputGroup-sizing-sm">Google+</span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            <input type="text" name="googleplus" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
           </div>
           <div class="input-group input-group-sm mb-3"> <span class="input-group-text" id="inputGroup-sizing-sm">YouTube</span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            <input type="text" name="youtube" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
           </div>
           <div class="input-group input-group-sm mb-3"> <span class="input-group-text" id="inputGroup-sizing-sm">Instagram</span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            <input type="text" name="instagram" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
           </div>
         </div>
       </div>
@@ -153,7 +153,7 @@ include "header.php"
         </div>
         <div class="col-sm-8 camposform">
           <label for="e-mail" class="form-label">Titulo do Anúncio </label>
-          <textarea class="form-control" aria-label="With textarea" rows="2"></textarea>
+          <textarea class="form-control" name="titulo_anuncio" aria-label="With textarea" rows="2"></textarea>
         </div>
       </div>
       <br/>
@@ -170,7 +170,7 @@ include "header.php"
         </div>
         <div class="col-sm-8 camposform">
           <label for="e-mail" class="form-label">Sobre o que você faz. </label>
-          <textarea class="form-control" aria-label="With textarea rows="4"" ></textarea>
+          <textarea class="form-control" name="oquefaz" aria-label="With textarea rows="4"" ></textarea>
         </div>
       </div>
   
@@ -185,7 +185,7 @@ include "header.php"
         </div>
         <div class="col-sm-8 camposform">
           <label for="e-mail" class="form-label">Sobre você. </label>
-          <textarea class="form-control" aria-label="With textarea" ></textarea>
+          <textarea class="form-control" name="sobrevc" aria-label="With textarea" ></textarea>
         </div>
       </div>
       <br/>
@@ -203,17 +203,17 @@ include "header.php"
           <div class="row">
             <label for="e-mail" class="form-label">Quanto você cobra? </label>
             <div class="col-sm-6 camposform">
-              <select class="form-select" >
+              <select class="form-select" name="tipovalor" >
                 <option selected>Selecionar</option>
                 <option value="1">Por hora</option>
                 <option value="2">Por dia</option>
                 <option value="3">Por serviço</option>
               </select>
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <input class="form-check-input" name="valor" type="checkbox" value="" id="flexCheckDefault" >
               <label class="form-check-label " for="flexCheckDefault"> A combinar</label>
             </div>
             <div class="col-sm-6 camposform">
-              <input type="text" class="form-control"  value="">
+              <input type="text" class="form-control" name="acombinar" value="">
             </div>
           </div>
         </div>
@@ -234,15 +234,16 @@ include "header.php"
           <div class="row">
             <label for="e-mail" class="form-label">Exemplos </label>
             <p><img src="https://c.superprof.com/static/img/ok-photo-1.64dfba7a.png" > <img src="https://c.superprof.com/static/img/ok-photo-2.07a75de7.png"> <img src="https://c.superprof.com/static/img/ok-photo-3.ccfd4b68.png"> </p>
-            <input class="form-control" type="file" id="formFile">
+            <input class="form-control" type="file" name="file" id="formFile">
           </div>
           <br>
           <br>
-          <a class="btn btn-primary" href="perfil.php" role="button">Salvar</a> <a class="btn btn-primary bgcinza" href="#" role="button">Voltar</a> </div>
+          <button class="btn btn-primary" type="submit" >Salvar</button> <a class="btn btn-primary bgcinza" href="#" role="button">Voltar</a> </div>
       </div>
     
     <br>
     <br>
+  </form>
   </div>
 </div>
 <?php
