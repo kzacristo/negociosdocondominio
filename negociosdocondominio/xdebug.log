@@ -1,0 +1,1603 @@
+[18] Log opened at 2022-06-12 18:35:16
+[18] I: Checking remote connect back address.
+[18] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[18] I: Checking header 'REMOTE_ADDR'.
+[18] I: Remote address found, connecting to 172.20.0.1:9000.
+[18] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2022-06-12 18:35:16
+
+[18] Log opened at 2022-06-12 18:35:16
+[18] I: Checking remote connect back address.
+[18] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[18] I: Checking header 'REMOTE_ADDR'.
+[18] I: Remote address found, connecting to 172.20.0.1:9000.
+[18] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2022-06-12 18:35:16
+
+[25] Log opened at 2022-06-12 18:36:04
+[25] I: Checking remote connect back address.
+[25] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[25] I: Checking header 'REMOTE_ADDR'.
+[25] I: Remote address found, connecting to 172.20.0.1:9000.
+[25] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[25] E: Could not connect to client. :-(
+[25] Log closed at 2022-06-12 18:36:04
+
+[25] Log opened at 2022-06-12 18:38:17
+[25] I: Checking remote connect back address.
+[25] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[25] I: Checking header 'REMOTE_ADDR'.
+[25] I: Remote address found, connecting to 172.20.0.1:9000.
+[25] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[25] E: Could not connect to client. :-(
+[25] Log closed at 2022-06-12 18:38:17
+
+[28] Log opened at 2022-06-12 18:38:25
+[28] I: Checking remote connect back address.
+[28] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[28] I: Checking header 'REMOTE_ADDR'.
+[28] I: Remote address found, connecting to 172.20.0.1:9000.
+[28] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[28] E: Could not connect to client. :-(
+[28] Log closed at 2022-06-12 18:38:25
+
+[20] Log opened at 2022-06-12 18:38:46
+[20] I: Checking remote connect back address.
+[20] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[20] I: Checking header 'REMOTE_ADDR'.
+[20] I: Remote address found, connecting to 172.20.0.1:9000.
+[20] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[20] E: Could not connect to client. :-(
+[20] Log closed at 2022-06-12 18:38:46
+
+[23] Log opened at 2022-06-12 18:39:03
+[23] I: Checking remote connect back address.
+[23] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[23] I: Checking header 'REMOTE_ADDR'.
+[23] I: Remote address found, connecting to 172.20.0.1:9000.
+[23] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[23] E: Could not connect to client. :-(
+[23] Log closed at 2022-06-12 18:39:03
+
+[23] Log opened at 2022-06-12 18:39:07
+[23] I: Checking remote connect back address.
+[23] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[23] I: Checking header 'REMOTE_ADDR'.
+[23] I: Remote address found, connecting to 172.20.0.1:9000.
+[23] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[23] E: Could not connect to client. :-(
+[23] Log closed at 2022-06-12 18:39:07
+
+[30] Log opened at 2022-06-12 18:39:35
+[30] I: Checking remote connect back address.
+[30] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[30] I: Checking header 'REMOTE_ADDR'.
+[30] I: Remote address found, connecting to 172.20.0.1:9000.
+[30] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[30] E: Could not connect to client. :-(
+[30] Log closed at 2022-06-12 18:39:35
+
+[27] Log opened at 2022-06-12 18:40:04
+[27] I: Checking remote connect back address.
+[27] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[27] I: Checking header 'REMOTE_ADDR'.
+[27] I: Remote address found, connecting to 172.20.0.1:9000.
+[27] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[27] E: Could not connect to client. :-(
+[27] Log closed at 2022-06-12 18:40:04
+
+[26] Log opened at 2022-06-12 18:40:12
+[26] I: Checking remote connect back address.
+[26] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[26] I: Checking header 'REMOTE_ADDR'.
+[26] I: Remote address found, connecting to 172.20.0.1:9000.
+[26] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[26] E: Could not connect to client. :-(
+[26] Log closed at 2022-06-12 18:40:12
+
+[29] Log opened at 2022-06-12 18:40:43
+[29] I: Checking remote connect back address.
+[29] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[29] I: Checking header 'REMOTE_ADDR'.
+[29] I: Remote address found, connecting to 172.20.0.1:9000.
+[29] I: Connected to client. :-)
+[29] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/login.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="29"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[29] <- breakpoint_list -i 1
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[29] <- breakpoint_set -i 2 -t line -f file:///var/www/html/negociosdocondominio/controller/connection.php -n 3
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="2" id="290001"></response>
+
+[29] <- breakpoint_list -i 3
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"><breakpoint type="line" filename="file:///var/www/html/negociosdocondominio/controller/connection.php" lineno="3" state="enabled" hit_count="0" hit_value="0" id="290001"></breakpoint></response>
+
+[29] <- breakpoint_list -i 4
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="4"><breakpoint type="line" filename="file:///var/www/html/negociosdocondominio/controller/connection.php" lineno="3" state="enabled" hit_count="0" hit_value="0" id="290001"></breakpoint></response>
+
+[29] <- breakpoint_set -i 5 -t exception -x *
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="290002"></response>
+
+[29] <- run -i 6
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="6" status="stopping" reason="ok"></response>
+
+[29] <- stop -i 7
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="7" status="stopped" reason="ok"></response>
+
+[29] Log closed at 2022-06-12 18:40:43
+
+[25] Log opened at 2022-06-12 18:40:45
+[25] I: Checking remote connect back address.
+[25] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[25] I: Checking header 'REMOTE_ADDR'.
+[25] I: Remote address found, connecting to 172.20.0.1:9000.
+[25] I: Connected to client. :-)
+[25] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/controller/connection.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="25"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[25] <- breakpoint_list -i 1
+[25] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[25] <- breakpoint_set -i 2 -t line -f file:///var/www/html/negociosdocondominio/controller/connection.php -n 3
+[25] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="2" id="250001"></response>
+
+[25] <- breakpoint_list -i 3
+[25] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"><breakpoint type="line" filename="file:///var/www/html/negociosdocondominio/controller/connection.php" lineno="3" state="enabled" hit_count="0" hit_value="0" id="250001"></breakpoint></response>
+
+[25] <- breakpoint_list -i 4
+[25] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="4"><breakpoint type="line" filename="file:///var/www/html/negociosdocondominio/controller/connection.php" lineno="3" state="enabled" hit_count="0" hit_value="0" id="250001"></breakpoint></response>
+
+[25] <- breakpoint_set -i 5 -t exception -x *
+[25] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="250002"></response>
+
+[25] <- run -i 6
+[25] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="6" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/controller/connection.php" lineno="16" exception="PDOException" code="2002"><![CDATA[SQLSTATE[HY000] [2002] Cannot assign requested address]]></xdebug:message></response>
+
+[25] <- stack_get -i 7
+[25] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="7"><stack where="PDO-&gt;__construct" level="0" type="file" filename="file:///var/www/html/controller/connection.php" lineno="16"></stack><stack where="{main}" level="1" type="file" filename="file:///var/www/html/controller/connection.php" lineno="16"></stack></response>
+
+[25] <- context_names -i 8 -d 0
+[25] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_names" transaction_id="8"><context name="Locals" id="0"></context><context name="Superglobals" id="1"></context><context name="User defined constants" id="2"></context></response>
+
+[25] <- step_over -i 9
+[25] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_over" transaction_id="9" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/controller/connection.php" lineno="32"></xdebug:message></response>
+
+[25] <- stack_get -i 10
+[25] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="10"><stack where="{main}" level="0" type="file" filename="file:///var/www/html/controller/connection.php" lineno="32"></stack></response>
+
+[25] <- context_names -i 11 -d 0
+[25] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_names" transaction_id="11"><context name="Locals" id="0"></context><context name="Superglobals" id="1"></context><context name="User defined constants" id="2"></context></response>
+
+[25] <- context_get -i 12 -d 0 -c 0
+[25] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="12" context="0"><property name="$conn" fullname="$conn" type="uninitialized"></property><property name="$database" fullname="$database" type="string" size="13" encoding="base64"><![CDATA[cGpfaW50ZWdyYWRvcg==]]></property><property name="$e" fullname="$e" type="object" classname="PDOException" children="1" numchildren="9" page="0" pagesize="32"><property name="message" fullname="$e-&gt;message" facet="protected" type="string" size="54" encoding="base64"><![CDATA[U1FMU1RBVEVbSFkwMDBdIFsyMDAyXSBDYW5ub3QgYXNzaWduIHJlcXVlc3RlZCBhZGRyZXNz]]></property><property name="*Exception*string" fullname="$e-&gt;*Exception*string" facet="private" type="string" size="0" encoding="base64"><![CDATA[]]></property><property name="code" fullname="$e-&gt;code" facet="protected" type="int"><![CDATA[2002]]></property><property name="file" fullname="$e-&gt;file" facet="protected" type="string" size="39" encoding="base64"><![CDATA[L3Zhci93d3cvaHRtbC9jb250cm9sbGVyL2Nvbm5lY3Rpb24ucGhw]]></property><property name="line" fullname="$e-&gt;line" facet="protected" type="int"><![CDATA[16]]></property><property name="*Exception*trace" fullname="$e-&gt;*Exception*trace" facet="private" type="array" children="1" numchildren="1"></property><property name="*Exception*previous" fullname="$e-&gt;*Exception*previous" facet="private" type="null"></property><property name="errorInfo" fullname="$e-&gt;errorInfo" facet="public" type="array" children="1" numchildren="3"></property><property name="xdebug_message" fullname="$e-&gt;xdebug_message" facet="public" type="string" size="1247" encoding="base64"><![CDATA[PHRyPjx0aCBhbGlnbj0nbGVmdCcgYmdjb2xvcj0nI2Y1NzkwMCcgY29sc3Bhbj0iNSI+PHNwYW4gc3R5bGU9J2JhY2tncm91bmQtY29sb3I6ICNjYzAwMDA7IGNvbG9yOiAjZmNlOTRmOyBmb250LXNpemU6IHgtbGFyZ2U7Jz4oICEgKTwvc3Bhbj4gUERPRXhjZXB0aW9uOiBTUUxTVEFURVtIWTAwMF0gWzIwMDJdIENhbm5vdCBhc3NpZ24gcmVxdWVzdGVkIGFkZHJlc3MgaW4gL3Zhci93d3cvaHRtbC9jb250cm9sbGVyL2Nvbm5lY3Rpb24ucGhwIG9uIGxpbmUgPGk+MTY8L2k+PC90aD48L3RyPgo8dHI+PHRoIGFsaWduPSdsZWZ0JyBiZ2NvbG9yPScjZTliOTZlJyBjb2xzcGFuPSc1Jz5DYWxsIFN0YWNrPC90aD48L3RyPgo8dHI+PHRoIGFsaWduPSdjZW50ZXInIGJnY29sb3I9JyNlZWVlZWMnPiM8L3RoPjx0aCBhbGlnbj0nbGVmdCcgYmdjb2xvcj0nI2VlZWVlYyc+VGltZTwvdGg+PHRoIGFsaWduPSdsZWZ0JyBiZ2NvbG9yPScjZWVlZWVjJz5NZW1vcnk8L3RoPjx0aCBhbGlnbj0nbGVmdCcgYmdjb2xvcj0nI2VlZWVlYyc+RnVuY3Rpb248L3RoPjx0aCBhbGlnbj0nbGVmdCcgYmdjb2xvcj0nI2VlZWVlYyc+TG9jYXRpb248L3RoPjwvdHI+Cjx0cj48dGQgYmdjb2xvcj0nI2VlZWVlYycgYWxpZ249J2NlbnRlcic+MTwvdGQ+PHRkIGJnY29sb3I9JyNlZWVlZWMnIGFsaWduPSdjZW50ZXInPjAuMDQ3MjwvdGQ+PHRkIGJnY29sb3I9JyNlZWVlZWMnIGFsaWduPSdyaWdodCc+NDA0OTYwPC90ZD48dGQgYmdjb2xvcj0nI2VlZWVlYyc+e21haW59KCAgKTwvdGQ+PHRkIHRpdGxlPScvdmFyL3d3dy9odG1sL2NvbnRyb2xsZXIvY29ubmVjdGlvbi5waHAnIGJnY29sb3I9JyNlZWVlZWMnPi4uLi9jb25uZWN0aW9uLnBocDxiPjo8L2I+MDwvdGQ+PC90cj4KPHRyPjx0ZCBiZ2NvbG9yPScjZWVlZWVjJyBhbGlnbj0nY2VudGVyJz4yPC90ZD48dGQgYmdjb2xvcj0nI2VlZWVlYycgYWxpZ249J2NlbnRlcic+MC4wNDczPC90ZD48dGQgYmdjb2xvcj0nI2VlZWVlYycgYWxpZ249J3JpZ2h0Jz40MDUzMzY8L3RkPjx0ZA==]]></property></property><property name="$email" fullname="$email" type="string" size="11" encoding="base64"><![CDATA[YWRtQGFkbS5jb20=]]></property><property name="$hostname" fullname="$hostname" type="string" size="14" encoding="base64"><![CDATA[bG9jYWxob3N0OjMzMDY=]]></property><property name="$password" fullname="$password" type="string" size="4" encoding="base64"><![CDATA[cm9vdA==]]></property><property name="$result" fullname="$result" type="uninitialized"></property><property name="$senha" fullname="$senha" type="string" size="6" encoding="base64"><![CDATA[MTIzNDU2]]></property><property name="$statusCode" fullname="$statusCode" type="uninitialized"></property><property name="$stmt" fullname="$stmt" type="uninitialized"></property><property name="$url" fullname="$url" type="uninitialized"></property><property name="$username" fullname="$username" type="string" size="4" encoding="base64"><![CDATA[cm9vdA==]]></property></response>
+
+[25] <- step_over -i 13
+[25] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_over" transaction_id="13" status="stopping" reason="ok"></response>
+
+[25] <- stop -i 14
+[25] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="14" status="stopped" reason="ok"></response>
+
+[25] Log closed at 2022-06-12 18:41:03
+
+[27] Log opened at 2022-06-12 18:41:14
+[27] I: Checking remote connect back address.
+[27] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[27] I: Checking header 'REMOTE_ADDR'.
+[27] I: Remote address found, connecting to 172.20.0.1:9000.
+[27] I: Connected to client. :-)
+[27] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/controller/connection.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="27"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[27] <- breakpoint_list -i 1
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[27] <- breakpoint_set -i 2 -t line -f file:///var/www/html/negociosdocondominio/controller/connection.php -n 3
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="2" id="270001"></response>
+
+[27] <- breakpoint_list -i 3
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"><breakpoint type="line" filename="file:///var/www/html/negociosdocondominio/controller/connection.php" lineno="3" state="enabled" hit_count="0" hit_value="0" id="270001"></breakpoint></response>
+
+[27] <- breakpoint_list -i 4
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="4"><breakpoint type="line" filename="file:///var/www/html/negociosdocondominio/controller/connection.php" lineno="3" state="enabled" hit_count="0" hit_value="0" id="270001"></breakpoint></response>
+
+[27] <- breakpoint_set -i 5 -t exception -x *
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="270002"></response>
+
+[27] <- run -i 6
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="6" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/controller/connection.php" lineno="16" exception="PDOException" code="2002"><![CDATA[SQLSTATE[HY000] [2002] Cannot assign requested address]]></xdebug:message></response>
+
+[27] <- stack_get -i 7
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="7"><stack where="PDO-&gt;__construct" level="0" type="file" filename="file:///var/www/html/controller/connection.php" lineno="16"></stack><stack where="{main}" level="1" type="file" filename="file:///var/www/html/controller/connection.php" lineno="16"></stack></response>
+
+[27] <- context_names -i 8 -d 0
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_names" transaction_id="8"><context name="Locals" id="0"></context><context name="Superglobals" id="1"></context><context name="User defined constants" id="2"></context></response>
+
+[27] <- stop -i 9
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="9" status="stopped" reason="ok"></response>
+
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="9" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/controller/connection.php" lineno="16" exception="Fatal error" code="1"><![CDATA[Uncaught PDOException: SQLSTATE[HY000] [2002] Cannot assign requested address in /var/www/html/controller/connection.php:16
+Stack trace:
+#0 /var/www/html/controller/connection.php(16): PDO->__construct('mysql:host=loca...', 'root', 'root')
+#1 {main}
+  thrown]]></xdebug:message></response>
+
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[27] Log closed at 2022-06-12 18:41:16
+
+[27] Log opened at 2022-06-12 18:41:20
+[27] I: Checking remote connect back address.
+[27] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[27] I: Checking header 'REMOTE_ADDR'.
+[27] I: Remote address found, connecting to 172.20.0.1:9000.
+[27] I: Connected to client. :-)
+[27] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/controller/connection.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="27"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[27] <- breakpoint_list -i 1
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[27] <- breakpoint_set -i 2 -t line -f file:///var/www/html/negociosdocondominio/controller/connection.php -n 3
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="2" id="270003"></response>
+
+[27] <- breakpoint_list -i 3
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"><breakpoint type="line" filename="file:///var/www/html/negociosdocondominio/controller/connection.php" lineno="3" state="enabled" hit_count="0" hit_value="0" id="270003"></breakpoint></response>
+
+[27] <- breakpoint_list -i 4
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="4"><breakpoint type="line" filename="file:///var/www/html/negociosdocondominio/controller/connection.php" lineno="3" state="enabled" hit_count="0" hit_value="0" id="270003"></breakpoint></response>
+
+[27] <- breakpoint_set -i 5 -t exception -x *
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="270004"></response>
+
+[27] <- run -i 6
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="6" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/controller/connection.php" lineno="16" exception="PDOException" code="2002"><![CDATA[SQLSTATE[HY000] [2002] Cannot assign requested address]]></xdebug:message></response>
+
+[27] <- stack_get -i 7
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="7"><stack where="PDO-&gt;__construct" level="0" type="file" filename="file:///var/www/html/controller/connection.php" lineno="16"></stack><stack where="{main}" level="1" type="file" filename="file:///var/www/html/controller/connection.php" lineno="16"></stack></response>
+
+[27] <- context_names -i 8 -d 0
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_names" transaction_id="8"><context name="Locals" id="0"></context><context name="Superglobals" id="1"></context><context name="User defined constants" id="2"></context></response>
+
+[27] <- run -i 9
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="9" status="stopping" reason="ok"></response>
+
+[27] <- stop -i 10
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="10" status="stopped" reason="ok"></response>
+
+[27] Log closed at 2022-06-12 18:41:29
+
+[26] Log opened at 2022-06-12 18:41:36
+[26] I: Checking remote connect back address.
+[26] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[26] I: Checking header 'REMOTE_ADDR'.
+[26] I: Remote address found, connecting to 172.20.0.1:9000.
+[26] I: Connected to client. :-)
+[26] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/index.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="26"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[26] <- breakpoint_list -i 1
+[26] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[26] <- breakpoint_set -i 2 -t line -f file:///var/www/html/negociosdocondominio/controller/connection.php -n 3
+[26] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="2" id="260001"></response>
+
+[26] <- breakpoint_list -i 3
+[26] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"><breakpoint type="line" filename="file:///var/www/html/negociosdocondominio/controller/connection.php" lineno="3" state="enabled" hit_count="0" hit_value="0" id="260001"></breakpoint></response>
+
+[26] <- breakpoint_list -i 4
+[26] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="4"><breakpoint type="line" filename="file:///var/www/html/negociosdocondominio/controller/connection.php" lineno="3" state="enabled" hit_count="0" hit_value="0" id="260001"></breakpoint></response>
+
+[26] <- breakpoint_set -i 5 -t exception -x *
+[26] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="260002"></response>
+
+[26] <- run -i 6
+[26] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="6" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/index.php" lineno="2" exception="Notice" code="8"><![CDATA[Undefined variable: url]]></xdebug:message></response>
+
+[26] <- stack_get -i 7
+[26] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="7"><stack where="{main}" level="0" type="file" filename="file:///var/www/html/index.php" lineno="2"></stack></response>
+
+[26] <- context_names -i 8 -d 0
+[26] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_names" transaction_id="8"><context name="Locals" id="0"></context><context name="Superglobals" id="1"></context><context name="User defined constants" id="2"></context></response>
+
+[26] <- breakpoint_list -i 9
+[26] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="9"><breakpoint type="line" filename="file:///var/www/html/negociosdocondominio/controller/connection.php" lineno="3" state="enabled" hit_count="0" hit_value="0" id="260001"></breakpoint><breakpoint type="exception" exception="*" state="enabled" hit_count="1" hit_value="0" id="260002"></breakpoint></response>
+
+[26] <- breakpoint_remove -i 10 -d 260002
+[26] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_remove" transaction_id="10"><breakpoint type="exception" exception="*" state="enabled" hit_count="1" hit_value="0" id="260002"></breakpoint></response>
+
+[26] <- step_over -i 11
+[26] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_over" transaction_id="11" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/index.php" lineno="3"></xdebug:message></response>
+
+[26] <- stack_get -i 12
+[26] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="12"><stack where="{main}" level="0" type="file" filename="file:///var/www/html/index.php" lineno="3"></stack></response>
+
+[26] <- context_names -i 13 -d 0
+[26] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_names" transaction_id="13"><context name="Locals" id="0"></context><context name="Superglobals" id="1"></context><context name="User defined constants" id="2"></context></response>
+
+[26] <- context_get -i 14 -d 0 -c 0
+[26] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="context_get" transaction_id="14" context="0"><property name="$statusCode" fullname="$statusCode" type="uninitialized"></property><property name="$url" fullname="$url" type="uninitialized"></property></response>
+
+[26] <- run -i 15
+[26] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="15" status="stopping" reason="ok"></response>
+
+[26] <- stop -i 16
+[26] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="16" status="stopped" reason="ok"></response>
+
+[26] Log closed at 2022-06-12 18:41:49
+
+[26] Log opened at 2022-06-12 18:41:49
+[26] I: Checking remote connect back address.
+[26] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[26] I: Checking header 'REMOTE_ADDR'.
+[26] I: Remote address found, connecting to 172.20.0.1:9000.
+[26] I: Connected to client. :-)
+[26] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/login.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="26"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[26] <- breakpoint_list -i 1
+[26] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[26] <- breakpoint_set -i 2 -t line -f file:///var/www/html/negociosdocondominio/controller/connection.php -n 3
+[26] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="2" id="260003"></response>
+
+[26] <- breakpoint_list -i 3
+[26] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"><breakpoint type="line" filename="file:///var/www/html/negociosdocondominio/controller/connection.php" lineno="3" state="enabled" hit_count="0" hit_value="0" id="260003"></breakpoint></response>
+
+[26] <- breakpoint_list -i 4
+[26] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="4"><breakpoint type="line" filename="file:///var/www/html/negociosdocondominio/controller/connection.php" lineno="3" state="enabled" hit_count="0" hit_value="0" id="260003"></breakpoint></response>
+
+[26] <- run -i 5
+[26] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="5" status="stopping" reason="ok"></response>
+
+[26] <- stop -i 6
+[26] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="6" status="stopped" reason="ok"></response>
+
+[26] Log closed at 2022-06-12 18:41:49
+
+[18] Log opened at 2022-06-12 18:42:00
+[18] I: Checking remote connect back address.
+[18] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[18] I: Checking header 'REMOTE_ADDR'.
+[18] I: Remote address found, connecting to 172.20.0.1:9000.
+[18] I: Connected to client. :-)
+[18] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/controller/connection.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="18"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[18] <- breakpoint_list -i 1
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[18] <- breakpoint_set -i 2 -t line -f file:///var/www/html/negociosdocondominio/controller/connection.php -n 3
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="2" id="180001"></response>
+
+[18] <- breakpoint_list -i 3
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"><breakpoint type="line" filename="file:///var/www/html/negociosdocondominio/controller/connection.php" lineno="3" state="enabled" hit_count="0" hit_value="0" id="180001"></breakpoint></response>
+
+[18] <- breakpoint_list -i 4
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="4"><breakpoint type="line" filename="file:///var/www/html/negociosdocondominio/controller/connection.php" lineno="3" state="enabled" hit_count="0" hit_value="0" id="180001"></breakpoint></response>
+
+[18] <- run -i 5
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="5" status="stopping" reason="ok"></response>
+
+[18] <- stop -i 6
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="6" status="stopped" reason="ok"></response>
+
+[18] Log closed at 2022-06-12 18:42:00
+
+[29] Log opened at 2022-06-12 18:42:26
+[29] I: Checking remote connect back address.
+[29] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[29] I: Checking header 'REMOTE_ADDR'.
+[29] I: Remote address found, connecting to 172.20.0.1:9000.
+[29] I: Connected to client. :-)
+[29] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/login.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="29"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[29] <- breakpoint_list -i 1
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[29] <- breakpoint_set -i 2 -t line -f file:///var/www/html/negociosdocondominio/controller/connection.php -n 3
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="2" id="290003"></response>
+
+[29] <- breakpoint_list -i 3
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"><breakpoint type="line" filename="file:///var/www/html/negociosdocondominio/controller/connection.php" lineno="3" state="enabled" hit_count="0" hit_value="0" id="290003"></breakpoint></response>
+
+[29] <- breakpoint_list -i 4
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="4"><breakpoint type="line" filename="file:///var/www/html/negociosdocondominio/controller/connection.php" lineno="3" state="enabled" hit_count="0" hit_value="0" id="290003"></breakpoint></response>
+
+[29] <- run -i 5
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="5" status="stopping" reason="ok"></response>
+
+[29] <- stop -i 6
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="6" status="stopped" reason="ok"></response>
+
+[29] Log closed at 2022-06-12 18:42:26
+
+[19] Log opened at 2022-06-12 18:42:27
+[19] I: Checking remote connect back address.
+[19] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[19] I: Checking header 'REMOTE_ADDR'.
+[19] I: Remote address found, connecting to 172.20.0.1:9000.
+[19] I: Connected to client. :-)
+[19] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/controller/connection.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="19"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[19] <- breakpoint_list -i 1
+[19] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[19] <- breakpoint_set -i 2 -t line -f file:///var/www/html/negociosdocondominio/controller/connection.php -n 3
+[19] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="2" id="190001"></response>
+
+[19] <- breakpoint_list -i 3
+[19] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"><breakpoint type="line" filename="file:///var/www/html/negociosdocondominio/controller/connection.php" lineno="3" state="enabled" hit_count="0" hit_value="0" id="190001"></breakpoint></response>
+
+[19] <- breakpoint_list -i 4
+[19] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="4"><breakpoint type="line" filename="file:///var/www/html/negociosdocondominio/controller/connection.php" lineno="3" state="enabled" hit_count="0" hit_value="0" id="190001"></breakpoint></response>
+
+[19] <- run -i 5
+[19] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="5" status="stopping" reason="ok"></response>
+
+[19] <- stop -i 6
+[19] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="6" status="stopped" reason="ok"></response>
+
+[19] Log closed at 2022-06-12 18:42:28
+
+[26] Log opened at 2022-06-12 18:42:50
+[26] I: Checking remote connect back address.
+[26] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[26] I: Checking header 'REMOTE_ADDR'.
+[26] I: Remote address found, connecting to 172.20.0.1:9000.
+[26] I: Connected to client. :-)
+[26] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/controller/connection.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="26"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[26] <- breakpoint_list -i 1
+[26] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[26] <- breakpoint_set -i 2 -t line -f file:///var/www/html/negociosdocondominio/controller/connection.php -n 3
+[26] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="2" id="260004"></response>
+
+[26] <- breakpoint_list -i 3
+[26] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"><breakpoint type="line" filename="file:///var/www/html/negociosdocondominio/controller/connection.php" lineno="3" state="enabled" hit_count="0" hit_value="0" id="260004"></breakpoint></response>
+
+[26] <- breakpoint_list -i 4
+[26] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="4"><breakpoint type="line" filename="file:///var/www/html/negociosdocondominio/controller/connection.php" lineno="3" state="enabled" hit_count="0" hit_value="0" id="260004"></breakpoint></response>
+
+[26] <- run -i 5
+[26] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="5" status="stopping" reason="ok"></response>
+
+[26] <- stop -i 6
+[26] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="6" status="stopped" reason="ok"></response>
+
+[26] Log closed at 2022-06-12 18:42:50
+
+[31] Log opened at 2022-06-12 18:43:16
+[31] I: Checking remote connect back address.
+[31] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[31] I: Checking header 'REMOTE_ADDR'.
+[31] I: Remote address found, connecting to 172.20.0.1:9000.
+[31] I: Connected to client. :-)
+[31] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/controller/connection.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="31"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[31] <- breakpoint_list -i 1
+[31] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[31] <- breakpoint_set -i 2 -t line -f file:///var/www/html/negociosdocondominio/controller/connection.php -n 3
+[31] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="2" id="310001"></response>
+
+[31] <- breakpoint_list -i 3
+[31] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"><breakpoint type="line" filename="file:///var/www/html/negociosdocondominio/controller/connection.php" lineno="3" state="enabled" hit_count="0" hit_value="0" id="310001"></breakpoint></response>
+
+[31] <- breakpoint_list -i 4
+[31] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="4"><breakpoint type="line" filename="file:///var/www/html/negociosdocondominio/controller/connection.php" lineno="3" state="enabled" hit_count="0" hit_value="0" id="310001"></breakpoint></response>
+
+[31] <- run -i 5
+[31] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="5" status="stopping" reason="ok"></response>
+
+[31] <- stop -i 6
+[31] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="6" status="stopped" reason="ok"></response>
+
+[31] Log closed at 2022-06-12 18:43:16
+
+[29] Log opened at 2022-06-12 18:44:10
+[29] I: Checking remote connect back address.
+[29] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[29] I: Checking header 'REMOTE_ADDR'.
+[29] I: Remote address found, connecting to 172.20.0.1:9000.
+[29] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[29] E: Could not connect to client. :-(
+[29] Log closed at 2022-06-12 18:44:10
+
+[29] Log opened at 2022-06-12 18:44:11
+[29] I: Checking remote connect back address.
+[29] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[29] I: Checking header 'REMOTE_ADDR'.
+[29] I: Remote address found, connecting to 172.20.0.1:9000.
+[29] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[29] E: Could not connect to client. :-(
+[29] Log closed at 2022-06-12 18:44:11
+
+[23] Log opened at 2022-06-12 18:44:29
+[23] I: Checking remote connect back address.
+[23] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[23] I: Checking header 'REMOTE_ADDR'.
+[23] I: Remote address found, connecting to 172.20.0.1:9000.
+[23] I: Connected to client. :-)
+[23] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/controller/connection.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="23"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[23] <- breakpoint_list -i 1
+[23] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[23] <- breakpoint_set -i 2 -t line -f file:///var/www/html/negociosdocondominio/controller/connection.php -n 3
+[23] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="2" id="230001"></response>
+
+[23] <- breakpoint_list -i 3
+[23] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"><breakpoint type="line" filename="file:///var/www/html/negociosdocondominio/controller/connection.php" lineno="3" state="enabled" hit_count="0" hit_value="0" id="230001"></breakpoint></response>
+
+[23] <- breakpoint_list -i 4
+[23] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="4"><breakpoint type="line" filename="file:///var/www/html/negociosdocondominio/controller/connection.php" lineno="3" state="enabled" hit_count="0" hit_value="0" id="230001"></breakpoint></response>
+
+[23] <- run -i 5
+[23] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="5" status="stopping" reason="ok"></response>
+
+[23] <- stop -i 6
+[23] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="6" status="stopped" reason="ok"></response>
+
+[23] Log closed at 2022-06-12 18:44:29
+
+[23] Log opened at 2022-06-12 18:44:32
+[23] I: Checking remote connect back address.
+[23] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[23] I: Checking header 'REMOTE_ADDR'.
+[23] I: Remote address found, connecting to 172.20.0.1:9000.
+[23] I: Connected to client. :-)
+[23] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/login.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="23"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[23] <- breakpoint_list -i 1
+[23] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[23] <- breakpoint_set -i 2 -t line -f file:///var/www/html/negociosdocondominio/controller/connection.php -n 3
+[23] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="2" id="230002"></response>
+
+[23] <- breakpoint_list -i 3
+[23] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"><breakpoint type="line" filename="file:///var/www/html/negociosdocondominio/controller/connection.php" lineno="3" state="enabled" hit_count="0" hit_value="0" id="230002"></breakpoint></response>
+
+[23] <- breakpoint_list -i 4
+[23] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="4"><breakpoint type="line" filename="file:///var/www/html/negociosdocondominio/controller/connection.php" lineno="3" state="enabled" hit_count="0" hit_value="0" id="230002"></breakpoint></response>
+
+[23] <- run -i 5
+[23] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="5" status="stopping" reason="ok"></response>
+
+[23] <- stop -i 6
+[23] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="6" status="stopped" reason="ok"></response>
+
+[23] Log closed at 2022-06-12 18:44:32
+
+[23] Log opened at 2022-06-12 18:44:33
+[23] I: Checking remote connect back address.
+[23] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[23] I: Checking header 'REMOTE_ADDR'.
+[23] I: Remote address found, connecting to 172.20.0.1:9000.
+[23] I: Connected to client. :-)
+[23] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/controller/connection.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="23"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[23] <- breakpoint_list -i 1
+[23] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[23] <- breakpoint_set -i 2 -t line -f file:///var/www/html/negociosdocondominio/controller/connection.php -n 3
+[23] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="2" id="230003"></response>
+
+[23] <- breakpoint_list -i 3
+[23] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"><breakpoint type="line" filename="file:///var/www/html/negociosdocondominio/controller/connection.php" lineno="3" state="enabled" hit_count="0" hit_value="0" id="230003"></breakpoint></response>
+
+[23] <- breakpoint_list -i 4
+[23] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="4"><breakpoint type="line" filename="file:///var/www/html/negociosdocondominio/controller/connection.php" lineno="3" state="enabled" hit_count="0" hit_value="0" id="230003"></breakpoint></response>
+
+[23] <- run -i 5
+[23] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="5" status="stopping" reason="ok"></response>
+
+[23] <- stop -i 6
+[23] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="6" status="stopped" reason="ok"></response>
+
+[23] Log closed at 2022-06-12 18:44:33
+
+[26] Log opened at 2022-06-12 18:45:39
+[26] I: Checking remote connect back address.
+[26] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[26] I: Checking header 'REMOTE_ADDR'.
+[26] I: Remote address found, connecting to 172.20.0.1:9000.
+[26] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[26] E: Could not connect to client. :-(
+[26] Log closed at 2022-06-12 18:45:39
+
+[26] Log opened at 2022-06-12 18:45:42
+[26] I: Checking remote connect back address.
+[26] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[26] I: Checking header 'REMOTE_ADDR'.
+[26] I: Remote address found, connecting to 172.20.0.1:9000.
+[26] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[26] E: Could not connect to client. :-(
+[26] Log closed at 2022-06-12 18:45:42
+
+[26] Log opened at 2022-06-12 18:45:43
+[26] I: Checking remote connect back address.
+[26] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[26] I: Checking header 'REMOTE_ADDR'.
+[26] I: Remote address found, connecting to 172.20.0.1:9000.
+[26] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[26] E: Could not connect to client. :-(
+[26] Log closed at 2022-06-12 18:45:43
+
+[18] Log opened at 2022-06-12 18:45:59
+[18] I: Checking remote connect back address.
+[18] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[18] I: Checking header 'REMOTE_ADDR'.
+[18] I: Remote address found, connecting to 172.20.0.1:9000.
+[18] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2022-06-12 18:45:59
+
+[31] Log opened at 2022-06-12 18:46:03
+[31] I: Checking remote connect back address.
+[31] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[31] I: Checking header 'REMOTE_ADDR'.
+[31] I: Remote address found, connecting to 172.20.0.1:9000.
+[31] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[31] E: Could not connect to client. :-(
+[31] Log closed at 2022-06-12 18:46:03
+
+[31] Log opened at 2022-06-12 18:46:05
+[31] I: Checking remote connect back address.
+[31] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[31] I: Checking header 'REMOTE_ADDR'.
+[31] I: Remote address found, connecting to 172.20.0.1:9000.
+[31] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[31] E: Could not connect to client. :-(
+[31] Log closed at 2022-06-12 18:46:05
+
+[23] Log opened at 2022-06-12 18:46:34
+[23] I: Checking remote connect back address.
+[23] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[23] I: Checking header 'REMOTE_ADDR'.
+[23] I: Remote address found, connecting to 172.20.0.1:9000.
+[23] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[23] E: Could not connect to client. :-(
+[23] Log closed at 2022-06-12 18:46:34
+
+[19] Log opened at 2022-06-12 18:46:35
+[19] I: Checking remote connect back address.
+[19] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[19] I: Checking header 'REMOTE_ADDR'.
+[19] I: Remote address found, connecting to 172.20.0.1:9000.
+[19] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[19] E: Could not connect to client. :-(
+[19] Log closed at 2022-06-12 18:46:35
+
+[25] Log opened at 2022-06-12 18:48:01
+[25] I: Checking remote connect back address.
+[25] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[25] I: Checking header 'REMOTE_ADDR'.
+[25] I: Remote address found, connecting to 172.20.0.1:9000.
+[25] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[25] E: Could not connect to client. :-(
+[25] Log closed at 2022-06-12 18:48:01
+
+[25] Log opened at 2022-06-12 18:48:06
+[25] I: Checking remote connect back address.
+[25] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[25] I: Checking header 'REMOTE_ADDR'.
+[25] I: Remote address found, connecting to 172.20.0.1:9000.
+[25] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[25] E: Could not connect to client. :-(
+[25] Log closed at 2022-06-12 18:48:06
+
+[20] Log opened at 2022-06-12 18:48:22
+[20] I: Checking remote connect back address.
+[20] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[20] I: Checking header 'REMOTE_ADDR'.
+[20] I: Remote address found, connecting to 172.20.0.1:9000.
+[20] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[20] E: Could not connect to client. :-(
+[20] Log closed at 2022-06-12 18:48:22
+
+[20] Log opened at 2022-06-12 18:48:23
+[20] I: Checking remote connect back address.
+[20] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[20] I: Checking header 'REMOTE_ADDR'.
+[20] I: Remote address found, connecting to 172.20.0.1:9000.
+[20] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[20] E: Could not connect to client. :-(
+[20] Log closed at 2022-06-12 18:48:23
+
+[34] Log opened at 2022-06-12 18:49:14
+[34] I: Checking remote connect back address.
+[34] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[34] I: Checking header 'REMOTE_ADDR'.
+[34] I: Remote address found, connecting to 172.20.0.1:9000.
+[34] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[34] E: Could not connect to client. :-(
+[34] Log closed at 2022-06-12 18:49:14
+
+[26] Log opened at 2022-06-12 18:49:21
+[26] I: Checking remote connect back address.
+[26] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[26] I: Checking header 'REMOTE_ADDR'.
+[26] I: Remote address found, connecting to 172.20.0.1:9000.
+[26] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[26] E: Could not connect to client. :-(
+[26] Log closed at 2022-06-12 18:49:21
+
+[28] Log opened at 2022-06-12 18:49:30
+[28] I: Checking remote connect back address.
+[28] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[28] I: Checking header 'REMOTE_ADDR'.
+[28] I: Remote address found, connecting to 172.20.0.1:9000.
+[28] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[28] E: Could not connect to client. :-(
+[28] Log closed at 2022-06-12 18:49:30
+
+[19] Log opened at 2022-06-12 18:50:00
+[19] I: Checking remote connect back address.
+[19] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[19] I: Checking header 'REMOTE_ADDR'.
+[19] I: Remote address found, connecting to 172.20.0.1:9000.
+[19] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[19] E: Could not connect to client. :-(
+[19] Log closed at 2022-06-12 18:50:00
+
+[25] Log opened at 2022-06-12 18:50:38
+[25] I: Checking remote connect back address.
+[25] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[25] I: Checking header 'REMOTE_ADDR'.
+[25] I: Remote address found, connecting to 172.20.0.1:9000.
+[25] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[25] E: Could not connect to client. :-(
+[25] Log closed at 2022-06-12 18:50:38
+
+[20] Log opened at 2022-06-12 18:51:04
+[20] I: Checking remote connect back address.
+[20] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[20] I: Checking header 'REMOTE_ADDR'.
+[20] I: Remote address found, connecting to 172.20.0.1:9000.
+[20] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[20] E: Could not connect to client. :-(
+[20] Log closed at 2022-06-12 18:51:04
+
+[31] Log opened at 2022-06-12 18:51:24
+[31] I: Checking remote connect back address.
+[31] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[31] I: Checking header 'REMOTE_ADDR'.
+[31] I: Remote address found, connecting to 172.20.0.1:9000.
+[31] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[31] E: Could not connect to client. :-(
+[31] Log closed at 2022-06-12 18:51:24
+
+[18] Log opened at 2022-06-12 18:51:46
+[18] I: Checking remote connect back address.
+[18] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[18] I: Checking header 'REMOTE_ADDR'.
+[18] I: Remote address found, connecting to 172.20.0.1:9000.
+[18] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2022-06-12 18:51:46
+
+[34] Log opened at 2022-06-12 18:53:15
+[34] I: Checking remote connect back address.
+[34] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[34] I: Checking header 'REMOTE_ADDR'.
+[34] I: Remote address found, connecting to 172.20.0.1:9000.
+[34] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[34] E: Could not connect to client. :-(
+[34] Log closed at 2022-06-12 18:53:15
+
+[28] Log opened at 2022-06-12 18:54:35
+[28] I: Checking remote connect back address.
+[28] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[28] I: Checking header 'REMOTE_ADDR'.
+[28] I: Remote address found, connecting to 172.20.0.1:9000.
+[28] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[28] E: Could not connect to client. :-(
+[28] Log closed at 2022-06-12 18:54:35
+
+[33] Log opened at 2022-06-12 18:55:04
+[33] I: Checking remote connect back address.
+[33] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[33] I: Checking header 'REMOTE_ADDR'.
+[33] I: Remote address found, connecting to 172.20.0.1:9000.
+[33] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[33] E: Could not connect to client. :-(
+[33] Log closed at 2022-06-12 18:55:04
+
+[25] Log opened at 2022-06-12 18:59:55
+[25] I: Checking remote connect back address.
+[25] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[25] I: Checking header 'REMOTE_ADDR'.
+[25] I: Remote address found, connecting to 172.20.0.1:9000.
+[25] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[25] E: Could not connect to client. :-(
+[25] Log closed at 2022-06-12 18:59:55
+
+[17] Log opened at 2022-06-12 19:01:51
+[17] I: Checking remote connect back address.
+[17] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[17] I: Checking header 'REMOTE_ADDR'.
+[17] I: Remote address found, connecting to 172.20.0.1:9000.
+[17] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2022-06-12 19:01:51
+
+[17] Log opened at 2022-06-12 19:11:33
+[17] I: Checking remote connect back address.
+[17] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[17] I: Checking header 'REMOTE_ADDR'.
+[17] I: Remote address found, connecting to 172.20.0.1:9000.
+[17] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2022-06-12 19:11:33
+
+[24] Log opened at 2022-06-12 19:11:46
+[24] I: Checking remote connect back address.
+[24] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[24] I: Checking header 'REMOTE_ADDR'.
+[24] I: Remote address found, connecting to 172.20.0.1:9000.
+[24] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[24] E: Could not connect to client. :-(
+[24] Log closed at 2022-06-12 19:11:46
+
+[26] Log opened at 2022-06-12 19:15:39
+[26] I: Checking remote connect back address.
+[26] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[26] I: Checking header 'REMOTE_ADDR'.
+[26] I: Remote address found, connecting to 172.20.0.1:9000.
+[26] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[26] E: Could not connect to client. :-(
+[26] Log closed at 2022-06-12 19:15:39
+
+[27] Log opened at 2022-06-12 19:15:46
+[27] I: Checking remote connect back address.
+[27] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[27] I: Checking header 'REMOTE_ADDR'.
+[27] I: Remote address found, connecting to 172.20.0.1:9000.
+[27] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[27] E: Could not connect to client. :-(
+[27] Log closed at 2022-06-12 19:15:46
+
+[17] Log opened at 2022-06-12 19:17:07
+[17] I: Checking remote connect back address.
+[17] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[17] I: Checking header 'REMOTE_ADDR'.
+[17] I: Remote address found, connecting to 172.20.0.1:9000.
+[17] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2022-06-12 19:17:07
+
+[24] Log opened at 2022-06-12 19:17:29
+[24] I: Checking remote connect back address.
+[24] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[24] I: Checking header 'REMOTE_ADDR'.
+[24] I: Remote address found, connecting to 172.20.0.1:9000.
+[24] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[24] E: Could not connect to client. :-(
+[24] Log closed at 2022-06-12 19:17:29
+
+[26] Log opened at 2022-06-12 19:19:29
+[26] I: Checking remote connect back address.
+[26] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[26] I: Checking header 'REMOTE_ADDR'.
+[26] I: Remote address found, connecting to 172.20.0.1:9000.
+[26] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[26] E: Could not connect to client. :-(
+[26] Log closed at 2022-06-12 19:19:29
+
+[19] Log opened at 2022-06-12 19:19:36
+[19] I: Checking remote connect back address.
+[19] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[19] I: Checking header 'REMOTE_ADDR'.
+[19] I: Remote address found, connecting to 172.20.0.1:9000.
+[19] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[19] E: Could not connect to client. :-(
+[19] Log closed at 2022-06-12 19:19:36
+
+[28] Log opened at 2022-06-12 19:19:36
+[28] I: Checking remote connect back address.
+[28] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[28] I: Checking header 'REMOTE_ADDR'.
+[28] I: Remote address found, connecting to 172.20.0.1:9000.
+[28] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[28] E: Could not connect to client. :-(
+[28] Log closed at 2022-06-12 19:19:36
+
+[27] Log opened at 2022-06-12 19:19:37
+[27] I: Checking remote connect back address.
+[27] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[27] I: Checking header 'REMOTE_ADDR'.
+[27] I: Remote address found, connecting to 172.20.0.1:9000.
+[27] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[27] E: Could not connect to client. :-(
+[27] Log closed at 2022-06-12 19:19:37
+
+[19] Log opened at 2022-06-12 19:19:37
+[19] I: Checking remote connect back address.
+[19] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[19] I: Checking header 'REMOTE_ADDR'.
+[19] I: Remote address found, connecting to 172.20.0.1:9000.
+[19] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[19] E: Could not connect to client. :-(
+[19] Log closed at 2022-06-12 19:19:37
+
+[19] Log opened at 2022-06-12 19:19:37
+[19] I: Checking remote connect back address.
+[19] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[19] I: Checking header 'REMOTE_ADDR'.
+[19] I: Remote address found, connecting to 172.20.0.1:9000.
+[19] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[19] E: Could not connect to client. :-(
+[19] Log closed at 2022-06-12 19:19:37
+
+[19] Log opened at 2022-06-12 19:19:39
+[19] I: Checking remote connect back address.
+[19] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[19] I: Checking header 'REMOTE_ADDR'.
+[19] I: Remote address found, connecting to 172.20.0.1:9000.
+[19] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[19] E: Could not connect to client. :-(
+[19] Log closed at 2022-06-12 19:19:39
+
+[17] Log opened at 2022-06-12 19:25:24
+[17] I: Checking remote connect back address.
+[17] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[17] I: Checking header 'REMOTE_ADDR'.
+[17] I: Remote address found, connecting to 172.20.0.1:9000.
+[17] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2022-06-12 19:25:24
+
+[18] Log opened at 2022-06-12 19:25:46
+[18] I: Checking remote connect back address.
+[18] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[18] I: Checking header 'REMOTE_ADDR'.
+[18] I: Remote address found, connecting to 172.20.0.1:9000.
+[18] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2022-06-12 19:25:46
+
+[19] Log opened at 2022-06-12 19:26:02
+[19] I: Checking remote connect back address.
+[19] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[19] I: Checking header 'REMOTE_ADDR'.
+[19] I: Remote address found, connecting to 172.20.0.1:9000.
+[19] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[19] E: Could not connect to client. :-(
+[19] Log closed at 2022-06-12 19:26:02
+
+[17] Log opened at 2022-06-12 19:27:44
+[17] I: Checking remote connect back address.
+[17] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[17] I: Checking header 'REMOTE_ADDR'.
+[17] I: Remote address found, connecting to 172.20.0.1:9000.
+[17] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2022-06-12 19:27:44
+
+[17] Log opened at 2022-06-12 19:27:44
+[17] I: Checking remote connect back address.
+[17] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[17] I: Checking header 'REMOTE_ADDR'.
+[17] I: Remote address found, connecting to 172.20.0.1:9000.
+[17] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2022-06-12 19:27:44
+
+[17] Log opened at 2022-06-12 19:27:46
+[17] I: Checking remote connect back address.
+[17] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[17] I: Checking header 'REMOTE_ADDR'.
+[17] I: Remote address found, connecting to 172.20.0.1:9000.
+[17] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2022-06-12 19:27:46
+
+[19] Log opened at 2022-06-12 19:28:01
+[19] I: Checking remote connect back address.
+[19] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[19] I: Checking header 'REMOTE_ADDR'.
+[19] I: Remote address found, connecting to 172.20.0.1:9000.
+[19] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[19] E: Could not connect to client. :-(
+[19] Log closed at 2022-06-12 19:28:01
+
+[20] Log opened at 2022-06-12 19:28:52
+[20] I: Checking remote connect back address.
+[20] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[20] I: Checking header 'REMOTE_ADDR'.
+[20] I: Remote address found, connecting to 172.20.0.1:9000.
+[20] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[20] E: Could not connect to client. :-(
+[20] Log closed at 2022-06-12 19:28:52
+
+[22] Log opened at 2022-06-12 19:31:21
+[22] I: Checking remote connect back address.
+[22] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[22] I: Checking header 'REMOTE_ADDR'.
+[22] I: Remote address found, connecting to 172.20.0.1:9000.
+[22] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[22] E: Could not connect to client. :-(
+[22] Log closed at 2022-06-12 19:31:21
+
+[23] Log opened at 2022-06-12 19:31:30
+[23] I: Checking remote connect back address.
+[23] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[23] I: Checking header 'REMOTE_ADDR'.
+[23] I: Remote address found, connecting to 172.20.0.1:9000.
+[23] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[23] E: Could not connect to client. :-(
+[23] Log closed at 2022-06-12 19:31:30
+
+[24] Log opened at 2022-06-12 19:31:31
+[24] I: Checking remote connect back address.
+[24] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[24] I: Checking header 'REMOTE_ADDR'.
+[24] I: Remote address found, connecting to 172.20.0.1:9000.
+[24] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[24] E: Could not connect to client. :-(
+[24] Log closed at 2022-06-12 19:31:31
+
+[21] Log opened at 2022-06-12 19:32:14
+[21] I: Checking remote connect back address.
+[21] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[21] I: Checking header 'REMOTE_ADDR'.
+[21] I: Remote address found, connecting to 172.20.0.1:9000.
+[21] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[21] E: Could not connect to client. :-(
+[21] Log closed at 2022-06-12 19:32:14
+
+[22] Log opened at 2022-06-12 19:32:34
+[22] I: Checking remote connect back address.
+[22] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[22] I: Checking header 'REMOTE_ADDR'.
+[22] I: Remote address found, connecting to 172.20.0.1:9000.
+[22] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[22] E: Could not connect to client. :-(
+[22] Log closed at 2022-06-12 19:32:34
+
+[17] Log opened at 2022-06-12 19:36:04
+[17] I: Checking remote connect back address.
+[17] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[17] I: Checking header 'REMOTE_ADDR'.
+[17] I: Remote address found, connecting to 172.20.0.1:9000.
+[17] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2022-06-12 19:36:04
+
+[18] Log opened at 2022-06-12 19:36:22
+[18] I: Checking remote connect back address.
+[18] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[18] I: Checking header 'REMOTE_ADDR'.
+[18] I: Remote address found, connecting to 172.20.0.1:9000.
+[18] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2022-06-12 19:36:22
+
+[19] Log opened at 2022-06-12 19:36:49
+[19] I: Checking remote connect back address.
+[19] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[19] I: Checking header 'REMOTE_ADDR'.
+[19] I: Remote address found, connecting to 172.20.0.1:9000.
+[19] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[19] E: Could not connect to client. :-(
+[19] Log closed at 2022-06-12 19:36:49
+
+[19] Log opened at 2022-06-12 19:36:49
+[19] I: Checking remote connect back address.
+[19] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[19] I: Checking header 'REMOTE_ADDR'.
+[19] I: Remote address found, connecting to 172.20.0.1:9000.
+[19] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[19] E: Could not connect to client. :-(
+[19] Log closed at 2022-06-12 19:36:49
+
+[19] Log opened at 2022-06-12 19:36:54
+[19] I: Checking remote connect back address.
+[19] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[19] I: Checking header 'REMOTE_ADDR'.
+[19] I: Remote address found, connecting to 172.20.0.1:9000.
+[19] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[19] E: Could not connect to client. :-(
+[19] Log closed at 2022-06-12 19:36:54
+
+[20] Log opened at 2022-06-12 19:37:25
+[20] I: Checking remote connect back address.
+[20] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[20] I: Checking header 'REMOTE_ADDR'.
+[20] I: Remote address found, connecting to 172.20.0.1:9000.
+[20] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[20] E: Could not connect to client. :-(
+[20] Log closed at 2022-06-12 19:37:25
+
+[20] Log opened at 2022-06-12 19:37:25
+[20] I: Checking remote connect back address.
+[20] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[20] I: Checking header 'REMOTE_ADDR'.
+[20] I: Remote address found, connecting to 172.20.0.1:9000.
+[20] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[20] E: Could not connect to client. :-(
+[20] Log closed at 2022-06-12 19:37:25
+
+[25] Log opened at 2022-06-12 19:37:57
+[25] I: Checking remote connect back address.
+[25] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[25] I: Checking header 'REMOTE_ADDR'.
+[25] I: Remote address found, connecting to 172.20.0.1:9000.
+[25] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[25] E: Could not connect to client. :-(
+[25] Log closed at 2022-06-12 19:37:57
+
+[28] Log opened at 2022-06-12 19:38:01
+[28] I: Checking remote connect back address.
+[28] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[28] I: Checking header 'REMOTE_ADDR'.
+[28] I: Remote address found, connecting to 172.20.0.1:9000.
+[28] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[28] E: Could not connect to client. :-(
+[28] Log closed at 2022-06-12 19:38:01
+
+[28] Log opened at 2022-06-12 19:38:01
+[28] I: Checking remote connect back address.
+[28] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[28] I: Checking header 'REMOTE_ADDR'.
+[28] I: Remote address found, connecting to 172.20.0.1:9000.
+[28] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[28] E: Could not connect to client. :-(
+[28] Log closed at 2022-06-12 19:38:01
+
+[28] Log opened at 2022-06-12 19:38:04
+[28] I: Checking remote connect back address.
+[28] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[28] I: Checking header 'REMOTE_ADDR'.
+[28] I: Remote address found, connecting to 172.20.0.1:9000.
+[28] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[28] E: Could not connect to client. :-(
+[28] Log closed at 2022-06-12 19:38:04
+
+[20] Log opened at 2022-06-12 19:38:05
+[20] I: Checking remote connect back address.
+[20] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[20] I: Checking header 'REMOTE_ADDR'.
+[20] I: Remote address found, connecting to 172.20.0.1:9000.
+[20] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[20] E: Could not connect to client. :-(
+[20] Log closed at 2022-06-12 19:38:05
+
+[17] Log opened at 2022-06-12 19:38:05
+[17] I: Checking remote connect back address.
+[17] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[17] I: Checking header 'REMOTE_ADDR'.
+[17] I: Remote address found, connecting to 172.20.0.1:9000.
+[17] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2022-06-12 19:38:05
+
+[18] Log opened at 2022-06-12 19:38:06
+[18] I: Checking remote connect back address.
+[18] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[18] I: Checking header 'REMOTE_ADDR'.
+[18] I: Remote address found, connecting to 172.20.0.1:9000.
+[18] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2022-06-12 19:38:06
+
+[21] Log opened at 2022-06-12 19:38:15
+[21] I: Checking remote connect back address.
+[21] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[21] I: Checking header 'REMOTE_ADDR'.
+[21] I: Remote address found, connecting to 172.20.0.1:9000.
+[21] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[21] E: Could not connect to client. :-(
+[21] Log closed at 2022-06-12 19:38:15
+
+[20] Log opened at 2022-06-12 19:38:29
+[20] I: Checking remote connect back address.
+[20] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[20] I: Checking header 'REMOTE_ADDR'.
+[20] I: Remote address found, connecting to 172.20.0.1:9000.
+[20] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[20] E: Could not connect to client. :-(
+[20] Log closed at 2022-06-12 19:38:29
+
+[18] Log opened at 2022-06-12 19:38:33
+[18] I: Checking remote connect back address.
+[18] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[18] I: Checking header 'REMOTE_ADDR'.
+[18] I: Remote address found, connecting to 172.20.0.1:9000.
+[18] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2022-06-12 19:38:33
+
+[18] Log opened at 2022-06-12 19:38:33
+[18] I: Checking remote connect back address.
+[18] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[18] I: Checking header 'REMOTE_ADDR'.
+[18] I: Remote address found, connecting to 172.20.0.1:9000.
+[18] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2022-06-12 19:38:33
+
+[18] Log opened at 2022-06-12 19:38:35
+[18] I: Checking remote connect back address.
+[18] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[18] I: Checking header 'REMOTE_ADDR'.
+[18] I: Remote address found, connecting to 172.20.0.1:9000.
+[18] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2022-06-12 19:38:35
+
+[18] Log opened at 2022-06-12 19:38:35
+[18] I: Checking remote connect back address.
+[18] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[18] I: Checking header 'REMOTE_ADDR'.
+[18] I: Remote address found, connecting to 172.20.0.1:9000.
+[18] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2022-06-12 19:38:35
+
+[18] Log opened at 2022-06-12 19:38:35
+[18] I: Checking remote connect back address.
+[18] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[18] I: Checking header 'REMOTE_ADDR'.
+[18] I: Remote address found, connecting to 172.20.0.1:9000.
+[18] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2022-06-12 19:38:35
+
+[18] Log opened at 2022-06-12 19:38:35
+[18] I: Checking remote connect back address.
+[18] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[18] I: Checking header 'REMOTE_ADDR'.
+[18] I: Remote address found, connecting to 172.20.0.1:9000.
+[18] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2022-06-12 19:38:35
+
+[18] Log opened at 2022-06-12 19:38:35
+[18] I: Checking remote connect back address.
+[18] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[18] I: Checking header 'REMOTE_ADDR'.
+[18] I: Remote address found, connecting to 172.20.0.1:9000.
+[18] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2022-06-12 19:38:35
+
+[18] Log opened at 2022-06-12 19:38:35
+[18] I: Checking remote connect back address.
+[18] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[18] I: Checking header 'REMOTE_ADDR'.
+[18] I: Remote address found, connecting to 172.20.0.1:9000.
+[18] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2022-06-12 19:38:35
+
+[18] Log opened at 2022-06-12 19:38:35
+[18] I: Checking remote connect back address.
+[18] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[18] I: Checking header 'REMOTE_ADDR'.
+[18] I: Remote address found, connecting to 172.20.0.1:9000.
+[18] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2022-06-12 19:38:35
+
+[18] Log opened at 2022-06-12 19:38:35
+[18] I: Checking remote connect back address.
+[18] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[18] I: Checking header 'REMOTE_ADDR'.
+[18] I: Remote address found, connecting to 172.20.0.1:9000.
+[18] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2022-06-12 19:38:35
+
+[18] Log opened at 2022-06-12 19:38:36
+[18] I: Checking remote connect back address.
+[18] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[18] I: Checking header 'REMOTE_ADDR'.
+[18] I: Remote address found, connecting to 172.20.0.1:9000.
+[18] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2022-06-12 19:38:36
+
+[18] Log opened at 2022-06-12 19:38:36
+[18] I: Checking remote connect back address.
+[18] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[18] I: Checking header 'REMOTE_ADDR'.
+[18] I: Remote address found, connecting to 172.20.0.1:9000.
+[18] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2022-06-12 19:38:36
+
+[18] Log opened at 2022-06-12 19:38:36
+[18] I: Checking remote connect back address.
+[18] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[18] I: Checking header 'REMOTE_ADDR'.
+[18] I: Remote address found, connecting to 172.20.0.1:9000.
+[18] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2022-06-12 19:38:36
+
+[18] Log opened at 2022-06-12 19:38:36
+[18] I: Checking remote connect back address.
+[18] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[18] I: Checking header 'REMOTE_ADDR'.
+[18] I: Remote address found, connecting to 172.20.0.1:9000.
+[18] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2022-06-12 19:38:36
+
+[27] Log opened at 2022-06-12 19:39:10
+[27] I: Checking remote connect back address.
+[27] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[27] I: Checking header 'REMOTE_ADDR'.
+[27] I: Remote address found, connecting to 172.20.0.1:9000.
+[27] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[27] E: Could not connect to client. :-(
+[27] Log closed at 2022-06-12 19:39:10
+
+[19] Log opened at 2022-06-12 19:39:15
+[19] I: Checking remote connect back address.
+[19] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[19] I: Checking header 'REMOTE_ADDR'.
+[19] I: Remote address found, connecting to 172.20.0.1:9000.
+[19] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[19] E: Could not connect to client. :-(
+[19] Log closed at 2022-06-12 19:39:15
+
+[19] Log opened at 2022-06-12 19:39:17
+[19] I: Checking remote connect back address.
+[19] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[19] I: Checking header 'REMOTE_ADDR'.
+[19] I: Remote address found, connecting to 172.20.0.1:9000.
+[19] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[19] E: Could not connect to client. :-(
+[19] Log closed at 2022-06-12 19:39:17
+
+[19] Log opened at 2022-06-12 19:39:17
+[19] I: Checking remote connect back address.
+[19] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[19] I: Checking header 'REMOTE_ADDR'.
+[19] I: Remote address found, connecting to 172.20.0.1:9000.
+[19] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[19] E: Could not connect to client. :-(
+[19] Log closed at 2022-06-12 19:39:17
+
+[21] Log opened at 2022-06-12 19:39:27
+[21] I: Checking remote connect back address.
+[21] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[21] I: Checking header 'REMOTE_ADDR'.
+[21] I: Remote address found, connecting to 172.20.0.1:9000.
+[21] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[21] E: Could not connect to client. :-(
+[21] Log closed at 2022-06-12 19:39:27
+
+[18] Log opened at 2022-06-12 19:39:31
+[18] I: Checking remote connect back address.
+[18] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[18] I: Checking header 'REMOTE_ADDR'.
+[18] I: Remote address found, connecting to 172.20.0.1:9000.
+[18] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2022-06-12 19:39:31
+
+[18] Log opened at 2022-06-12 19:39:35
+[18] I: Checking remote connect back address.
+[18] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[18] I: Checking header 'REMOTE_ADDR'.
+[18] I: Remote address found, connecting to 172.20.0.1:9000.
+[18] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2022-06-12 19:39:35
+
+[18] Log opened at 2022-06-12 19:39:35
+[18] I: Checking remote connect back address.
+[18] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[18] I: Checking header 'REMOTE_ADDR'.
+[18] I: Remote address found, connecting to 172.20.0.1:9000.
+[18] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2022-06-12 19:39:35
+
+[18] Log opened at 2022-06-12 19:39:36
+[18] I: Checking remote connect back address.
+[18] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[18] I: Checking header 'REMOTE_ADDR'.
+[18] I: Remote address found, connecting to 172.20.0.1:9000.
+[18] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2022-06-12 19:39:36
+
+[18] Log opened at 2022-06-12 19:39:36
+[18] I: Checking remote connect back address.
+[18] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[18] I: Checking header 'REMOTE_ADDR'.
+[18] I: Remote address found, connecting to 172.20.0.1:9000.
+[18] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2022-06-12 19:39:36
+
+[20] Log opened at 2022-06-12 19:39:43
+[20] I: Checking remote connect back address.
+[20] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[20] I: Checking header 'REMOTE_ADDR'.
+[20] I: Remote address found, connecting to 172.20.0.1:9000.
+[20] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[20] E: Could not connect to client. :-(
+[20] Log closed at 2022-06-12 19:39:43
+
+[20] Log opened at 2022-06-12 19:39:43
+[20] I: Checking remote connect back address.
+[20] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[20] I: Checking header 'REMOTE_ADDR'.
+[20] I: Remote address found, connecting to 172.20.0.1:9000.
+[20] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[20] E: Could not connect to client. :-(
+[20] Log closed at 2022-06-12 19:39:43
+
+[20] Log opened at 2022-06-12 19:39:46
+[20] I: Checking remote connect back address.
+[20] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[20] I: Checking header 'REMOTE_ADDR'.
+[20] I: Remote address found, connecting to 172.20.0.1:9000.
+[20] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[20] E: Could not connect to client. :-(
+[20] Log closed at 2022-06-12 19:39:46
+
+[20] Log opened at 2022-06-12 19:39:46
+[20] I: Checking remote connect back address.
+[20] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[20] I: Checking header 'REMOTE_ADDR'.
+[20] I: Remote address found, connecting to 172.20.0.1:9000.
+[20] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[20] E: Could not connect to client. :-(
+[20] Log closed at 2022-06-12 19:39:46
+
+[27] Log opened at 2022-06-12 19:40:29
+[27] I: Checking remote connect back address.
+[27] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[27] I: Checking header 'REMOTE_ADDR'.
+[27] I: Remote address found, connecting to 172.20.0.1:9000.
+[27] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[27] E: Could not connect to client. :-(
+[27] Log closed at 2022-06-12 19:40:29
+
+[27] Log opened at 2022-06-12 19:40:29
+[27] I: Checking remote connect back address.
+[27] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[27] I: Checking header 'REMOTE_ADDR'.
+[27] I: Remote address found, connecting to 172.20.0.1:9000.
+[27] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[27] E: Could not connect to client. :-(
+[27] Log closed at 2022-06-12 19:40:29
+
+[21] Log opened at 2022-06-12 19:41:02
+[21] I: Checking remote connect back address.
+[21] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[21] I: Checking header 'REMOTE_ADDR'.
+[21] I: Remote address found, connecting to 172.20.0.1:9000.
+[21] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[21] E: Could not connect to client. :-(
+[21] Log closed at 2022-06-12 19:41:02
+
+[32] Log opened at 2022-06-12 19:43:54
+[32] I: Checking remote connect back address.
+[32] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[32] I: Checking header 'REMOTE_ADDR'.
+[32] I: Remote address found, connecting to 172.20.0.1:9000.
+[32] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[32] E: Could not connect to client. :-(
+[32] Log closed at 2022-06-12 19:43:54
+
+[25] Log opened at 2022-06-12 19:44:42
+[25] I: Checking remote connect back address.
+[25] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[25] I: Checking header 'REMOTE_ADDR'.
+[25] I: Remote address found, connecting to 172.20.0.1:9000.
+[25] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[25] E: Could not connect to client. :-(
+[25] Log closed at 2022-06-12 19:44:42
+
+[31] Log opened at 2022-06-12 19:45:05
+[31] I: Checking remote connect back address.
+[31] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[31] I: Checking header 'REMOTE_ADDR'.
+[31] I: Remote address found, connecting to 172.20.0.1:9000.
+[31] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[31] E: Could not connect to client. :-(
+[31] Log closed at 2022-06-12 19:45:05
+
+[27] Log opened at 2022-06-12 19:45:13
+[27] I: Checking remote connect back address.
+[27] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[27] I: Checking header 'REMOTE_ADDR'.
+[27] I: Remote address found, connecting to 172.20.0.1:9000.
+[27] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[27] E: Could not connect to client. :-(
+[27] Log closed at 2022-06-12 19:45:13
+
+[25] Log opened at 2022-06-12 19:47:39
+[25] I: Checking remote connect back address.
+[25] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[25] I: Checking header 'REMOTE_ADDR'.
+[25] I: Remote address found, connecting to 172.20.0.1:9000.
+[25] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[25] E: Could not connect to client. :-(
+[25] Log closed at 2022-06-12 19:47:39
+
+[29] Log opened at 2022-06-12 19:48:49
+[29] I: Checking remote connect back address.
+[29] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[29] I: Checking header 'REMOTE_ADDR'.
+[29] I: Remote address found, connecting to 172.20.0.1:9000.
+[29] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[29] E: Could not connect to client. :-(
+[29] Log closed at 2022-06-12 19:48:49
+
+[18] Log opened at 2022-06-12 19:48:57
+[18] I: Checking remote connect back address.
+[18] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[18] I: Checking header 'REMOTE_ADDR'.
+[18] I: Remote address found, connecting to 172.20.0.1:9000.
+[18] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2022-06-12 19:48:57
+
+[21] Log opened at 2022-06-12 19:55:10
+[21] I: Checking remote connect back address.
+[21] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[21] I: Checking header 'REMOTE_ADDR'.
+[21] I: Remote address found, connecting to 172.20.0.1:9000.
+[21] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[21] E: Could not connect to client. :-(
+[21] Log closed at 2022-06-12 19:55:10
+
+[27] Log opened at 2022-06-12 19:55:16
+[27] I: Checking remote connect back address.
+[27] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[27] I: Checking header 'REMOTE_ADDR'.
+[27] I: Remote address found, connecting to 172.20.0.1:9000.
+[27] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[27] E: Could not connect to client. :-(
+[27] Log closed at 2022-06-12 19:55:16
+
+[18] Log opened at 2022-06-12 19:55:41
+[18] I: Checking remote connect back address.
+[18] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[18] I: Checking header 'REMOTE_ADDR'.
+[18] I: Remote address found, connecting to 172.20.0.1:9000.
+[18] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2022-06-12 19:55:41
+
+[16] Log opened at 2022-06-12 19:55:48
+[16] I: Checking remote connect back address.
+[16] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[16] I: Checking header 'REMOTE_ADDR'.
+[16] I: Remote address found, connecting to 172.20.0.1:9000.
+[16] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[16] E: Could not connect to client. :-(
+[16] Log closed at 2022-06-12 19:55:48
+
+[27] Log opened at 2022-06-12 19:55:58
+[27] I: Checking remote connect back address.
+[27] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[27] I: Checking header 'REMOTE_ADDR'.
+[27] I: Remote address found, connecting to 172.20.0.1:9000.
+[27] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[27] E: Could not connect to client. :-(
+[27] Log closed at 2022-06-12 19:55:58
+
+[27] Log opened at 2022-06-12 19:55:59
+[27] I: Checking remote connect back address.
+[27] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[27] I: Checking header 'REMOTE_ADDR'.
+[27] I: Remote address found, connecting to 172.20.0.1:9000.
+[27] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[27] E: Could not connect to client. :-(
+[27] Log closed at 2022-06-12 19:55:59
+
+[35] Log opened at 2022-06-12 19:56:05
+[35] I: Checking remote connect back address.
+[35] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[35] I: Checking header 'REMOTE_ADDR'.
+[35] I: Remote address found, connecting to 172.20.0.1:9000.
+[35] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[35] E: Could not connect to client. :-(
+[35] Log closed at 2022-06-12 19:56:05
+

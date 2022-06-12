@@ -20,7 +20,7 @@ foreach ($where as $k => $v) {
 $username = "root";
 $password = "root";
 $database = "pj_integrador";
-$hostname = "localhost:3306";
+$hostname = "172.20.0.7";
 
 try {
     $conn = new PDO('mysql:host=' . $hostname . ';dbname=' . $database, $username, $password);

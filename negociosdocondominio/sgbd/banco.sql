@@ -19,9 +19,14 @@ CREATE TABLE morador(
   idcadastro INT,
   bloco INT,
   torre varchar(20),
+  nome varchar(55),
+  email varchar(55),
+  data_nascimento varchar(20),
+  telenofe varchar(20),
   PRIMARY KEY (id),
   FOREIGN KEY (idcadastro) REFERENCES cadastros(id)
 );
+INSERT INTO `morador`(`bloco`, `torre`, `nome`, `email`, `data_nascimento`) VALUES (1,2,'julia','julia@julia.com','1989-10-12')
 
 CREATE TABLE servicos(
   id bigint AUTO_INCREMENT,

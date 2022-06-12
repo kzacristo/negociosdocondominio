@@ -5,7 +5,7 @@ include "header.php";
 ?>
 <div class="container">
   <div class="row justify-content-center">
-    <form action="connection.php" method="post">
+    <form action="../controller/connection.php" method="post">
     <div class="col-sm-6 "><br><br>
       <div class="branco">
         <div class="text-center"> <img src="images/logo.svg" alt="" width="72" height="57"> </div>
@@ -27,7 +27,7 @@ include "header.php";
                 <input type="checkbox" value="remember-me" >
                 LEMBRAR DE MIM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span><a href="#">ESQUECI A SENHA</a></span></label>
               <button class="w-100 btn btn-lg btn-primary" type="submit">Entrar</button>
-              <?php if (isset($_GET['erro']) && ($_GET['erro'] == "dadoserrado")) { echo "alert('login ou senha estão incorreto!');"; } ?>
+              <?php if (isset($_GET['erro']) && ($_GET['erro'] == "dadoserrado")) { echo "login ou senha estão incorreto!"; } ?>
               <div class="checkbox mb-3 text-center" >
                 <label> <br>
                   Não é cadastrado? <a href="cadastro.php">Crie sua conta</a></label>
