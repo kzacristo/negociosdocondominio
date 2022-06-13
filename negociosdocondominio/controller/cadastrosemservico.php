@@ -36,8 +36,6 @@ if($tipe == 1){
     $areadeatuacao = (isset($_POST['areadeatuacao'])) ? $_POST['areadeatuacao'] : false;
     $outraarea = (isset($_POST['outraarea'])) ? $_POST['outraarea'] : false;
     $servicos_ofertados = (isset($_POST['servicos_ofertados'])) ? $_POST['servicos_ofertados'] : false;
-    $horario = (isset($_POST['horario1'])) ? $_POST['horario1'] : false;
-    $time = (isset($_POST['time'])) ? $_POST['time'] : false;
     $diasemana = (isset($_POST['diasemana'])) ? $_POST['diasemana'] : false;
     $areadeatuacao = (isset($_POST['areadeatuacao'])) ? $_POST['areadeatuacao'] : false;
     $linckdin = (isset($_POST['linckdin'])) ? $_POST['linckdin'] : false;
@@ -51,6 +49,23 @@ if($tipe == 1){
     $sobrevc = (isset($_POST['sobrevc'])) ? $_POST['sobrevc'] : false;
     $valor = (isset($_POST['valor'])) ? $_POST['valor'] : false;
     $file = (isset($_POST['file'])) ? $_POST['file'] : false;
+
+    $horario = array();
+
+    if(isset($_POST['horario1'])){ array_push($horario, $_POST['horario1']);}
+    if(isset($_POST['horario2'])){ array_push($horario, $_POST['horario2']);}
+    if(isset($_POST['horario3'])){ array_push($horario, $_POST['horario3']);}
+    if(isset($_POST['horario4'])){ array_push($horario, $_POST['horario4']);}
+    if(isset($_POST['horario5'])){ array_push($horario, $_POST['horario5']);}
+    if(isset($_POST['horario6'])){ array_push($horario, $_POST['horario6']);}
+    if(isset($_POST['horario7'])){ array_push($horario, $_POST['horario7']);}
+    if(isset($_POST['horario8'])){ array_push($horario, $_POST['horario8']);}
+
+    foreach($horario as $key => $h){
+        
+    }
+
+    $time = (isset($_POST['time'])) ? $_POST['time'] : false;
 
     var_dump($horario,$time);die();
 
