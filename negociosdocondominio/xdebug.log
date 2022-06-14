@@ -6645,3 +6645,120 @@ Stack trace:
 [31] E: Could not connect to client. :-(
 [31] Log closed at 2022-06-14 15:24:29
 
+[21] Log opened at 2022-06-14 16:32:34
+[21] I: Checking remote connect back address.
+[21] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[21] I: Checking header 'REMOTE_ADDR'.
+[21] I: Remote address found, connecting to 172.20.0.1:9000.
+[21] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[21] E: Could not connect to client. :-(
+[21] Log closed at 2022-06-14 16:32:34
+
+[21] Log opened at 2022-06-14 16:32:34
+[21] I: Checking remote connect back address.
+[21] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[21] I: Checking header 'REMOTE_ADDR'.
+[21] I: Remote address found, connecting to 172.20.0.1:9000.
+[21] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[21] E: Could not connect to client. :-(
+[21] Log closed at 2022-06-14 16:32:34
+
+[21] Log opened at 2022-06-14 16:32:38
+[21] I: Checking remote connect back address.
+[21] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[21] I: Checking header 'REMOTE_ADDR'.
+[21] I: Remote address found, connecting to 172.20.0.1:9000.
+[21] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[21] E: Could not connect to client. :-(
+[21] Log closed at 2022-06-14 16:32:38
+
+[17] Log opened at 2022-06-14 16:33:46
+[17] I: Checking remote connect back address.
+[17] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[17] I: Checking header 'REMOTE_ADDR'.
+[17] I: Remote address found, connecting to 172.20.0.1:9000.
+[17] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2022-06-14 16:33:46
+
+[17] Log opened at 2022-06-14 16:33:49
+[17] I: Checking remote connect back address.
+[17] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[17] I: Checking header 'REMOTE_ADDR'.
+[17] I: Remote address found, connecting to 172.20.0.1:9000.
+[17] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2022-06-14 16:33:49
+
+[25] Log opened at 2022-06-14 16:34:27
+[25] I: Checking remote connect back address.
+[25] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[25] I: Checking header 'REMOTE_ADDR'.
+[25] I: Remote address found, connecting to 172.20.0.1:9000.
+[25] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[25] E: Could not connect to client. :-(
+[25] Log closed at 2022-06-14 16:34:27
+
+[25] Log opened at 2022-06-14 16:34:30
+[25] I: Checking remote connect back address.
+[25] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[25] I: Checking header 'REMOTE_ADDR'.
+[25] I: Remote address found, connecting to 172.20.0.1:9000.
+[25] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[25] E: Could not connect to client. :-(
+[25] Log closed at 2022-06-14 16:34:30
+
+[25] Log opened at 2022-06-14 16:34:30
+[25] I: Checking remote connect back address.
+[25] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[25] I: Checking header 'REMOTE_ADDR'.
+[25] I: Remote address found, connecting to 172.20.0.1:9000.
+[25] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[25] E: Could not connect to client. :-(
+[25] Log closed at 2022-06-14 16:34:30
+
+[25] Log opened at 2022-06-14 16:34:31
+[25] I: Checking remote connect back address.
+[25] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[25] I: Checking header 'REMOTE_ADDR'.
+[25] I: Remote address found, connecting to 172.20.0.1:9000.
+[25] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[25] E: Could not connect to client. :-(
+[25] Log closed at 2022-06-14 16:34:31
+
+[23] Log opened at 2022-06-14 16:35:10
+[23] I: Checking remote connect back address.
+[23] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[23] I: Checking header 'REMOTE_ADDR'.
+[23] I: Remote address found, connecting to 172.20.0.1:9000.
+[23] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[23] E: Could not connect to client. :-(
+[23] Log closed at 2022-06-14 16:35:10
+
+[18] Log opened at 2022-06-14 16:35:12
+[18] I: Checking remote connect back address.
+[18] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[18] I: Checking header 'REMOTE_ADDR'.
+[18] I: Remote address found, connecting to 172.20.0.1:9000.
+[18] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[18] E: Could not connect to client. :-(
+[18] Log closed at 2022-06-14 16:35:12
+
+[32] Log opened at 2022-06-14 16:35:48
+[32] I: Checking remote connect back address.
+[32] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[32] I: Checking header 'REMOTE_ADDR'.
+[32] I: Remote address found, connecting to 172.20.0.1:9000.
+[32] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[32] E: Could not connect to client. :-(
+[32] Log closed at 2022-06-14 16:35:48
+
+[32] Log opened at 2022-06-14 16:35:48
+[32] I: Checking remote connect back address.
+[32] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[32] I: Checking header 'REMOTE_ADDR'.
+[32] I: Remote address found, connecting to 172.20.0.1:9000.
+[32] W: Creating socket for '172.20.0.1:9000', poll success, but error: Operation now in progress (29).
+[32] E: Could not connect to client. :-(
+[32] Log closed at 2022-06-14 16:35:48
+

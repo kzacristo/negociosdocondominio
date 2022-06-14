@@ -1,5 +1,7 @@
 <?php
 
+require_once('conect.php');
+
 $email = $_POST["email"];
 $senha = $_POST["senha"];
 
@@ -7,14 +9,8 @@ if(!$email || !$senha){
     echo "Informe um E-mail ou a Senha ";
 }
 
-$username = "root";
-$password = "root";
-$database = "pj_integrador";
-$hostname = "172.20.0.7";
-
 try {
-  $conn = new PDO('mysql:host='.$hostname.';dbname='.$database, $username, $password);
-  $stmt = $conn->prepare("SELECT c.* FROM cadastro c WHERE c.email LIKE '%$email%' AND c.senha = $senha");
+  $stmt = $pdo->prepare("SELECT c.* FROM cadastro c WHERE c.email LIKE '%$email%' AND c.senha = $senha");
   $stmt->execute();
   
   

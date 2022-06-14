@@ -49,8 +49,10 @@ CREATE TABLE servicos(
   PRIMARY KEY (id)
 );
 
-ALTER TABLE `morador` ADD `genero` VARCHAR(20) NULL AFTER `telenofe`;
+
+ALTER TABLE `morador` ADD `genero` VARCHAR(20) NULL AFTER `telefone`;
 ALTER TABLE `morador` ADD `sobrenome` VARCHAR(50) NULL AFTER `nome`;
 ALTER TABLE `morador` ADD `whatsapp` VARCHAR(20) NULL AFTER `telefone`;
 
 ALTER TABLE `servicos` ADD `id_morador` BIGINT NOT NULL AFTER `id`;
+
