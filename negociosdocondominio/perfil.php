@@ -53,12 +53,22 @@ include "header.php";
           <p>Sábado, domingo e feriados – das 12h00 às 18h00 </p>
           <br>
           <h2>Redes socias</h2>
-          <p>LinkedIn: </p>
-          <p>Facebook:</p>
-          <p>Twitter:</p>
-          <p>Google+:</p>
-          <p>YouTube:</p>
-          <p>Instagram:</p>
+          <?php $redesocial = explode(';', $row[0]['redes_socieais']) ?>
+          <?php foreach ($redesocial as $key => $link) : ?>
+            <?php if (strchr($link, 'LinkedIn') || strchr($link, 'linkedin')) : ?>
+              <p>LinkedIn: <a href="<?php echo $link ?>">LinkedIn</a> </p>
+            <?php elseif (strchr($link, 'Facebook') || strchr($link, 'facebook')) : ?>
+              <p>Facebook:<a href="<?php if (strchr($link, 'Facebook')) echo $link ?>">Facebook</a></p>
+            <?php elseif (strchr($link, 'Twitter') || strchr($link, 'twitter')) : ?>
+              <p>Twitter:<a href="<?php if (strchr($link, 'Twitter')) echo $link ?>">Twitter</a></p>
+            <?php elseif (strchr($link, 'Google+') || strchr($link, 'google+')) : ?>
+              <p>Google+:<a href="<?php if (strchr($link, 'Google+')) echo $link ?>"></a></p>
+            <?php elseif (strchr($link, 'YouTube') || strchr($link, 'youtube')) : ?>
+              <p>YouTube:<a href="<?php if (strchr($link, 'YouTube')) echo $link ?>">YouTube</a></p>
+            <?php elseif (strchr($link, 'Instagram') || strchr($link, 'instagram')) : ?>
+              <p>Instagram:<a href="<?php if (strchr($link, 'Instagram ')) echo $link ?>">Instagram</a></p>
+            <?php endif ?>
+          <?php endforeach ?>
         </div>
       </div>
       <div class="col-sm-8">
@@ -66,17 +76,14 @@ include "header.php";
           <h1 class="display-6 branco">Professora de Língua Portuguesa, Especialista em Metodologia do Ensino de leitura, interpretação de textos diversificados, Literatura e gramática para o ENEM, vestibulares e concursos</h1>
         </div>
         <h1 class="titulo">Sobre seu trabalho e experiência</h1>
-        Sou graduada em Letras, especialista em Metodologia para o ensino de Língua Portuguesa, cursando mestrado em Linguística. Trabalhei em escolas públicas e particulares, especialmente com alunos do ensino médio. Experiência de mais de 15 anos com aulas particulares personalizadas para o ENEM, vestibulares e concursos.
-        Tenho preparado milhares de alunos para provas, Enem, Vestibulares e concursos com sucesso! Participei das principais bancas de correção de provas e redações do Enem, de vestibulares e de concursos.
+        <?php echo $row[0]['sobre_oque_faz'] ?>
         <h1 class="titulo">Mais sobre informaçoes sobre Lucia Costa </h1>
-        As aulas são personalizadas, planejadas de acordo com as necessidades de cada aluno. Utilizo diversos materiais didáticos como vídeos, músicas, textos de jornais, revistas e recursos tecnológicos para estudar os conteúdos da Língua Portuguesa.
-        Cursos completos de leitura e interpretação de textos, literatura com contexto social e histórico, gramática e redação para o ENEM, vestibulares e concursos. Atividades práticas com simulados, correção e comentários de provas do ENEM, de concursos e de vestibulares anteriores. Dessa forma o conteúdo é estudado com atividades interativas por meio da teoria, de exemplos e de atividades bastante práticas .
-        Quanto tiver dificuldades e quiser descomplicar o uso da Língua Portuguesa é só chamar. Será um prazer ajudar!
+        <?php echo $row[0]['sobre_voce'] ?>
         <h1 class="titulo">Recomendações</h1>
         <div class="recomendacoes">
 
           <p><strong>Rosana</strong></p>
-          <p>Conheço a Sirene desde os anos 90, deu-me suporte no TCC da faculdade, é Super profissional e os anos a tornaram exímia no que faz. Suas aulas são momentos de reconhecimento que somos capazes de aprender.</p>
+          <p><?php echo $row[0]['text_experiencia'] ?></p>
         </div>
       </div>
     </div>

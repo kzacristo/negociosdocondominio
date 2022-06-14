@@ -1,6 +1,6 @@
-DROP TABLE IF EXISTS cadastro;
-DROP TABLE IF EXISTS morador;
 DROP TABLE IF EXISTS servicos;
+DROP TABLE IF EXISTS morador;
+DROP TABLE IF EXISTS cadastro;
 
 CREATE TABLE cadastro(
 	id bigint AUTO_INCREMENT,

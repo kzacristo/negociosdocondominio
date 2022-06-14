@@ -94,7 +94,7 @@ if ($tipe == 1) {
 
 
     if ($link) $links =  implode(';', $link);
-    array_push($set, "redes_socieais = " . strval($links));
+    array_push($set, "redes_socieais = $links");
 
     $titulo_anuncio = (isset($_POST['titulo_anuncio'])) ? $_POST['titulo_anuncio'] : false;
     if ($titulo_anuncio) array_push($set, "titulo_anuncio = '$titulo_anuncio'");
@@ -193,7 +193,7 @@ if ($tipe == 1) {
     // die($w);
 
     try {
-        $stmt = $pdo->prepare("INSERT INTO `servicos`(`id_morador`, `area_de_atuacao`, `outra_area`, `atendimento`, `servicos_ofertados`, `dia_semana`, `hora_atendimento`, `data_atendimento`, `titulo_anuncio`, `text_experiencia`, `redes_socieais`, `sobre_voce`, `sobre_oque_faz`, `valor`, `tipo_valor`, `imagem`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)")->execute([$id_morador, $areadeatuacao, $outraarea, $tipodeatendimento, $servicos_ofertados, $semana, $hora, $semana, $titulo_anuncio, $oquefaz, $link, $sobrevc, $oquefaz, $valor, $tipovalor, $image]);
+        $stmt = $pdo->prepare("INSERT INTO `servicos`(`id_morador`, `area_de_atuacao`, `outra_area`, `atendimento`, `servicos_ofertados`, `dia_semana`, `hora_atendimento`, `data_atendimento`, `titulo_anuncio`, `text_experiencia`, `redes_socieais`, `sobre_voce`, `sobre_oque_faz`, `valor`, `tipo_valor`, `imagem`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)")->execute([$id_morador, $areadeatuacao, $outraarea, $tipodeatendimento, $servicos_ofertados, $semana, $hora, $semana, $titulo_anuncio, $oquefaz, $links, $sobrevc, $oquefaz, $valor, $tipovalor, $image]);
 
         header('Location: ../perfil.php');
     } catch (PDOException $e) {

@@ -11093,3 +11093,1603 @@ Stack trace:
 
 [19] Log closed at 2022-06-14 19:33:24
 
+[25] Log opened at 2022-06-14 19:35:01
+[25] I: Checking remote connect back address.
+[25] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[25] I: Checking header 'REMOTE_ADDR'.
+[25] I: Remote address found, connecting to 172.20.0.1:9000.
+[25] I: Connected to client. :-)
+[25] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/perfil.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="25"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[25] <- breakpoint_list -i 1
+[25] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[25] <- breakpoint_list -i 2
+[25] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="2"></response>
+
+[25] <- breakpoint_list -i 3
+[25] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"></response>
+
+[25] <- breakpoint_set -i 4 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 167
+[25] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="4" id="250019"></response>
+
+[25] <- breakpoint_set -i 5 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 188
+[25] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="250020"></response>
+
+[25] <- breakpoint_set -i 6 -t line -f file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml -n 277
+[25] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="250021"></response>
+
+[25] <- breakpoint_list -i 7
+[25] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="7"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="250020"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="250021"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="250019"></breakpoint></response>
+
+[25] <- breakpoint_list -i 8
+[25] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="8"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="250020"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="250021"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="250019"></breakpoint></response>
+
+[25] <- run -i 9
+[25] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="9" status="stopping" reason="ok"></response>
+
+[25] <- stop -i 10
+[25] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="10" status="stopped" reason="ok"></response>
+
+[25] Log closed at 2022-06-14 19:35:01
+
+[37] Log opened at 2022-06-14 19:35:43
+[37] I: Checking remote connect back address.
+[37] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[37] I: Checking header 'REMOTE_ADDR'.
+[37] I: Remote address found, connecting to 172.20.0.1:9000.
+[37] I: Connected to client. :-)
+[37] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/perfil.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="37"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[37] <- breakpoint_list -i 1
+[37] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[37] <- breakpoint_list -i 2
+[37] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="2"></response>
+
+[37] <- breakpoint_list -i 3
+[37] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"></response>
+
+[37] <- breakpoint_set -i 4 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 167
+[37] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="4" id="370001"></response>
+
+[37] <- breakpoint_set -i 5 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 188
+[37] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="370002"></response>
+
+[37] <- breakpoint_set -i 6 -t line -f file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml -n 277
+[37] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="370003"></response>
+
+[37] <- breakpoint_list -i 7
+[37] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="7"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="370001"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="370003"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="370002"></breakpoint></response>
+
+[37] <- breakpoint_list -i 8
+[37] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="8"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="370001"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="370003"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="370002"></breakpoint></response>
+
+[37] <- run -i 9
+[37] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="9" status="stopping" reason="ok"></response>
+
+[37] <- stop -i 10
+[37] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="10" status="stopped" reason="ok"></response>
+
+[37] Log closed at 2022-06-14 19:35:43
+
+[27] Log opened at 2022-06-14 19:36:18
+[27] I: Checking remote connect back address.
+[27] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[27] I: Checking header 'REMOTE_ADDR'.
+[27] I: Remote address found, connecting to 172.20.0.1:9000.
+[27] I: Connected to client. :-)
+[27] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/perfil.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="27"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[27] <- breakpoint_list -i 1
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[27] <- breakpoint_list -i 2
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="2"></response>
+
+[27] <- breakpoint_list -i 3
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"></response>
+
+[27] <- breakpoint_set -i 4 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 167
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="4" id="270028"></response>
+
+[27] <- breakpoint_set -i 5 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 188
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="270029"></response>
+
+[27] <- breakpoint_set -i 6 -t line -f file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml -n 277
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="270030"></response>
+
+[27] <- breakpoint_list -i 7
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="7"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="270028"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="270029"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="270030"></breakpoint></response>
+
+[27] <- breakpoint_list -i 8
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="8"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="270028"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="270029"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="270030"></breakpoint></response>
+
+[27] <- run -i 9
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="9" status="stopping" reason="ok"></response>
+
+[27] <- stop -i 10
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="10" status="stopped" reason="ok"></response>
+
+[27] Log closed at 2022-06-14 19:36:18
+
+[39] Log opened at 2022-06-14 19:37:34
+[39] I: Checking remote connect back address.
+[39] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[39] I: Checking header 'REMOTE_ADDR'.
+[39] I: Remote address found, connecting to 172.20.0.1:9000.
+[39] I: Connected to client. :-)
+[39] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/perfil.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="39"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[39] <- breakpoint_list -i 1
+[39] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[39] <- breakpoint_list -i 2
+[39] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="2"></response>
+
+[39] <- breakpoint_list -i 3
+[39] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"></response>
+
+[39] <- breakpoint_set -i 4 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 167
+[39] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="4" id="390001"></response>
+
+[39] <- breakpoint_set -i 5 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 188
+[39] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="390002"></response>
+
+[39] <- breakpoint_set -i 6 -t line -f file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml -n 277
+[39] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="390003"></response>
+
+[39] <- breakpoint_list -i 7
+[39] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="7"><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="390003"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="390002"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="390001"></breakpoint></response>
+
+[39] <- breakpoint_list -i 8
+[39] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="8"><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="390003"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="390002"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="390001"></breakpoint></response>
+
+[39] <- run -i 9
+[39] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="9" status="stopping" reason="ok"></response>
+
+[39] <- stop -i 10
+[39] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="10" status="stopped" reason="ok"></response>
+
+[39] Log closed at 2022-06-14 19:37:34
+
+[29] Log opened at 2022-06-14 19:42:16
+[29] I: Checking remote connect back address.
+[29] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[29] I: Checking header 'REMOTE_ADDR'.
+[29] I: Remote address found, connecting to 172.20.0.1:9000.
+[29] I: Connected to client. :-)
+[29] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/index.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="29"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[29] <- breakpoint_list -i 1
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[29] <- breakpoint_list -i 2
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="2"></response>
+
+[29] <- breakpoint_list -i 3
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"></response>
+
+[29] <- breakpoint_set -i 4 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 167
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="4" id="290025"></response>
+
+[29] <- breakpoint_set -i 5 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 188
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="290026"></response>
+
+[29] <- breakpoint_set -i 6 -t line -f file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml -n 277
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="290027"></response>
+
+[29] <- breakpoint_list -i 7
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="7"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="290025"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="290026"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="290027"></breakpoint></response>
+
+[29] <- breakpoint_list -i 8
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="8"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="290025"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="290026"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="290027"></breakpoint></response>
+
+[29] <- run -i 9
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="9" status="stopping" reason="ok"></response>
+
+[29] <- stop -i 10
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="10" status="stopped" reason="ok"></response>
+
+[29] Log closed at 2022-06-14 19:42:16
+
+[29] Log opened at 2022-06-14 19:42:16
+[29] I: Checking remote connect back address.
+[29] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[29] I: Checking header 'REMOTE_ADDR'.
+[29] I: Remote address found, connecting to 172.20.0.1:9000.
+[29] I: Connected to client. :-)
+[29] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/login.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="29"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[29] <- breakpoint_list -i 1
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[29] <- breakpoint_list -i 2
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="2"></response>
+
+[29] <- breakpoint_list -i 3
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"></response>
+
+[29] <- breakpoint_set -i 4 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 167
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="4" id="290028"></response>
+
+[29] <- breakpoint_set -i 5 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 188
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="290029"></response>
+
+[29] <- breakpoint_set -i 6 -t line -f file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml -n 277
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="290030"></response>
+
+[29] <- breakpoint_list -i 7
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="7"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="290028"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="290029"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="290030"></breakpoint></response>
+
+[29] <- breakpoint_list -i 8
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="8"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="290028"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="290029"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="290030"></breakpoint></response>
+
+[29] <- run -i 9
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="9" status="stopping" reason="ok"></response>
+
+[29] <- stop -i 10
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="10" status="stopped" reason="ok"></response>
+
+[29] Log closed at 2022-06-14 19:42:16
+
+[40] Log opened at 2022-06-14 19:49:31
+[40] I: Checking remote connect back address.
+[40] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[40] I: Checking header 'REMOTE_ADDR'.
+[40] I: Remote address found, connecting to 172.20.0.1:9000.
+[40] I: Connected to client. :-)
+[40] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/cadastro.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="40"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[40] <- breakpoint_list -i 1
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[40] <- breakpoint_list -i 2
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="2"></response>
+
+[40] <- breakpoint_list -i 3
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"></response>
+
+[40] <- breakpoint_set -i 4 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 167
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="4" id="400001"></response>
+
+[40] <- breakpoint_set -i 5 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 188
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="400002"></response>
+
+[40] <- breakpoint_set -i 6 -t line -f file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml -n 277
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="400003"></response>
+
+[40] <- breakpoint_list -i 7
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="7"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="400001"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="400003"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="400002"></breakpoint></response>
+
+[40] <- breakpoint_list -i 8
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="8"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="400001"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="400003"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="400002"></breakpoint></response>
+
+[40] <- run -i 9
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="9" status="stopping" reason="ok"></response>
+
+[40] <- stop -i 10
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="10" status="stopped" reason="ok"></response>
+
+[40] Log closed at 2022-06-14 19:49:31
+
+[42] Log opened at 2022-06-14 19:49:59
+[42] I: Checking remote connect back address.
+[42] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[42] I: Checking header 'REMOTE_ADDR'.
+[42] I: Remote address found, connecting to 172.20.0.1:9000.
+[42] I: Connected to client. :-)
+[42] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/controller/cadastrosemservico.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="42"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[42] <- breakpoint_list -i 1
+[42] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[42] <- breakpoint_list -i 2
+[42] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="2"></response>
+
+[42] <- breakpoint_list -i 3
+[42] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"></response>
+
+[42] <- breakpoint_set -i 4 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 167
+[42] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="4" id="420001"></response>
+
+[42] <- breakpoint_set -i 5 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 188
+[42] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="420002"></response>
+
+[42] <- breakpoint_set -i 6 -t line -f file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml -n 277
+[42] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="420003"></response>
+
+[42] <- breakpoint_list -i 7
+[42] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="7"><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="420003"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="420002"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="420001"></breakpoint></response>
+
+[42] <- breakpoint_list -i 8
+[42] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="8"><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="420003"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="420002"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="420001"></breakpoint></response>
+
+[42] <- run -i 9
+[42] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="9" status="stopping" reason="ok"></response>
+
+[42] <- stop -i 10
+[42] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="10" status="stopped" reason="ok"></response>
+
+[42] Log closed at 2022-06-14 19:49:59
+
+[42] Log opened at 2022-06-14 19:49:59
+[42] I: Checking remote connect back address.
+[42] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[42] I: Checking header 'REMOTE_ADDR'.
+[42] I: Remote address found, connecting to 172.20.0.1:9000.
+[42] I: Connected to client. :-)
+[42] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/cadastro-servicos.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="42"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[42] <- breakpoint_list -i 1
+[42] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[42] <- breakpoint_list -i 2
+[42] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="2"></response>
+
+[42] <- breakpoint_list -i 3
+[42] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"></response>
+
+[42] <- breakpoint_set -i 4 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 167
+[42] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="4" id="420004"></response>
+
+[42] <- breakpoint_set -i 5 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 188
+[42] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="420005"></response>
+
+[42] <- breakpoint_set -i 6 -t line -f file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml -n 277
+[42] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="420006"></response>
+
+[42] <- breakpoint_list -i 7
+[42] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="7"><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="420006"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="420005"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="420004"></breakpoint></response>
+
+[42] <- breakpoint_list -i 8
+[42] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="8"><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="420006"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="420005"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="420004"></breakpoint></response>
+
+[42] <- run -i 9
+[42] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="9" status="stopping" reason="ok"></response>
+
+[42] <- stop -i 10
+[42] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="10" status="stopped" reason="ok"></response>
+
+[42] Log closed at 2022-06-14 19:49:59
+
+[27] Log opened at 2022-06-14 19:50:56
+[27] I: Checking remote connect back address.
+[27] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[27] I: Checking header 'REMOTE_ADDR'.
+[27] I: Remote address found, connecting to 172.20.0.1:9000.
+[27] I: Connected to client. :-)
+[27] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/controller/cadastrosemservico.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="27"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[27] <- breakpoint_list -i 1
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[27] <- breakpoint_list -i 2
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="2"></response>
+
+[27] <- breakpoint_list -i 3
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"></response>
+
+[27] <- breakpoint_set -i 4 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 167
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="4" id="270031"></response>
+
+[27] <- breakpoint_set -i 5 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 188
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="270032"></response>
+
+[27] <- breakpoint_set -i 6 -t line -f file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml -n 277
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="270033"></response>
+
+[27] <- breakpoint_list -i 7
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="7"><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="270033"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="270032"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="270031"></breakpoint></response>
+
+[27] <- breakpoint_list -i 8
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="8"><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="270033"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="270032"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="270031"></breakpoint></response>
+
+[27] <- run -i 9
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="9" status="stopping" reason="ok"></response>
+
+[27] <- stop -i 10
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="10" status="stopped" reason="ok"></response>
+
+[27] Log closed at 2022-06-14 19:50:56
+
+[27] Log opened at 2022-06-14 19:50:56
+[27] I: Checking remote connect back address.
+[27] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[27] I: Checking header 'REMOTE_ADDR'.
+[27] I: Remote address found, connecting to 172.20.0.1:9000.
+[27] I: Connected to client. :-)
+[27] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/perfil.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="27"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[27] <- breakpoint_list -i 1
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[27] <- breakpoint_list -i 2
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="2"></response>
+
+[27] <- breakpoint_list -i 3
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"></response>
+
+[27] <- breakpoint_set -i 4 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 167
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="4" id="270034"></response>
+
+[27] <- breakpoint_set -i 5 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 188
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="270035"></response>
+
+[27] <- breakpoint_set -i 6 -t line -f file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml -n 277
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="270036"></response>
+
+[27] <- breakpoint_list -i 7
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="7"><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="270036"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="270035"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="270034"></breakpoint></response>
+
+[27] <- breakpoint_list -i 8
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="8"><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="270036"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="270035"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="270034"></breakpoint></response>
+
+[27] <- run -i 9
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="9" status="stopping" reason="ok"></response>
+
+[27] <- stop -i 10
+[27] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="10" status="stopped" reason="ok"></response>
+
+[27] Log closed at 2022-06-14 19:50:56
+
+[39] Log opened at 2022-06-14 19:51:18
+[39] I: Checking remote connect back address.
+[39] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[39] I: Checking header 'REMOTE_ADDR'.
+[39] I: Remote address found, connecting to 172.20.0.1:9000.
+[39] I: Connected to client. :-)
+[39] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/perfil.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="39"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[39] <- breakpoint_list -i 1
+[39] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[39] <- breakpoint_list -i 2
+[39] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="2"></response>
+
+[39] <- breakpoint_list -i 3
+[39] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"></response>
+
+[39] <- breakpoint_set -i 4 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 167
+[39] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="4" id="390004"></response>
+
+[39] <- breakpoint_set -i 5 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 188
+[39] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="390005"></response>
+
+[39] <- breakpoint_set -i 6 -t line -f file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml -n 277
+[39] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="390006"></response>
+
+[39] <- breakpoint_list -i 7
+[39] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="7"><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="390006"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="390005"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="390004"></breakpoint></response>
+
+[39] <- breakpoint_list -i 8
+[39] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="8"><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="390006"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="390005"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="390004"></breakpoint></response>
+
+[39] <- run -i 9
+[39] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="9" status="stopping" reason="ok"></response>
+
+[39] <- stop -i 10
+[39] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="10" status="stopped" reason="ok"></response>
+
+[39] Log closed at 2022-06-14 19:51:18
+
+[18] Log opened at 2022-06-14 19:52:25
+[18] I: Checking remote connect back address.
+[18] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[18] I: Checking header 'REMOTE_ADDR'.
+[18] I: Remote address found, connecting to 172.20.0.1:9000.
+[18] I: Connected to client. :-)
+[18] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/perfil.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="18"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[18] <- breakpoint_list -i 1
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[18] <- breakpoint_list -i 2
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="2"></response>
+
+[18] <- breakpoint_list -i 3
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"></response>
+
+[18] <- breakpoint_set -i 4 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 167
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="4" id="180037"></response>
+
+[18] <- breakpoint_set -i 5 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 188
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="180038"></response>
+
+[18] <- breakpoint_set -i 6 -t line -f file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml -n 277
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="180039"></response>
+
+[18] <- breakpoint_list -i 7
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="7"><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="180039"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="180038"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="180037"></breakpoint></response>
+
+[18] <- breakpoint_list -i 8
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="8"><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="180039"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="180038"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="180037"></breakpoint></response>
+
+[18] <- run -i 9
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="9" status="stopping" reason="ok"></response>
+
+[18] <- stop -i 10
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="10" status="stopped" reason="ok"></response>
+
+[18] Log closed at 2022-06-14 19:52:25
+
+[29] Log opened at 2022-06-14 19:52:32
+[29] I: Checking remote connect back address.
+[29] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[29] I: Checking header 'REMOTE_ADDR'.
+[29] I: Remote address found, connecting to 172.20.0.1:9000.
+[29] I: Connected to client. :-)
+[29] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/index.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="29"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[29] <- breakpoint_list -i 1
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[29] <- breakpoint_list -i 2
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="2"></response>
+
+[29] <- breakpoint_list -i 3
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"></response>
+
+[29] <- breakpoint_set -i 4 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 167
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="4" id="290031"></response>
+
+[29] <- breakpoint_set -i 5 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 188
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="290032"></response>
+
+[29] <- breakpoint_set -i 6 -t line -f file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml -n 277
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="290033"></response>
+
+[29] <- breakpoint_list -i 7
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="7"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="290031"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="290033"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="290032"></breakpoint></response>
+
+[29] <- breakpoint_list -i 8
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="8"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="290031"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="290033"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="290032"></breakpoint></response>
+
+[29] <- run -i 9
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="9" status="stopping" reason="ok"></response>
+
+[29] <- stop -i 10
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="10" status="stopped" reason="ok"></response>
+
+[29] Log closed at 2022-06-14 19:52:32
+
+[29] Log opened at 2022-06-14 19:52:32
+[29] I: Checking remote connect back address.
+[29] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[29] I: Checking header 'REMOTE_ADDR'.
+[29] I: Remote address found, connecting to 172.20.0.1:9000.
+[29] I: Connected to client. :-)
+[29] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/login.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="29"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[29] <- breakpoint_list -i 1
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[29] <- breakpoint_list -i 2
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="2"></response>
+
+[29] <- breakpoint_list -i 3
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"></response>
+
+[29] <- breakpoint_set -i 4 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 167
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="4" id="290034"></response>
+
+[29] <- breakpoint_set -i 5 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 188
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="290035"></response>
+
+[29] <- breakpoint_set -i 6 -t line -f file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml -n 277
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="290036"></response>
+
+[29] <- breakpoint_list -i 7
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="7"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="290035"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="290034"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="290036"></breakpoint></response>
+
+[29] <- breakpoint_list -i 8
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="8"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="290035"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="290034"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="290036"></breakpoint></response>
+
+[29] <- run -i 9
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="9" status="stopping" reason="ok"></response>
+
+[29] <- stop -i 10
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="10" status="stopped" reason="ok"></response>
+
+[29] Log closed at 2022-06-14 19:52:32
+
+[29] Log opened at 2022-06-14 19:52:34
+[29] I: Checking remote connect back address.
+[29] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[29] I: Checking header 'REMOTE_ADDR'.
+[29] I: Remote address found, connecting to 172.20.0.1:9000.
+[29] I: Connected to client. :-)
+[29] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/cadastro.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="29"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[29] <- breakpoint_list -i 1
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[29] <- breakpoint_list -i 2
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="2"></response>
+
+[29] <- breakpoint_list -i 3
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"></response>
+
+[29] <- breakpoint_set -i 4 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 167
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="4" id="290037"></response>
+
+[29] <- breakpoint_set -i 5 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 188
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="290038"></response>
+
+[29] <- breakpoint_set -i 6 -t line -f file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml -n 277
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="290039"></response>
+
+[29] <- breakpoint_list -i 7
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="7"><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="290039"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="290038"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="290037"></breakpoint></response>
+
+[29] <- breakpoint_list -i 8
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="8"><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="290039"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="290038"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="290037"></breakpoint></response>
+
+[29] <- run -i 9
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="9" status="stopping" reason="ok"></response>
+
+[29] <- stop -i 10
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="10" status="stopped" reason="ok"></response>
+
+[29] Log closed at 2022-06-14 19:52:34
+
+[35] Log opened at 2022-06-14 19:52:52
+[35] I: Checking remote connect back address.
+[35] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[35] I: Checking header 'REMOTE_ADDR'.
+[35] I: Remote address found, connecting to 172.20.0.1:9000.
+[35] I: Connected to client. :-)
+[35] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/controller/cadastrosemservico.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="35"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[35] <- breakpoint_list -i 1
+[35] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[35] <- breakpoint_list -i 2
+[35] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="2"></response>
+
+[35] <- breakpoint_list -i 3
+[35] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"></response>
+
+[35] <- breakpoint_set -i 4 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 167
+[35] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="4" id="350007"></response>
+
+[35] <- breakpoint_set -i 5 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 188
+[35] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="350008"></response>
+
+[35] <- breakpoint_set -i 6 -t line -f file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml -n 277
+[35] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="350009"></response>
+
+[35] <- breakpoint_list -i 7
+[35] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="7"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="350007"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="350009"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="350008"></breakpoint></response>
+
+[35] <- breakpoint_list -i 8
+[35] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="8"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="350007"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="350009"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="350008"></breakpoint></response>
+
+[35] <- run -i 9
+[35] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="9" status="stopping" reason="ok"></response>
+
+[35] <- stop -i 10
+[35] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="10" status="stopped" reason="ok"></response>
+
+[35] Log closed at 2022-06-14 19:52:52
+
+[35] Log opened at 2022-06-14 19:52:52
+[35] I: Checking remote connect back address.
+[35] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[35] I: Checking header 'REMOTE_ADDR'.
+[35] I: Remote address found, connecting to 172.20.0.1:9000.
+[35] I: Connected to client. :-)
+[35] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/cadastro-servicos.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="35"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[35] <- breakpoint_list -i 1
+[35] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[35] <- breakpoint_list -i 2
+[35] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="2"></response>
+
+[35] <- breakpoint_list -i 3
+[35] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"></response>
+
+[35] <- breakpoint_set -i 4 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 167
+[35] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="4" id="350010"></response>
+
+[35] <- breakpoint_set -i 5 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 188
+[35] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="350011"></response>
+
+[35] <- breakpoint_set -i 6 -t line -f file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml -n 277
+[35] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="350012"></response>
+
+[35] <- breakpoint_list -i 7
+[35] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="7"><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="350012"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="350010"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="350011"></breakpoint></response>
+
+[35] <- breakpoint_list -i 8
+[35] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="8"><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="350012"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="350010"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="350011"></breakpoint></response>
+
+[35] <- run -i 9
+[35] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="9" status="stopping" reason="ok"></response>
+
+[35] <- stop -i 10
+[35] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="10" status="stopped" reason="ok"></response>
+
+[35] Log closed at 2022-06-14 19:52:52
+
+[40] Log opened at 2022-06-14 19:53:31
+[40] I: Checking remote connect back address.
+[40] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[40] I: Checking header 'REMOTE_ADDR'.
+[40] I: Remote address found, connecting to 172.20.0.1:9000.
+[40] I: Connected to client. :-)
+[40] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/controller/cadastrosemservico.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="40"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[40] <- breakpoint_list -i 1
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[40] <- breakpoint_list -i 2
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="2"></response>
+
+[40] <- breakpoint_list -i 3
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"></response>
+
+[40] <- breakpoint_set -i 4 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 167
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="4" id="400004"></response>
+
+[40] <- breakpoint_set -i 5 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 188
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="400005"></response>
+
+[40] <- breakpoint_set -i 6 -t line -f file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml -n 277
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="400006"></response>
+
+[40] <- breakpoint_list -i 7
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="7"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="400005"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="400004"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="400006"></breakpoint></response>
+
+[40] <- breakpoint_list -i 8
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="8"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="400005"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="400004"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="400006"></breakpoint></response>
+
+[40] <- run -i 9
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="9" status="stopping" reason="ok"></response>
+
+[40] <- stop -i 10
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="10" status="stopped" reason="ok"></response>
+
+[40] Log closed at 2022-06-14 19:53:31
+
+[42] Log opened at 2022-06-14 19:53:58
+[42] I: Checking remote connect back address.
+[42] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[42] I: Checking header 'REMOTE_ADDR'.
+[42] I: Remote address found, connecting to 172.20.0.1:9000.
+[42] I: Connected to client. :-)
+[42] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/controller/cadastrosemservico.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="42"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[42] <- breakpoint_list -i 1
+[42] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[42] <- breakpoint_list -i 2
+[42] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="2"></response>
+
+[42] <- breakpoint_list -i 3
+[42] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"></response>
+
+[42] <- breakpoint_set -i 4 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 167
+[42] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="4" id="420007"></response>
+
+[42] <- breakpoint_set -i 5 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 188
+[42] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="420008"></response>
+
+[42] <- breakpoint_set -i 6 -t line -f file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml -n 277
+[42] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="420009"></response>
+
+[42] <- breakpoint_list -i 7
+[42] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="7"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="420007"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="420009"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="420008"></breakpoint></response>
+
+[42] <- breakpoint_list -i 8
+[42] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="8"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="420007"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="420009"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="420008"></breakpoint></response>
+
+[42] <- run -i 9
+[42] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="9" status="stopping" reason="ok"></response>
+
+[42] <- stop -i 10
+[42] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="10" status="stopped" reason="ok"></response>
+
+[42] Log closed at 2022-06-14 19:53:58
+
+[19] Log opened at 2022-06-14 19:54:21
+[19] I: Checking remote connect back address.
+[19] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[19] I: Checking header 'REMOTE_ADDR'.
+[19] I: Remote address found, connecting to 172.20.0.1:9000.
+[19] I: Connected to client. :-)
+[19] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/controller/cadastrosemservico.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="19"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[19] <- breakpoint_list -i 1
+[19] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[19] <- breakpoint_list -i 2
+[19] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="2"></response>
+
+[19] <- breakpoint_list -i 3
+[19] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"></response>
+
+[19] <- breakpoint_set -i 4 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 167
+[19] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="4" id="190043"></response>
+
+[19] <- breakpoint_set -i 5 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 188
+[19] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="190044"></response>
+
+[19] <- breakpoint_set -i 6 -t line -f file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml -n 277
+[19] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="190045"></response>
+
+[19] <- breakpoint_list -i 7
+[19] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="7"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="190043"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="190045"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="190044"></breakpoint></response>
+
+[19] <- breakpoint_list -i 8
+[19] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="8"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="190043"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="190045"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="190044"></breakpoint></response>
+
+[19] <- run -i 9
+[19] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="9" status="stopping" reason="ok"></response>
+
+[19] <- stop -i 10
+[19] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="10" status="stopped" reason="ok"></response>
+
+[19] Log closed at 2022-06-14 19:54:21
+
+[19] Log opened at 2022-06-14 19:54:21
+[19] I: Checking remote connect back address.
+[19] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[19] I: Checking header 'REMOTE_ADDR'.
+[19] I: Remote address found, connecting to 172.20.0.1:9000.
+[19] I: Connected to client. :-)
+[19] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/perfil.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="19"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[19] <- breakpoint_list -i 1
+[19] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[19] <- breakpoint_list -i 2
+[19] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="2"></response>
+
+[19] <- breakpoint_list -i 3
+[19] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"></response>
+
+[19] <- breakpoint_set -i 4 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 167
+[19] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="4" id="190046"></response>
+
+[19] <- breakpoint_set -i 5 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 188
+[19] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="190047"></response>
+
+[19] <- breakpoint_set -i 6 -t line -f file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml -n 277
+[19] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="190048"></response>
+
+[19] <- breakpoint_list -i 7
+[19] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="7"><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="190048"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="190047"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="190046"></breakpoint></response>
+
+[19] <- breakpoint_list -i 8
+[19] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="8"><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="190048"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="190047"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="190046"></breakpoint></response>
+
+[19] <- run -i 9
+[19] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="9" status="stopping" reason="ok"></response>
+
+[19] <- stop -i 10
+[19] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="10" status="stopped" reason="ok"></response>
+
+[19] Log closed at 2022-06-14 19:54:21
+
+[41] Log opened at 2022-06-14 19:55:17
+[41] I: Checking remote connect back address.
+[41] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[41] I: Checking header 'REMOTE_ADDR'.
+[41] I: Remote address found, connecting to 172.20.0.1:9000.
+[41] I: Connected to client. :-)
+[41] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/index.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="41"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[41] <- breakpoint_list -i 1
+[41] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[41] <- breakpoint_list -i 2
+[41] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="2"></response>
+
+[41] <- breakpoint_list -i 3
+[41] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"></response>
+
+[41] <- breakpoint_set -i 4 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 167
+[41] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="4" id="410001"></response>
+
+[41] <- breakpoint_set -i 5 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 188
+[41] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="410002"></response>
+
+[41] <- breakpoint_set -i 6 -t line -f file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml -n 277
+[41] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="410003"></response>
+
+[41] <- breakpoint_list -i 7
+[41] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="7"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="410001"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="410002"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="410003"></breakpoint></response>
+
+[41] <- breakpoint_list -i 8
+[41] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="8"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="410001"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="410002"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="410003"></breakpoint></response>
+
+[41] <- run -i 9
+[41] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="9" status="stopping" reason="ok"></response>
+
+[41] <- stop -i 10
+[41] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="10" status="stopped" reason="ok"></response>
+
+[41] Log closed at 2022-06-14 19:55:17
+
+[41] Log opened at 2022-06-14 19:55:17
+[41] I: Checking remote connect back address.
+[41] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[41] I: Checking header 'REMOTE_ADDR'.
+[41] I: Remote address found, connecting to 172.20.0.1:9000.
+[41] I: Connected to client. :-)
+[41] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/login.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="41"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[41] <- breakpoint_list -i 1
+[41] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[41] <- breakpoint_list -i 2
+[41] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="2"></response>
+
+[41] <- breakpoint_list -i 3
+[41] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"></response>
+
+[41] <- breakpoint_set -i 4 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 167
+[41] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="4" id="410004"></response>
+
+[41] <- breakpoint_set -i 5 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 188
+[41] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="410005"></response>
+
+[41] <- breakpoint_set -i 6 -t line -f file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml -n 277
+[41] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="410006"></response>
+
+[41] <- breakpoint_list -i 7
+[41] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="7"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="410004"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="410005"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="410006"></breakpoint></response>
+
+[41] <- breakpoint_list -i 8
+[41] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="8"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="410004"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="410005"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="410006"></breakpoint></response>
+
+[41] <- run -i 9
+[41] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="9" status="stopping" reason="ok"></response>
+
+[41] <- stop -i 10
+[41] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="10" status="stopped" reason="ok"></response>
+
+[41] Log closed at 2022-06-14 19:55:17
+
+[39] Log opened at 2022-06-14 19:55:27
+[39] I: Checking remote connect back address.
+[39] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[39] I: Checking header 'REMOTE_ADDR'.
+[39] I: Remote address found, connecting to 172.20.0.1:9000.
+[39] I: Connected to client. :-)
+[39] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/cadastro.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="39"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[39] <- breakpoint_list -i 1
+[39] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[39] <- breakpoint_list -i 2
+[39] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="2"></response>
+
+[39] <- breakpoint_list -i 3
+[39] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"></response>
+
+[39] <- breakpoint_set -i 4 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 167
+[39] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="4" id="390007"></response>
+
+[39] <- breakpoint_set -i 5 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 188
+[39] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="390008"></response>
+
+[39] <- breakpoint_set -i 6 -t line -f file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml -n 277
+[39] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="390009"></response>
+
+[39] <- breakpoint_list -i 7
+[39] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="7"><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="390009"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="390008"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="390007"></breakpoint></response>
+
+[39] <- breakpoint_list -i 8
+[39] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="8"><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="390009"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="390008"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="390007"></breakpoint></response>
+
+[39] <- run -i 9
+[39] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="9" status="stopping" reason="ok"></response>
+
+[39] <- stop -i 10
+[39] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="10" status="stopped" reason="ok"></response>
+
+[39] Log closed at 2022-06-14 19:55:27
+
+[37] Log opened at 2022-06-14 19:55:49
+[37] I: Checking remote connect back address.
+[37] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[37] I: Checking header 'REMOTE_ADDR'.
+[37] I: Remote address found, connecting to 172.20.0.1:9000.
+[37] I: Connected to client. :-)
+[37] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/controller/cadastrosemservico.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="37"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[37] <- breakpoint_list -i 1
+[37] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[37] <- breakpoint_list -i 2
+[37] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="2"></response>
+
+[37] <- breakpoint_list -i 3
+[37] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"></response>
+
+[37] <- breakpoint_set -i 4 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 167
+[37] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="4" id="370004"></response>
+
+[37] <- breakpoint_set -i 5 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 188
+[37] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="370005"></response>
+
+[37] <- breakpoint_set -i 6 -t line -f file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml -n 277
+[37] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="370006"></response>
+
+[37] <- breakpoint_list -i 7
+[37] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="7"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="370005"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="370004"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="370006"></breakpoint></response>
+
+[37] <- breakpoint_list -i 8
+[37] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="8"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="370005"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="370004"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="370006"></breakpoint></response>
+
+[37] <- run -i 9
+[37] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="9" status="stopping" reason="ok"></response>
+
+[37] <- stop -i 10
+[37] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="10" status="stopped" reason="ok"></response>
+
+[37] Log closed at 2022-06-14 19:55:49
+
+[37] Log opened at 2022-06-14 19:55:49
+[37] I: Checking remote connect back address.
+[37] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[37] I: Checking header 'REMOTE_ADDR'.
+[37] I: Remote address found, connecting to 172.20.0.1:9000.
+[37] I: Connected to client. :-)
+[37] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/cadastro-servicos.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="37"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[37] <- breakpoint_list -i 1
+[37] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[37] <- breakpoint_list -i 2
+[37] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="2"></response>
+
+[37] <- breakpoint_list -i 3
+[37] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"></response>
+
+[37] <- breakpoint_set -i 4 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 167
+[37] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="4" id="370007"></response>
+
+[37] <- breakpoint_set -i 5 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 188
+[37] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="370008"></response>
+
+[37] <- breakpoint_set -i 6 -t line -f file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml -n 277
+[37] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="370009"></response>
+
+[37] <- breakpoint_list -i 7
+[37] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="7"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="370007"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="370009"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="370008"></breakpoint></response>
+
+[37] <- breakpoint_list -i 8
+[37] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="8"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="370007"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="370009"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="370008"></breakpoint></response>
+
+[37] <- run -i 9
+[37] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="9" status="stopping" reason="ok"></response>
+
+[37] <- stop -i 10
+[37] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="10" status="stopped" reason="ok"></response>
+
+[37] Log closed at 2022-06-14 19:55:49
+
+[18] Log opened at 2022-06-14 19:56:18
+[18] I: Checking remote connect back address.
+[18] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[18] I: Checking header 'REMOTE_ADDR'.
+[18] I: Remote address found, connecting to 172.20.0.1:9000.
+[18] I: Connected to client. :-)
+[18] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/controller/cadastrosemservico.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="18"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[18] <- breakpoint_list -i 1
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[18] <- breakpoint_list -i 2
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="2"></response>
+
+[18] <- breakpoint_list -i 3
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"></response>
+
+[18] <- breakpoint_set -i 4 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 167
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="4" id="180040"></response>
+
+[18] <- breakpoint_set -i 5 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 188
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="180041"></response>
+
+[18] <- breakpoint_set -i 6 -t line -f file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml -n 277
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="180042"></response>
+
+[18] <- breakpoint_list -i 7
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="7"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="180040"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="180041"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="180042"></breakpoint></response>
+
+[18] <- breakpoint_list -i 8
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="8"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="180040"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="180041"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="180042"></breakpoint></response>
+
+[18] <- run -i 9
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="9" status="stopping" reason="ok"></response>
+
+[18] <- stop -i 10
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="10" status="stopped" reason="ok"></response>
+
+[18] Log closed at 2022-06-14 19:56:18
+
+[18] Log opened at 2022-06-14 19:56:18
+[18] I: Checking remote connect back address.
+[18] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[18] I: Checking header 'REMOTE_ADDR'.
+[18] I: Remote address found, connecting to 172.20.0.1:9000.
+[18] I: Connected to client. :-)
+[18] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/perfil.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="18"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[18] <- breakpoint_list -i 1
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[18] <- breakpoint_list -i 2
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="2"></response>
+
+[18] <- breakpoint_list -i 3
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"></response>
+
+[18] <- breakpoint_set -i 4 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 167
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="4" id="180043"></response>
+
+[18] <- breakpoint_set -i 5 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 188
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="180044"></response>
+
+[18] <- breakpoint_set -i 6 -t line -f file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml -n 277
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="180045"></response>
+
+[18] <- breakpoint_list -i 7
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="7"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="180043"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="180044"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="180045"></breakpoint></response>
+
+[18] <- breakpoint_list -i 8
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="8"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="180043"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="180044"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="180045"></breakpoint></response>
+
+[18] <- run -i 9
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="9" status="stopping" reason="ok"></response>
+
+[18] <- stop -i 10
+[18] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="10" status="stopped" reason="ok"></response>
+
+[18] Log closed at 2022-06-14 19:56:18
+
+[29] Log opened at 2022-06-14 19:56:28
+[29] I: Checking remote connect back address.
+[29] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[29] I: Checking header 'REMOTE_ADDR'.
+[29] I: Remote address found, connecting to 172.20.0.1:9000.
+[29] I: Connected to client. :-)
+[29] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/perfil.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="29"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[29] <- breakpoint_list -i 1
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[29] <- breakpoint_list -i 2
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="2"></response>
+
+[29] <- breakpoint_list -i 3
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"></response>
+
+[29] <- breakpoint_set -i 4 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 167
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="4" id="290040"></response>
+
+[29] <- breakpoint_set -i 5 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 188
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="290041"></response>
+
+[29] <- breakpoint_set -i 6 -t line -f file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml -n 277
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="290042"></response>
+
+[29] <- breakpoint_list -i 7
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="7"><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="290042"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="290040"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="290041"></breakpoint></response>
+
+[29] <- breakpoint_list -i 8
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="8"><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="290042"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="290040"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="290041"></breakpoint></response>
+
+[29] <- run -i 9
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="9" status="stopping" reason="ok"></response>
+
+[29] <- stop -i 10
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="10" status="stopped" reason="ok"></response>
+
+[29] Log closed at 2022-06-14 19:56:28
+
+[41] Log opened at 2022-06-14 20:02:38
+[41] I: Checking remote connect back address.
+[41] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[41] I: Checking header 'REMOTE_ADDR'.
+[41] I: Remote address found, connecting to 172.20.0.1:9000.
+[41] I: Connected to client. :-)
+[41] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/perfil.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="41"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[41] <- breakpoint_list -i 1
+[41] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[41] <- breakpoint_list -i 2
+[41] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="2"></response>
+
+[41] <- breakpoint_list -i 3
+[41] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"></response>
+
+[41] <- breakpoint_set -i 4 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 167
+[41] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="4" id="410007"></response>
+
+[41] <- breakpoint_set -i 5 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 188
+[41] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="410008"></response>
+
+[41] <- breakpoint_set -i 6 -t line -f file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml -n 277
+[41] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="410009"></response>
+
+[41] <- breakpoint_list -i 7
+[41] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="7"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="410007"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="410008"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="410009"></breakpoint></response>
+
+[41] <- breakpoint_list -i 8
+[41] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="8"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="410007"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="410008"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="410009"></breakpoint></response>
+
+[41] <- run -i 9
+[41] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="9" status="stopping" reason="ok"></response>
+
+[41] <- stop -i 10
+[41] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="10" status="stopped" reason="ok"></response>
+
+[41] Log closed at 2022-06-14 20:02:38
+
+[40] Log opened at 2022-06-14 20:02:57
+[40] I: Checking remote connect back address.
+[40] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[40] I: Checking header 'REMOTE_ADDR'.
+[40] I: Remote address found, connecting to 172.20.0.1:9000.
+[40] I: Connected to client. :-)
+[40] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/perfil.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="40"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[40] <- breakpoint_list -i 1
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[40] <- breakpoint_list -i 2
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="2"></response>
+
+[40] <- breakpoint_list -i 3
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"></response>
+
+[40] <- breakpoint_set -i 4 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 167
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="4" id="400007"></response>
+
+[40] <- breakpoint_set -i 5 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 188
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="400008"></response>
+
+[40] <- breakpoint_set -i 6 -t line -f file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml -n 277
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="400009"></response>
+
+[40] <- breakpoint_list -i 7
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="7"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="400007"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="400009"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="400008"></breakpoint></response>
+
+[40] <- breakpoint_list -i 8
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="8"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="400007"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="400009"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="400008"></breakpoint></response>
+
+[40] <- run -i 9
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="9" status="stopping" reason="ok"></response>
+
+[40] <- stop -i 10
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="10" status="stopped" reason="ok"></response>
+
+[40] Log closed at 2022-06-14 20:02:57
+
+[37] Log opened at 2022-06-14 20:05:44
+[37] I: Checking remote connect back address.
+[37] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[37] I: Checking header 'REMOTE_ADDR'.
+[37] I: Remote address found, connecting to 172.20.0.1:9000.
+[37] I: Connected to client. :-)
+[37] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/perfil.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="37"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[37] <- breakpoint_list -i 1
+[37] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[37] <- breakpoint_list -i 2
+[37] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="2"></response>
+
+[37] <- breakpoint_list -i 3
+[37] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"></response>
+
+[37] <- breakpoint_set -i 4 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 167
+[37] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="4" id="370010"></response>
+
+[37] <- breakpoint_set -i 5 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 188
+[37] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="370011"></response>
+
+[37] <- breakpoint_set -i 6 -t line -f file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml -n 277
+[37] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="370012"></response>
+
+[37] <- breakpoint_list -i 7
+[37] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="7"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="370010"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="370011"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="370012"></breakpoint></response>
+
+[37] <- breakpoint_list -i 8
+[37] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="8"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="370010"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="370011"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="370012"></breakpoint></response>
+
+[37] <- run -i 9
+[37] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="9" status="stopping" reason="ok"></response>
+
+[37] <- stop -i 10
+[37] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="10" status="stopped" reason="ok"></response>
+
+[37] Log closed at 2022-06-14 20:05:44
+
+[40] Log opened at 2022-06-14 20:05:53
+[40] I: Checking remote connect back address.
+[40] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[40] I: Checking header 'REMOTE_ADDR'.
+[40] I: Remote address found, connecting to 172.20.0.1:9000.
+[40] I: Connected to client. :-)
+[40] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/perfil.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="40"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[40] <- breakpoint_list -i 1
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[40] <- breakpoint_list -i 2
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="2"></response>
+
+[40] <- breakpoint_list -i 3
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"></response>
+
+[40] <- breakpoint_set -i 4 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 167
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="4" id="400010"></response>
+
+[40] <- breakpoint_set -i 5 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 188
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="400011"></response>
+
+[40] <- breakpoint_set -i 6 -t line -f file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml -n 277
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="400012"></response>
+
+[40] <- breakpoint_list -i 7
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="7"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="400010"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="400011"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="400012"></breakpoint></response>
+
+[40] <- breakpoint_list -i 8
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="8"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="400010"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="400011"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="400012"></breakpoint></response>
+
+[40] <- run -i 9
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="9" status="stopping" reason="ok"></response>
+
+[40] <- stop -i 10
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="10" status="stopped" reason="ok"></response>
+
+[40] Log closed at 2022-06-14 20:05:53
+
+[43] Log opened at 2022-06-14 20:06:29
+[43] I: Checking remote connect back address.
+[43] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[43] I: Checking header 'REMOTE_ADDR'.
+[43] I: Remote address found, connecting to 172.20.0.1:9000.
+[43] I: Connected to client. :-)
+[43] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/perfil.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="43"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[43] <- breakpoint_list -i 1
+[43] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[43] <- breakpoint_list -i 2
+[43] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="2"></response>
+
+[43] <- breakpoint_list -i 3
+[43] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"></response>
+
+[43] <- breakpoint_set -i 4 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 167
+[43] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="4" id="430001"></response>
+
+[43] <- breakpoint_set -i 5 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 188
+[43] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="430002"></response>
+
+[43] <- breakpoint_set -i 6 -t line -f file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml -n 277
+[43] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="430003"></response>
+
+[43] <- breakpoint_list -i 7
+[43] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="7"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="430002"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="430003"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="430001"></breakpoint></response>
+
+[43] <- breakpoint_list -i 8
+[43] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="8"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="430002"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="430003"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="430001"></breakpoint></response>
+
+[43] <- run -i 9
+[43] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="9" status="stopping" reason="ok"></response>
+
+[43] <- stop -i 10
+[43] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="10" status="stopped" reason="ok"></response>
+
+[43] Log closed at 2022-06-14 20:06:29
+
+[43] Log opened at 2022-06-14 20:06:30
+[43] I: Checking remote connect back address.
+[43] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[43] I: Checking header 'REMOTE_ADDR'.
+[43] I: Remote address found, connecting to 172.20.0.1:9000.
+[43] I: Connected to client. :-)
+[43] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/perfil.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="43"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[43] <- breakpoint_list -i 1
+[43] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[43] <- breakpoint_list -i 2
+[43] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="2"></response>
+
+[43] <- breakpoint_list -i 3
+[43] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"></response>
+
+[43] <- breakpoint_set -i 4 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 167
+[43] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="4" id="430004"></response>
+
+[43] <- breakpoint_set -i 5 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 188
+[43] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="430005"></response>
+
+[43] <- breakpoint_set -i 6 -t line -f file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml -n 277
+[43] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="430006"></response>
+
+[43] <- breakpoint_list -i 7
+[43] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="7"><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="430006"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="430004"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="430005"></breakpoint></response>
+
+[43] <- breakpoint_list -i 8
+[43] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="8"><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="430006"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="430004"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="430005"></breakpoint></response>
+
+[43] <- run -i 9
+[43] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="9" status="stopping" reason="ok"></response>
+
+[43] <- stop -i 10
+[43] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="10" status="stopped" reason="ok"></response>
+
+[43] Log closed at 2022-06-14 20:06:31
+
+[29] Log opened at 2022-06-14 20:08:13
+[29] I: Checking remote connect back address.
+[29] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[29] I: Checking header 'REMOTE_ADDR'.
+[29] I: Remote address found, connecting to 172.20.0.1:9000.
+[29] I: Connected to client. :-)
+[29] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/perfil.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="29"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[29] <- breakpoint_list -i 1
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[29] <- breakpoint_list -i 2
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="2"></response>
+
+[29] <- breakpoint_list -i 3
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"></response>
+
+[29] <- breakpoint_set -i 4 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 167
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="4" id="290043"></response>
+
+[29] <- breakpoint_set -i 5 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 188
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="290044"></response>
+
+[29] <- breakpoint_set -i 6 -t line -f file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml -n 277
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="290045"></response>
+
+[29] <- breakpoint_list -i 7
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="7"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="290043"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="290044"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="290045"></breakpoint></response>
+
+[29] <- breakpoint_list -i 8
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="8"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="290043"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="290044"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="290045"></breakpoint></response>
+
+[29] <- run -i 9
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="9" status="stopping" reason="ok"></response>
+
+[29] <- stop -i 10
+[29] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="10" status="stopped" reason="ok"></response>
+
+[29] Log closed at 2022-06-14 20:08:13
+
+[35] Log opened at 2022-06-14 20:08:40
+[35] I: Checking remote connect back address.
+[35] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[35] I: Checking header 'REMOTE_ADDR'.
+[35] I: Remote address found, connecting to 172.20.0.1:9000.
+[35] I: Connected to client. :-)
+[35] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/perfil.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="35"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[35] <- breakpoint_list -i 1
+[35] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[35] <- breakpoint_list -i 2
+[35] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="2"></response>
+
+[35] <- breakpoint_list -i 3
+[35] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"></response>
+
+[35] <- breakpoint_set -i 4 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 167
+[35] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="4" id="350013"></response>
+
+[35] <- breakpoint_set -i 5 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 188
+[35] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="350014"></response>
+
+[35] <- breakpoint_set -i 6 -t line -f file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml -n 277
+[35] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="350015"></response>
+
+[35] <- breakpoint_list -i 7
+[35] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="7"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="350013"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="350014"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="350015"></breakpoint></response>
+
+[35] <- breakpoint_list -i 8
+[35] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="8"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="350013"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="350014"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="350015"></breakpoint></response>
+
+[35] <- run -i 9
+[35] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="9" status="stopping" reason="ok"></response>
+
+[35] <- stop -i 10
+[35] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="10" status="stopped" reason="ok"></response>
+
+[35] Log closed at 2022-06-14 20:08:40
+
+[40] Log opened at 2022-06-14 20:10:04
+[40] I: Checking remote connect back address.
+[40] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[40] I: Checking header 'REMOTE_ADDR'.
+[40] I: Remote address found, connecting to 172.20.0.1:9000.
+[40] I: Connected to client. :-)
+[40] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/perfil.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="40"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[40] <- breakpoint_list -i 1
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[40] <- breakpoint_list -i 2
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="2"></response>
+
+[40] <- breakpoint_list -i 3
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"></response>
+
+[40] <- breakpoint_set -i 4 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 167
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="4" id="400013"></response>
+
+[40] <- breakpoint_set -i 5 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 188
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="400014"></response>
+
+[40] <- breakpoint_set -i 6 -t line -f file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml -n 277
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="400015"></response>
+
+[40] <- breakpoint_list -i 7
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="7"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="400013"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="400014"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="400015"></breakpoint></response>
+
+[40] <- breakpoint_list -i 8
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="8"><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="400013"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="400014"></breakpoint><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="400015"></breakpoint></response>
+
+[40] <- run -i 9
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="9" status="stopping" reason="ok"></response>
+
+[40] <- stop -i 10
+[40] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="10" status="stopped" reason="ok"></response>
+
+[40] Log closed at 2022-06-14 20:10:04
+
+[42] Log opened at 2022-06-14 20:10:06
+[42] I: Checking remote connect back address.
+[42] I: Checking header 'HTTP_X_FORWARDED_FOR'.
+[42] I: Checking header 'REMOTE_ADDR'.
+[42] I: Remote address found, connecting to 172.20.0.1:9000.
+[42] I: Connected to client. :-)
+[42] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/perfil.php" language="PHP" xdebug:language_version="7.4.30" protocol_version="1.0" appid="42"><engine version="2.9.8"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[42] <- breakpoint_list -i 1
+[42] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="1"></response>
+
+[42] <- breakpoint_list -i 2
+[42] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="2"></response>
+
+[42] <- breakpoint_list -i 3
+[42] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="3"></response>
+
+[42] <- breakpoint_set -i 4 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 167
+[42] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="4" id="420010"></response>
+
+[42] <- breakpoint_set -i 5 -t line -f file:///var/www/html/library/Mn/Controller/Apontamentos.php -n 188
+[42] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="5" id="420011"></response>
+
+[42] <- breakpoint_set -i 6 -t line -f file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml -n 277
+[42] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_set" transaction_id="6" id="420012"></response>
+
+[42] <- breakpoint_list -i 7
+[42] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="7"><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="420012"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="420010"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="420011"></breakpoint></response>
+
+[42] <- breakpoint_list -i 8
+[42] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="breakpoint_list" transaction_id="8"><breakpoint type="line" filename="file:///var/www/html/application/modules/petpro/views/scripts/aprs/form.phtml" lineno="277" state="enabled" hit_count="0" hit_value="0" id="420012"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="167" state="enabled" hit_count="0" hit_value="0" id="420010"></breakpoint><breakpoint type="line" filename="file:///var/www/html/library/Mn/Controller/Apontamentos.php" lineno="188" state="enabled" hit_count="0" hit_value="0" id="420011"></breakpoint></response>
+
+[42] <- run -i 9
+[42] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="9" status="stopping" reason="ok"></response>
+
+[42] <- stop -i 10
+[42] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stop" transaction_id="10" status="stopped" reason="ok"></response>
+
+[42] Log closed at 2022-06-14 20:10:06
+
