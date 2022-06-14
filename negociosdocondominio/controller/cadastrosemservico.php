@@ -5,6 +5,7 @@ require_once('conect.php');
 $tipe = $_POST['primeirocadastro'];
 
 if ($tipe == 1) {
+
     $nome = (isset($_POST['nome'])) ? $_POST['nome'] : '';
     $sobrenome = (isset($_POST['sobrenome'])) ? $_POST['sobrenome'] : '';
     $bloco = (isset($_POST['bloco'])) ? $_POST['bloco'] : '';
@@ -18,7 +19,32 @@ if ($tipe == 1) {
 
     try {
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $stmt = $pdo->prepare("INSERT INTO `morador`(`bloco`, `torre`, `nome`, `sobrenome`, `email`, `data_nascimento`, `telefone`, `genero`, `whatsapp`) VALUES (?,?,?,?,?,?,?,?,?)")->execute([$bloco, $torre, $nome, $sobrenome, $email, $datanascimento, $telefone, $genero, $zap]);
+
+        $query = $pdo->prepare("SELECT c.* FROM cadastro c WHERE c.nome LIKE '%$nome%' AND c.email LIKE '%$email%'");
+
+        $query->execute();
+
+        $result = $query->fetchAll();
+
+        if (isset($reuslt) && sizeof($reuslt) > 0) {
+            $idcadastro = $result[0]['id'];
+
+            $stmt = $pdo->prepare("INSERT INTO `morador`(`idcadastro` ,`bloco`, `torre`, `nome`, `sobrenome`, `email`, `data_nascimento`, `telefone`, `genero`, `whatsapp`) VALUES (?,?,?,?,?,?,?,?,?)")->execute([$idcadastro, $bloco, $torre, $nome, $sobrenome, $email, $datanascimento, $telefone, $genero, $zap]);
+        } else {
+            $insertcadastro = $pdo->prepare("INSERT INTO `cadastro`(`email`, `senha`, `nome`, `sobrenome`, `genero`) VALUES (?,?,?,?,?)")->execute([$email, $senha, $nome, $sobrenome, $genero]);
+            
+            $consultacadastro = $pdo->prepare("SELECT c.* FROM cadastro c WHERE c.nome LIKE '%$nome%' AND c.email LIKE '%$email%'");
+            
+            $consultacadastro->execute();
+            
+            $result = $consultacadastro->fetchAll();
+            
+            $idcadastro = $result[0]['id'];
+
+            $stmt = $pdo->prepare("INSERT INTO `morador`(`idcadastro` ,`bloco`, `torre`, `nome`, `sobrenome`, `email`, `data_nascimento`, `telefone`, `genero`, `whatsapp`) VALUES (?,?,?,?,?,?,?,?,?,?)")->execute([$idcadastro, $bloco, $torre, $nome, $sobrenome, $email, $datanascimento, $telefone, $genero, $zap]);
+        }
+
+
 
         header('Location: ../cadastro-servicos.php');
     } catch (PDOException $e) {
@@ -66,7 +92,9 @@ if ($tipe == 1) {
     $instagram = (isset($_POST['instagram'])) ? $_POST['instagram'] : false;
     if ($instagram) array_push($link, strval($instagram));
 
-    if ($link) array_push($set, 'redes_socieais = ' . implode(';', $link));
+
+    if ($link) $links =  implode(';', $link);
+    array_push($set, "redes_socieais = " . strval($links));
 
     $titulo_anuncio = (isset($_POST['titulo_anuncio'])) ? $_POST['titulo_anuncio'] : false;
     if ($titulo_anuncio) array_push($set, "titulo_anuncio = '$titulo_anuncio'");
@@ -78,13 +106,13 @@ if ($tipe == 1) {
     if ($sobrevc) array_push($set, "sobre_voce = '$sobrevc'");
 
     $valor = (isset($_POST['valor'])) ? $_POST['valor'] : false;
-    if ($valor){
+    if ($valor) {
         array_push($set, "valor = '$valor'");
-    } else{
+    } else {
         $acombinar = (isset($_POST['acombinar'])) ? $_POST['acombinar'] : false;
-        if($acombinar) array_push($set, "valor = '$acombinar'");
+        if ($acombinar) array_push($set, "valor = '$acombinar'");
     }
-        
+
 
     $tipovalor = (isset($_POST['tipovalor'])) ? $_POST['tipovalor'] : false;
     if ($tipovalor) array_push($set, "tipo_valor = '$tipovalor'");
@@ -162,14 +190,12 @@ if ($tipe == 1) {
         $w .= $v;
     }
 
-    die($w);
+    // die($w);
 
     try {
-        $stmt = $pdo->prepare("UPDATE `servicos` SET $w WHERE `id_morador` = $id_morador");
-        $stmt->execute();
+        $stmt = $pdo->prepare("INSERT INTO `servicos`(`id_morador`, `area_de_atuacao`, `outra_area`, `atendimento`, `servicos_ofertados`, `dia_semana`, `hora_atendimento`, `data_atendimento`, `titulo_anuncio`, `text_experiencia`, `redes_socieais`, `sobre_voce`, `sobre_oque_faz`, `valor`, `tipo_valor`, `imagem`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)")->execute([$id_morador, $areadeatuacao, $outraarea, $tipodeatendimento, $servicos_ofertados, $semana, $hora, $semana, $titulo_anuncio, $oquefaz, $link, $sobrevc, $oquefaz, $valor, $tipovalor, $image]);
 
         header('Location: ../perfil.php');
-        
     } catch (PDOException $e) {
         echo 'ERROR: ' . $e->getMessage();
     }
@@ -227,11 +253,12 @@ function salvararquivoAction($id)
         if (move_uploaded_file($_FILES['file']['tmp_name'], $_UP['pasta'] . $nome_final)) {
             // Upload efetuado com sucesso, exibe uma mensagem e um link para o arquivo
             // echo "Upload efetuado com sucesso!";
-            $caminho = $_UP['pasta'] . '$nome_final';
+            $caminho = $_UP['pasta'] . $nome_final;
             return $caminho;
         } else {
             // Não foi possível fazer o upload, provavelmente a pasta está incorreta
-            return "Não foi possível enviar o arquivo, tente novamente";
+            $caminho = $_UP['pasta'] . $nome_final;
+            return $caminho;
         }
     }
 }

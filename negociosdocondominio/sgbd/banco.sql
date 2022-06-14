@@ -4,32 +4,38 @@ DROP TABLE IF EXISTS servicos;
 
 CREATE TABLE cadastro(
 	id bigint AUTO_INCREMENT,
-    email varchar(50),
-    senha varchar(50),
-  	nome varchar(50),
+    email VARCHAR(50),
+    senha VARCHAR(50),
+  	nome VARCHAR(50),
+    sobrenome VARCHAR(50),
     genero int,
     PRIMARY KEY (id)
 );
 
 -- apenas para teste
-INSERT INTO cadastro (email, senha, nome, genero) VALUES ('adm@adm.com', '123456', 'admin', 1);
+-- INSERT INTO cadastro (email, senha, nome, genero) VALUES ('adm@adm.com', '123456', 'admin', 1);
 
 CREATE TABLE morador(
   id bigint AUTO_INCREMENT,
-  idcadastro INT,
+  idcadastro bigint,
   bloco INT,
-  torre varchar(20),
-  nome varchar(55),
-  email varchar(55),
-  data_nascimento varchar(20),
-  telefone varchar(20),
+  torre VARCHAR(20),
+  nome VARCHAR(55),
+  sobrenome VARCHAR(55),
+  email VARCHAR(55),
+  data_nascimento VARCHAR(20),
+  telefone VARCHAR(20),
+  whatsapp VARCHAR(20),
+  genero VARCHAR(20),
+
   PRIMARY KEY (id),
-  FOREIGN KEY (idcadastro) REFERENCES cadastros(id)
+  FOREIGN KEY (idcadastro) REFERENCES cadastro(id)
 );
-INSERT INTO `morador`(`bloco`, `torre`, `nome`, `email`, `data_nascimento`) VALUES (1,2,'julia','julia@julia.com','1989-10-12');
+-- INSERT INTO `morador`(`bloco`, `torre`, `nome`, `email`, `data_nascimento`) VALUES (1,2,'julia','julia@julia.com','1989-10-12');
 
 CREATE TABLE servicos(
   id bigint AUTO_INCREMENT,
+  id_morador bigint,
   area_de_atuacao VARCHAR(50),
   outra_area VARCHAR(50),
   atendimento VARCHAR(255),
@@ -46,13 +52,6 @@ CREATE TABLE servicos(
   tipo_valor INT,
   imagem VARCHAR(255),
 
-  PRIMARY KEY (id)
+  PRIMARY KEY (id),
+  FOREIGN KEY (id_morador) REFERENCES morador(id)
 );
-
-
-ALTER TABLE `morador` ADD `genero` VARCHAR(20) NULL AFTER `telefone`;
-ALTER TABLE `morador` ADD `sobrenome` VARCHAR(50) NULL AFTER `nome`;
-ALTER TABLE `morador` ADD `whatsapp` VARCHAR(20) NULL AFTER `telefone`;
-
-ALTER TABLE `servicos` ADD `id_morador` BIGINT NOT NULL AFTER `id`;
-
