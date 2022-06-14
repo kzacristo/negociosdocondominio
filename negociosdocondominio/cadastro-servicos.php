@@ -213,7 +213,7 @@ include "header.php"
               <label class="form-check-label " for="flexCheckDefault"> A combinar</label>
             </div>
             <div class="col-sm-6 camposform">
-              <input type="text" class="form-control" name="acombinar" value="">
+              <input type="text" class="form-control" name="acombinar" value="acombinar">
             </div>
           </div>
         </div>

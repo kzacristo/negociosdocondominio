@@ -78,7 +78,13 @@ if ($tipe == 1) {
     if ($sobrevc) array_push($set, "sobre_voce = '$sobrevc'");
 
     $valor = (isset($_POST['valor'])) ? $_POST['valor'] : false;
-    if ($valor) array_push($set, "valor = '$valor'");
+    if ($valor){
+        array_push($set, "valor = '$valor'");
+    } else{
+        $acombinar = (isset($_POST['acombinar'])) ? $_POST['acombinar'] : false;
+        if($acombinar) array_push($set, "valor = '$acombinar'");
+    }
+        
 
     $tipovalor = (isset($_POST['tipovalor'])) ? $_POST['tipovalor'] : false;
     if ($tipovalor) array_push($set, "tipo_valor = '$tipovalor'");
@@ -156,10 +162,13 @@ if ($tipe == 1) {
         $w .= $v;
     }
 
+    die($w);
 
     try {
         $stmt = $pdo->prepare("UPDATE `servicos` SET $w WHERE `id_morador` = $id_morador");
         $stmt->execute();
+
+        header('Location: ../perfil.php');
         
     } catch (PDOException $e) {
         echo 'ERROR: ' . $e->getMessage();
@@ -173,7 +182,7 @@ function salvararquivoAction($id)
 
     $_UP['pasta'] = '../images/';
     $_UP['tamanho'] = 1024 * 1024 * 2;
-    $_UP['extensoes'] = array('jpg', 'png');
+    $_UP['extensoes'] = array('jpg', 'png', 'jpeg');
 
     // Renomeia o arquivo? (Se true, o arquivo será salvo como .jpg e um nome único)
     $_UP['renomeia'] = true;
@@ -192,8 +201,9 @@ function salvararquivoAction($id)
     }
     // Faz a verificação da extensão do arquivo
     $extensao = strtolower(end(explode('.', $_FILES['file']['name'])));
+    // die($extensao);
     if (array_search($extensao, $_UP['extensoes']) === false) {
-        echo "Por favor, envie arquivos com as seguintes extensões: jpg, png ou gif";
+        echo "Por favor, envie arquivos com as seguintes extensões: jpg, png, jpeg ou gif";
     }
 
     // Faz a verificação do tamanho do arquivo
