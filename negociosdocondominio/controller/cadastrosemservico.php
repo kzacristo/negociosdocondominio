@@ -222,8 +222,8 @@ function salvararquivoAction($id)
 
     // Verifica se houve algum erro com o upload. Se sim, exibe a mensagem do erro
     if ($_FILES['file']['error'] != 0) {
-        die("Não foi possível fazer o upload, erro:<br />" . $_UP['erros'][$_FILES['file']['error']]);
-        exit; // Para a execução do script
+        die("Não foi possível fazer o upload, " . $_UP['erros'][$_FILES['file']['error']]);
+        // exit; // Para a execução do script
     }
     // Faz a verificação da extensão do arquivo
     $extensao = strtolower(end(explode('.', $_FILES['file']['name'])));
