@@ -22,7 +22,7 @@ CREATE TABLE morador(
   nome varchar(55),
   email varchar(55),
   data_nascimento varchar(20),
-  telenofe varchar(20),
+  telefone varchar(20),
   PRIMARY KEY (id),
   FOREIGN KEY (idcadastro) REFERENCES cadastros(id)
 );
@@ -48,3 +48,9 @@ CREATE TABLE servicos(
 
   PRIMARY KEY (id)
 );
+
+ALTER TABLE `morador` ADD `genero` VARCHAR(20) NULL AFTER `telenofe`;
+ALTER TABLE `morador` ADD `sobrenome` VARCHAR(50) NULL AFTER `nome`;
+ALTER TABLE `morador` ADD `whatsapp` VARCHAR(20) NULL AFTER `telefone`;
+
+ALTER TABLE `servicos` ADD `id_morador` BIGINT NOT NULL AFTER `id`;

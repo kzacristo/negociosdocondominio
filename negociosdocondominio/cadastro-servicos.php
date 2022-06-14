@@ -6,7 +6,7 @@ include "header.php"
 <div class="container">
   <div class="row">
     <h1 class="titulo">Cadastro de serviços</h1>
-  <form action="../controller/cadastrosemservico.php" method="post">
+  <form action="../controller/cadastrosemservico.php" method="post" enctype="multipart/form-data">
       <div class="row">
         <div class="col-sm-6 camposform ">
           <label for="bloco" class="form-label">Área de atuação</label>
@@ -67,51 +67,51 @@ include "header.php"
           <div class="form-check">
             <input class="form-check-input checkmark" type="checkbox" value="1" id="flexCheckDefault" name="horario1">
             <label class="form-check-label " for="flexCheckDefault"> Segunda-feira das </label>
-            <input type="time" class="form-control" name="time" value="" >
+            <input type="time" class="form-control" name="time1" value="" >
             às
-            <input type="time" class="form-control" name="time" value="" >
+            <input type="time" class="form-control" name="time11" value="" >
           </div>
           <div class="form-check">
             <input class="form-check-input" type="checkbox" value="2" id="flexCheckDefault" name="horario2">
             <label class="form-check-label " for="flexCheckDefault"> Terça-feira das </label>
-            <input type="time" class="form-control" name="time" value="" >
+            <input type="time" class="form-control" name="time2" value="" >
             às
-            <input type="time" class="form-control" name="time" value="" >
+            <input type="time" class="form-control" name="time22" value="" >
           </div>
           <div class="form-check ">
             <input class="form-check-input" type="checkbox" value="3" id="flexCheckDefault" name="horario3">
             <label class="form-check-label " for="flexCheckDefault"> Quarta-feira das </label>
-            <input type="time" class="form-control" name="time" value="" >
+            <input type="time" class="form-control" name="time3" value="" >
             às
-            <input type="time" class="form-control" name="time" value="" >
+            <input type="time" class="form-control" name="time33" value="" >
           </div>
           <div class="form-check ">
             <input class="form-check-input" type="checkbox" value="4" id="flexCheckDefault" name="horario4">
             <label class="form-check-label " for="flexCheckDefault"> Quinta-feira das </label>
-            <input type="time" class="form-control" name="time" value="">
+            <input type="time" class="form-control" name="time4" value="">
             às
-            <input type="time" class="form-control" name="time" value="" >
+            <input type="time" class="form-control" name="time44" value="" >
           </div>
           <div class="form-check ">
             <input class="form-check-input" type="checkbox" value="5" id="flexCheckDefault" name="horario"5>
             <label class="form-check-label " for="flexCheckDefault"> Sexta-feira das </label>
-            <input type="time" class="form-control" name="time" value="" >
+            <input type="time" class="form-control" name="time5" value="" >
             às
-            <input type="time" class="form-control" name="time" value="" >
+            <input type="time" class="form-control" name="time55" value="" >
           </div>
           <div class="form-check ">
             <input class="form-check-input" type="checkbox" value="6" id="flexCheckDefault" name="horario6">
             <label class="form-check-label " for="flexCheckDefault"> Sabádo das </label>
-            <input type="time" class="form-control" name="time" value="" >
+            <input type="time" class="form-control" name="time6" value="" >
             às
-            <input type="time" class="form-control" name="time" value="" >
+            <input type="time" class="form-control" name="time66" value="" >
           </div>
           <div class="form-check ">
             <input class="form-check-input" type="checkbox" value="7" id="flexCheckDefault" name="horario7">
             <label class="form-check-label " for="flexCheckDefault"> Domingo das </label>
-            <input type="time" class="form-control" name="time" value="" >
+            <input type="time" class="form-control" name="time7" value="" >
             às
-            <input type="time" class="form-control" name="time" value="" >
+            <input type="time" class="form-control" name="time77" value="" >
           </div>
           <div class="form-check ">
             <input class="form-check-input" type="checkbox" value="8" id="flexCheckDefault" name="horario8">
