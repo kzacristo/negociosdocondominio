@@ -213,7 +213,7 @@ function salvararquivoAction($id)
         if ($_UP['renomeia'] == true) {
 
             // Cria um nome baseado no UNIX TIMESTAMP atual e com extensão .jpg
-            $nome_final = $id . '_' . '.jpg';
+            $nome_final = $id . '_usuario' . '.jpg';
         } else {
             // Mantém o nome original do arquivo
             $nome_final = $_FILES['file']['name'];
