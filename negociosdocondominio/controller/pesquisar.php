@@ -1,5 +1,7 @@
 <?php
 
+require_once('conect.php');
+
 $where = array();
 $destinatario = (isset($_GET["destinatario"])) ? $_GET['destinatario'] : false;
 if ($destinatario) array_push($where, " m.nome LIKE '%$destinatario%' ");
@@ -17,14 +19,8 @@ foreach ($where as $k => $v) {
     $w .= $v;
 }
 
-$username = "root";
-$password = "root";
-$database = "pj_integrador";
-$hostname = "172.20.0.7";
-
 try {
-    $conn = new PDO('mysql:host=' . $hostname . ';dbname=' . $database, $username, $password);
-    $stmt = $conn->prepare("SELECT m.* FROM morador m WHERE $w ");
+    $stmt = $pdo->prepare("SELECT m.* FROM morador m WHERE $w ");
     $stmt->execute();
 
     $row = $stmt->fetchAll();

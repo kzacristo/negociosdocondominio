@@ -1,12 +1,8 @@
 <?php
 
+require_once('conect.php');
+
 $tipe = $_POST['primeirocadastro'];
-
-$username = "root";
-$password = "root";
-$database = "pj_integrador";
-$hostname = "172.20.0.7";
-
 
 if ($tipe == 1) {
     $nome = (isset($_POST['nome'])) ? $_POST['nome'] : '';
@@ -21,9 +17,8 @@ if ($tipe == 1) {
 
 
     try {
-        $conn = new PDO('mysql:host=' . $hostname . ';dbname=' . $database, $username, $password);
-        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $stmt = $conn->prepare("INSERT INTO `morador`(`bloco`, `torre`, `nome`, `sobrenome`, `email`, `data_nascimento`, `telefone`, `genero`, `whatsapp`) VALUES (?,?,?,?,?,?,?,?,?)")->execute([$bloco, $torre, $nome, $sobrenome, $email, $datanascimento, $telefone, $genero, $zap]);
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $stmt = $pdo->prepare("INSERT INTO `morador`(`bloco`, `torre`, `nome`, `sobrenome`, `email`, `data_nascimento`, `telefone`, `genero`, `whatsapp`) VALUES (?,?,?,?,?,?,?,?,?)")->execute([$bloco, $torre, $nome, $sobrenome, $email, $datanascimento, $telefone, $genero, $zap]);
 
         header('Location: ../cadastro-servicos.php');
     } catch (PDOException $e) {
@@ -31,8 +26,7 @@ if ($tipe == 1) {
     }
 } else {
     // href="perfil.php" 
-    $conn = new PDO('mysql:host=' . $hostname . ';dbname=' . $database, $username, $password);
-    $query = $conn->prepare("SELECT m.* FROM morador m WHERE m.nome LIKE '%$nome%' AND m.email LIKE '%$email%' ORDER BY m.id DESC;");
+    $query = $pdo->prepare("SELECT m.* FROM morador m WHERE m.nome LIKE '%$nome%' AND m.email LIKE '%$email%' ORDER BY m.id DESC;");
     $query->execute();
 
     $result = $query->fetchAll();
@@ -164,8 +158,8 @@ if ($tipe == 1) {
 
 
     try {
-        $conn = new PDO('mysql:host=' . $hostname . ';dbname=' . $database, $username, $password);
-        $stmt = "UPDATE `servicos` SET $w WHERE `id_morador` = $id_morador";
+        $stmt = $pdo->prepare("UPDATE `servicos` SET $w WHERE `id_morador` = $id_morador");
+        $stmt->execute();
         
     } catch (PDOException $e) {
         echo 'ERROR: ' . $e->getMessage();
