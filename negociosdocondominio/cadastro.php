@@ -83,16 +83,17 @@ include "header.php"
 
         </div>
         <div class="row">
+        <!-- pattern="^\\([0-9]{2}\\)((3[0-9]{4}-[0-9]{4})|(9[0-9]{3}-[0-9]{5}))$" -->
 
           <div class="col-sm-6 camposform">
             <label for="telefone" class="form-control">Telefone </label>
-            <input type="text" class="form-control" name="telefone" id="telefone" pattern="[0-9]{9}" placeholder="+55(XX)XXXX-XXXX" required>
+            <input type="text" class="form-control" name="telefone" id="telefone"  placeholder="+55(XX)XXXX-XXXX" required>
             <div class="invalid-feedback"> Campo Obrigatório </div>
           </div>
 
           <div class="col-sm-6 camposform">
             <label for="telefone" class="form-control">Whatsapp </label>
-            <input type="text" class="form-control" name="zap" id="telefone" pattern="[0-9]{9}" placeholder="+55(XX)XXXX-XXXX">
+            <input type="text" class="form-control" name="zap" id="telefone"  placeholder="+55(XX)XXXX-XXXX">
 
           </div>
 
@@ -106,9 +107,9 @@ include "header.php"
 
 
 
-        <h4>Deseja incluir serviços?</h4>
         <div class="row">
           <div class="col-sm-6 camposform" id="cadastrosenha">
+            <h4>Deseja incluir serviços?</h4>
             <button class="btn btn-primary" name="button" onclick="cadastrosenha()" type="button">Sim</button>
             <!-- <a class="btn btn-primary" role="button" onclick="cadastrosenha()"  type="button">Sim</a> -->
             <!-- <a class="btn btn-primary bgcinza" onclick="cadastrosenha()" type="button">Não</a> -->
@@ -134,8 +135,9 @@ include "footer.php"
 
     $('#cadastrosenha').html(' ')
     $("#cadastrosenha").show()
-    $('#cadastrosenha').append('<input type="password" name="senha" id="senha" value="" /><br />')
-    $('#cadastrosenha').append('<button class="btn btn-primary" name="button" value="sim" type="submit">Salvar</button>')
+    $('#cadastrosenha').append('<label for="senha" class="form-control">Digite a sua senha </label><br />')
+    $('#cadastrosenha').append('<input type="password" name="senha" class="form-control input-group-lg"  id="senha" value="" /><br />')
+    $('#cadastrosenha').append('<button class="btn btn-primary" name="button" type="submit">Salvar</button>')
     $('#cadastrosenha').append('<button class="btn btn-primary bgcinza" name="button" href="#" type="submit">Canselar</button><br />')
     // document.getElementById(cadastrosenha).appendChild(cadastrosenha);
 

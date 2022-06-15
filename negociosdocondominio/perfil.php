@@ -17,7 +17,75 @@ try {
   echo 'ERROR: ' . $e->getMessage();
 }
 
+$iddia = explode(',', $row[0]['dia_semana']);
+$idhora = explode(',', $row[0]['hora_atendimento']);
+$trabalho = array();
 
+foreach ($iddia as $k => $dias) {
+  switch ($dias) {
+    case 1:
+      array_push($trabalho   , 'Segunda');
+      break;
+    case 2:
+      array_push($trabalho ,  'Terça');
+      break;
+    case 3:
+      array_push($trabalho ,  'Quarta');
+      break;
+    case 4:
+      array_push($trabalho , 'Quinta');
+      break;
+    case 5:
+      array_push($trabalho , 'Sexta');
+      break;
+    case 6:
+      array_push($trabalho , 'Sabado');
+      break;
+    case 7:
+      array_push($trabalho , 'Domingo');
+      break;
+    default:
+    array_push($trabalho , 'A combinar');
+      break;
+  }
+}
+var_dump($trabalho);
+foreach ($idhora as $k => $h) {
+  $hora = explode('/',$h);
+  foreach($trabalho as $y => $trab){
+
+  }
+  switch ($hora[0]) {
+    case 1:
+      $trabalho[0] .= ' - ' . $hora[1];
+      break;
+    case 2:
+      $trabalho[1] .=  ' - ' . $hora[1];
+      break;
+    case 3:
+      $trabalho[2] .=  ' - ' . $hora[1];
+      break;
+    case 4:
+      $trabalho[3] .=  ' - ' . $hora[1];
+      break;
+    case 5:
+      $trabalho[4] .=  ' - ' . $hora[1];
+      break;
+    case 6:
+      $trabalho[5] .=  ' - ' . $hora[1];
+      break;
+    case 7:
+      $trabalho[6] .=  ' - ' . $hora[1];
+      break;
+    default:
+      $trabalho[7] .=  ' - ' . ' ';
+      break;
+  }
+ 
+  
+}
+var_dump($trabalho); die();
+// $trabalho = explode(',', $trabalho);
 include "header.php";
 
 ?>
@@ -35,22 +103,38 @@ include "header.php";
       <div class="col-sm-4">
         <div class="destaqueperfil"> <img src="<?php echo $row[0]['imagem'] ?>" height="100">
           <h2><?php echo $row[0]['nome'] ?></h2>
-          <?php $row ?>
-          <p>Aulas de Portugues</p>
-          <p> Revisão de texto</p>
+          <p><?php echo $row[0]['titulo_anuncio'] ?></p>
           <br>
           <h2>Valor</h2>
-          <p>Preço hora/aula: R$85</p>
+          <?php
+          switch ($row[0]['tipo_valor']) {
+            case 1:
+              $tipo_valor = 'Por Hora';
+              break;
+            case 2:
+              $tipo_valor = 'Por Dia';
+              break;
+            case 3:
+              $tipo_valor = 'Por Serviço';
+              break;
+            default:
+              $tipo_valor = 'A combinar';
+              break;
+          }
+
+          ?>
+          <p><?php $valor =  $tipo_valor . ' :' . ' R$. ' . $row[0]['valor'];
+              echo $valor ?></p>
           <br>
           <h2>Informações de contato</h2>
-          <p>Telefone: 11 1234-1234</p>
-          <p>Whatsapp: 11 1234-1234</p>
-          <p>E-mail: luciaa@mail.com.br</p>
+          <p>Telefone: <?php echo $row[0]['telefone'] ?></p>
+          <p>Whatsapp: <?php echo $row[0]['whatsapp'] ?></p>
+          <p>E-mail: <?php echo $row[0]['email'] ?></p>
           <br>
           <h2>Horário de funcionamento</h2>
-          <p>Terça e Quinta – das 18h00 às 22h00 </p>
-          <p>Quarta e Sexta – das 16h00 às 20h00 </p>
-          <p>Sábado, domingo e feriados – das 12h00 às 18h00 </p>
+          <?php foreach ($trabalho as $key => $semanal) : ?>
+            <p><?php echo $semanal ?></p>
+          <?php endforeach ?>
           <br>
           <h2>Redes socias</h2>
           <?php $redesocial = explode(';', $row[0]['redes_socieais']) ?>

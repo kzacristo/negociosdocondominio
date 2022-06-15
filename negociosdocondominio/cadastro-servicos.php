@@ -209,11 +209,11 @@ include "header.php"
                 <option value="2">Por dia</option>
                 <option value="3">Por serviço</option>
               </select>
-              <input class="form-check-input" name="valor" type="checkbox" value="" id="flexCheckDefault" >
+              <input class="form-check-input" name="acombinar" type="checkbox" value="acombinar" id="flexCheckDefault" >
               <label class="form-check-label " for="flexCheckDefault"> A combinar</label>
             </div>
             <div class="col-sm-6 camposform">
-              <input type="text" class="form-control" name="acombinar" value="acombinar">
+              <input type="text" class="form-control" name="valor" value="">
             </div>
           </div>
         </div>
