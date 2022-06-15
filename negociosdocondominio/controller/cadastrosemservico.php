@@ -44,9 +44,14 @@ if ($tipe == 1) {
             $stmt = $pdo->prepare("INSERT INTO `morador`(`idcadastro` ,`bloco`, `torre`, `nome`, `sobrenome`, `email`, `data_nascimento`, `telefone`, `genero`, `whatsapp`) VALUES (?,?,?,?,?,?,?,?,?,?)")->execute([$idcadastro, $bloco, $torre, $nome, $sobrenome, $email, $datanascimento, $telefone, $genero, $zap]);
         }
 
+        $button = (isset($_POST['button'])) ? $_POST['button'] : false;
 
+        if($button == 'sim'){
+            header('Location: ../cadastro-servicos.php');
+        }else{
+            header('Location: ../perfil.php');
+        }
 
-        header('Location: ../cadastro-servicos.php');
     } catch (PDOException $e) {
         echo 'ERROR: ' . $e->getMessage();
     }

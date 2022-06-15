@@ -97,9 +97,10 @@ include "header.php"
       <h4>Deseja incluir serviços?</h4>
       <div class="row">
         <div class="col-sm-6 camposform"> 
-        <button class="btn btn-primary" type="submit">Sim</button>
+        <button class="btn btn-primary" name="button" value="sim" type="submit">Sim</button>
           <!-- <a class="btn btn-primary" role="button"  type="submit">Sim</a> -->
-           <a class="btn btn-primary bgcinza" href="#" role="button">Não</a>
+           <!-- <a class="btn btn-primary bgcinza" value='nao' href="#" role="button">Não</a> -->
+           <button class="btn btn-primary bgcinza" name="button" value='nao' href="#" role="button">Não</button>
     </div>
   </div>
 </form>
