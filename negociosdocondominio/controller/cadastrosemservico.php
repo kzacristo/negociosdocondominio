@@ -8,6 +8,7 @@ if ($tipe == 1) {
 
     $nome = (isset($_POST['nome'])) ? $_POST['nome'] : '';
     $sobrenome = (isset($_POST['sobrenome'])) ? $_POST['sobrenome'] : '';
+    $senha = (isset($_POST['senha'])) ? $_POST['senha'] : '';
     $bloco = (isset($_POST['bloco'])) ? $_POST['bloco'] : '';
     $torre = (isset($_POST['torre'])) ? $_POST['torre'] : '';
     $datanascimento = (isset($_POST['datanascimento'])) ? $_POST['datanascimento'] : '';

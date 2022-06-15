@@ -3,6 +3,16 @@
 include "header.php"
 
 ?>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Perfil</title>
+  <script src=“js/jquery.js”></script>
+</head>
+
+<body>
   <div class="container">
     <div class="row">
       <h1 class="titulo">Cadastro de Morador</h1>
@@ -12,21 +22,23 @@ include "header.php"
           <div class="row">
             <div class="col-sm-6 camposform">
               <label for="bloco" class="form-control">Bloco / torre</label>
-              <select class="form-select " name="bloco">
-                <option selected>Selecionar</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
+              <!-- <select class="form-select " name="bloco">
+              <option selected>Selecionar</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select> -->
+              <input type="text" class="form-control " id="bloco" placeholder="Bloco/torre" value="" name="bloco" required>
             </div>
             <div class="col-sm-6 camposform">
               <label for="unidade" class="form-control">Unidade / Apartamento</label>
-              <select class="form-select " name="torre">
-                <option selected>Selecionar</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
+              <!-- <select class="form-select " name="torre">
+              <option selected>Selecionar</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select> -->
+              <input type="text" class="form-control " id="torre" placeholder="Unidade/ Apartamento" value="" name="torre" required>
             </div>
           </div>
         </div>
@@ -45,7 +57,7 @@ include "header.php"
         <div class="row">
           <div class="col-sm-3 camposform">
             <label for="datanascimento" class="form-control">Data de Nascimento</label>
-            <input type="date" class="form-control " id="datanascimento" placeholder="" value="" name="datanascimento" required>
+            <input type="date" class="form-control " id="datanascimento" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" placeholder="" value="" name="datanascimento" required>
             <div class="invalid-feedback">Campo Obrigatório</div>
           </div>
           <div class="col-sm-3 camposform">
@@ -74,13 +86,13 @@ include "header.php"
 
           <div class="col-sm-6 camposform">
             <label for="telefone" class="form-control">Telefone </label>
-            <input type="text" class="form-control" name="telefone" id="telefone" placeholder="+55(XX)XXXX-XXXX" required>
+            <input type="text" class="form-control" name="telefone" id="telefone" pattern="[0-9]{9}" placeholder="+55(XX)XXXX-XXXX" required>
             <div class="invalid-feedback"> Campo Obrigatório </div>
           </div>
 
           <div class="col-sm-6 camposform">
             <label for="telefone" class="form-control">Whatsapp </label>
-            <input type="text" class="form-control" name="zap" id="telefone" placeholder="+55(XX)XXXX-XXXX">
+            <input type="text" class="form-control" name="zap" id="telefone" pattern="[0-9]{9}" placeholder="+55(XX)XXXX-XXXX">
 
           </div>
 
@@ -94,20 +106,39 @@ include "header.php"
 
 
 
-      <h4>Deseja incluir serviços?</h4>
-      <div class="row">
-        <div class="col-sm-6 camposform"> 
-        <button class="btn btn-primary" name="button" value="sim" type="submit">Sim</button>
-          <!-- <a class="btn btn-primary" role="button"  type="submit">Sim</a> -->
-           <!-- <a class="btn btn-primary bgcinza" value='nao' href="#" role="button">Não</a> -->
-           <button class="btn btn-primary bgcinza" name="button" value='nao' href="#" role="button">Não</button>
+        <h4>Deseja incluir serviços?</h4>
+        <div class="row">
+          <div class="col-sm-6 camposform" id="cadastrosenha">
+            <button class="btn btn-primary" name="button" onclick="cadastrosenha()" type="button">Sim</button>
+            <!-- <a class="btn btn-primary" role="button" onclick="cadastrosenha()"  type="button">Sim</a> -->
+            <!-- <a class="btn btn-primary bgcinza" onclick="cadastrosenha()" type="button">Não</a> -->
+            <button class="btn btn-primary bgcinza" name="button" onclick="cadastrosenha()"  type="button">Não</button>
+          </div>
+        </div>
+        
+      </form>
     </div>
   </div>
-</form>
-</div>
-</div>
+</body>
+
+</html>
 <?php
 
 include "footer.php"
 
 ?>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript">
+  function cadastrosenha() {
+
+    $('#cadastrosenha').html(' ')
+    $("#cadastrosenha").show()
+    $('#cadastrosenha').append('<input type="password" name="senha" id="senha" value="" /><br />')
+    $('#cadastrosenha').append('<button class="btn btn-primary" name="button" value="sim" type="submit">Salvar</button>')
+    $('#cadastrosenha').append('<button class="btn btn-primary bgcinza" name="button" href="#" type="submit">Canselar</button><br />')
+    // document.getElementById(cadastrosenha).appendChild(cadastrosenha);
+
+
+  }
+</script>
