@@ -40,8 +40,6 @@ CREATE TABLE servicos(
   outra_area VARCHAR(50),
   atendimento VARCHAR(255),
   servicos_ofertados TEXT,
-  dia_semana VARCHAR(25),
-  hora_atendimento VARCHAR(255),
   data_atendimento VARCHAR(255),
   titulo_anuncio VARCHAR(255),
   text_experiencia TEXT,

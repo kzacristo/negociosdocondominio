@@ -8,8 +8,7 @@ try {
 
   $row = $stmt->fetchAll();
 
-  // var_dump($row); die();
-
+  
   if (!isset($row) && sizeof($row) <= 0) {
     header('location:index.php');
   }
@@ -17,75 +16,10 @@ try {
   echo 'ERROR: ' . $e->getMessage();
 }
 
-$iddia = explode(',', $row[0]['dia_semana']);
-$idhora = explode(',', $row[0]['hora_atendimento']);
-$trabalho = array();
+$trabalho = $row[0]['data_atendimento'];
+$trabalho = explode(',', $trabalho);
+// var_dump($trabalho); die();
 
-foreach ($iddia as $k => $dias) {
-  switch ($dias) {
-    case 1:
-      array_push($trabalho   , 'Segunda');
-      break;
-    case 2:
-      array_push($trabalho ,  'Terça');
-      break;
-    case 3:
-      array_push($trabalho ,  'Quarta');
-      break;
-    case 4:
-      array_push($trabalho , 'Quinta');
-      break;
-    case 5:
-      array_push($trabalho , 'Sexta');
-      break;
-    case 6:
-      array_push($trabalho , 'Sabado');
-      break;
-    case 7:
-      array_push($trabalho , 'Domingo');
-      break;
-    default:
-    array_push($trabalho , 'A combinar');
-      break;
-  }
-}
-var_dump($trabalho);
-foreach ($idhora as $k => $h) {
-  $hora = explode('/',$h);
-  foreach($trabalho as $y => $trab){
-
-  }
-  switch ($hora[0]) {
-    case 1:
-      $trabalho[0] .= ' - ' . $hora[1];
-      break;
-    case 2:
-      $trabalho[1] .=  ' - ' . $hora[1];
-      break;
-    case 3:
-      $trabalho[2] .=  ' - ' . $hora[1];
-      break;
-    case 4:
-      $trabalho[3] .=  ' - ' . $hora[1];
-      break;
-    case 5:
-      $trabalho[4] .=  ' - ' . $hora[1];
-      break;
-    case 6:
-      $trabalho[5] .=  ' - ' . $hora[1];
-      break;
-    case 7:
-      $trabalho[6] .=  ' - ' . $hora[1];
-      break;
-    default:
-      $trabalho[7] .=  ' - ' . ' ';
-      break;
-  }
- 
-  
-}
-var_dump($trabalho); die();
-// $trabalho = explode(',', $trabalho);
 include "header.php";
 
 ?>
@@ -157,7 +91,7 @@ include "header.php";
       </div>
       <div class="col-sm-8">
         <div class="frasedestaque">
-          <h1 class="display-6 branco">Professora de Língua Portuguesa, Especialista em Metodologia do Ensino de leitura, interpretação de textos diversificados, Literatura e gramática para o ENEM, vestibulares e concursos</h1>
+          <h1 class="display-6 branco"><?php echo $row[0]['titulo_anuncio'] ?></h1>
         </div>
         <h1 class="titulo">Sobre seu trabalho e experiência</h1>
         <?php echo $row[0]['sobre_oque_faz'] ?>

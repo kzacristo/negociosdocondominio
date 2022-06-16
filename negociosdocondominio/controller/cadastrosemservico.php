@@ -116,67 +116,60 @@ if ($tipe == 1) {
     $tipovalor = (isset($_POST['tipovalor'])) ? $_POST['tipovalor'] : false;
     if ($tipovalor) array_push($set, "tipo_valor = '$tipovalor'");
 
-    $diadasemana = array();
-    $horario = array();
+    $data_atendimento = array();
+
 
     if (isset($_POST['horario1'])) {
-        array_push($diadasemana, $_POST['horario1']);
         if ((isset($_POST['time1']) && $_POST['time1'] != '') && (isset($_POST['time11'])) && $_POST['time11'] != '') {
-            $time = $_POST['horario1'] .'/'. $_POST['time1'] . '-' . $_POST['time11'];
-            array_push($horario, $time);
+            $time = 'Segunda'.'-'. $_POST['time1'] . '-' . $_POST['time11'];
+            array_push($data_atendimento, $time);
         }
     }
     if (isset($_POST['horario2'])) {
-        array_push($diadasemana, $_POST['horario2']);
         if ((isset($_POST['time2']) && $_POST['time2'] != '') && (isset($_POST['time22'])) && $_POST['time22'] != '') {
-            $time = $_POST['horario2'] .'/'. $_POST['time2'] . '-' . $_POST['time22'];
-            array_push($horario, $time);
+            $time = 'Terça'.'-'. $_POST['time2'] . '-' . $_POST['time22'];
+            array_push($data_atendimento, $time);
         }
     }
     if (isset($_POST['horario3'])) {
-        array_push($diadasemana, $_POST['horario3']);
         if ((isset($_POST['time3']) && $_POST['time3'] != '') && (isset($_POST['time33'])) && $_POST['time33'] != '') {
-            $time = $_POST['horario3'].'/'. $_POST['time3'] . '-' . $_POST['time33'];
-            array_push($horario, $time);
+            $time = 'Quarta'.'-'. $_POST['time3'] . '-' . $_POST['time33'];
+            array_push($data_atendimento, $time);
         }
     }
     if (isset($_POST['horario4'])) {
-        array_push($diadasemana, $_POST['horario4']);
         if ((isset($_POST['time4']) && $_POST['time4'] != '') && (isset($_POST['time44'])) && $_POST['time44'] != '') {
-            $time = $_POST['horario4'] .'/'. $_POST['time4'] . '-' . $_POST['time44'];
-            array_push($horario, $time);
+            $time = 'Quinta'.'-'. $_POST['time4'] . '-' . $_POST['time44'];
+            array_push($data_atendimento, $time);
         }
     }
     if (isset($_POST['horario5'])) {
-        array_push($diadasemana, $_POST['horario5']);
         if ((isset($_POST['time5']) && $_POST['time5'] != '') && (isset($_POST['time55'])) && $_POST['time55'] != '') {
-            $time = $_POST['horario5'] .'/'. $_POST['time5'] . '-' . $_POST['time55'];
-            array_push($horario, $time);
+            $time = 'Sexta'.'-'. $_POST['time5'] . '-' . $_POST['time55'];
+            array_push($data_atendimento, $time);
         }
     }
     if (isset($_POST['horario6'])) {
-        array_push($diadasemana, $_POST['horario6']);
         if ((isset($_POST['time6']) && $_POST['time6'] != '') && (isset($_POST['time66'])) && $_POST['time66'] != '') {
-            $time = $_POST['horario6'] .'/'. $_POST['time6'] . '-' . $_POST['time66'];
-            array_push($horario, $time);
+            $time = 'Sabado'.'-'. $_POST['time6'] . '-' . $_POST['time66'];
+            array_push($data_atendimento, $time);
         }
     }
     if (isset($_POST['horario7'])) {
-        array_push($diadasemana, $_POST['horario7']);
         if ((isset($_POST['time7']) && $_POST['time7'] != '') && (isset($_POST['time77'])) && $_POST['time77'] != '') {
-            $time = $_POST['horaio7'] .'/'. $_POST['time7'] . '-' . $_POST['time77'];
-            array_push($horario, $time);
+            $time = 'Domingo'.'-'. $_POST['time7'] . '-' . $_POST['time77'];
+            array_push($data_atendimento, $time);
         }
     }
     if (isset($_POST['horario8'])) {
-        array_push($diadasemana, $_POST['horario8']);
+        array_push($data_atendimento, $_POST['horario8']);
     }
 
-    $hora   = implode(',', $horario);
-    if ($hora) array_push($set, "hora_atendimento = '$hora'");
-
-    $semana = implode(',', $diadasemana);
-    if ($semana) array_push($set, "dia_semana = '$semana'");
+    
+    $data_atendimento = implode(',', $data_atendimento);
+    // var_dump($data_atendimento); die();
+    
+    
 
     salvararquivoAction($result[0]['id']);
 
@@ -189,10 +182,10 @@ if ($tipe == 1) {
         $w .= $v;
     }
 
-    // die($w);
+    // die($data_atendimento);
 
     try {
-        $stmt = $pdo->prepare("INSERT INTO `servicos`(`id_morador`, `area_de_atuacao`, `outra_area`, `atendimento`, `servicos_ofertados`, `dia_semana`, `hora_atendimento`, `data_atendimento`, `titulo_anuncio`, `text_experiencia`, `redes_socieais`, `sobre_voce`, `sobre_oque_faz`, `valor`, `tipo_valor`, `imagem`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)")->execute([$id_morador, $areadeatuacao, $outraarea, $tipodeatendimento, $servicos_ofertados, $semana, $hora, $semana, $titulo_anuncio, $oquefaz, $links, $sobrevc, $oquefaz, $valor, $tipovalor, $image]);
+        $stmt = $pdo->prepare("INSERT INTO `servicos`(`id_morador`, `area_de_atuacao`, `outra_area`, `atendimento`, `servicos_ofertados`, `data_atendimento`, `titulo_anuncio`, `text_experiencia`, `redes_socieais`, `sobre_voce`, `sobre_oque_faz`, `valor`, `tipo_valor`, `imagem`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)")->execute([$id_morador, $areadeatuacao, $outraarea, $tipodeatendimento, $servicos_ofertados, $data_atendimento, $titulo_anuncio, $oquefaz, $links, $sobrevc, $oquefaz, $valor, $tipovalor, $image]);
 
         header('Location: ../perfil.php');
     } catch (PDOException $e) {
