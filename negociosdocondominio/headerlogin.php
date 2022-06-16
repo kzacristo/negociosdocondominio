@@ -23,7 +23,7 @@
         </a></div>
       <div class="col-sm-6 align-self-end">
         <nav class="navbar navbar-expand-lg navbar-dark" >
-          <div class="container-fluid">
+          <!-- <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
             <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
               <ul class="navbar-nav">
@@ -31,8 +31,8 @@
                 <input class="form-control form-control-sm" type="search" placeholder="Search" aria-label="Search"> 
                 <a class="btn me-2 btn btn-primary" href="busca.php">Buscar</a>
               </ul>
-            </div>
-            <div class="dropdown text-end"> <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle text-white" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false"> <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle"> </a>
+            </div> -->
+            <div class="dropdown text-end"> 
               <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1" style="">
                 <li><a class="dropdown-item" href="cadastro.php">Cadastro Morador</a></li>
                 <li><a class="dropdown-item" href="cadastro-servicos.php">Cadastro Serviços</a></li>
