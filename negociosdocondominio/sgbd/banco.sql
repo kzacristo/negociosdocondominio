@@ -27,6 +27,7 @@ CREATE TABLE morador(
   telefone VARCHAR(20),
   whatsapp VARCHAR(20),
   genero VARCHAR(20),
+  imagem VARCHAR(255),
 
   PRIMARY KEY (id),
   FOREIGN KEY (idcadastro) REFERENCES cadastro(id)

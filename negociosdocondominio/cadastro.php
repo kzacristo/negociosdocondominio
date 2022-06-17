@@ -83,17 +83,17 @@ include "header.php"
 
         </div>
         <div class="row">
-        <!-- pattern="^\\([0-9]{2}\\)((3[0-9]{4}-[0-9]{4})|(9[0-9]{3}-[0-9]{5}))$" -->
+          <!-- pattern="^\\([0-9]{2}\\)((3[0-9]{4}-[0-9]{4})|(9[0-9]{3}-[0-9]{5}))$" -->
 
           <div class="col-sm-6 camposform">
             <label for="telefone" class="form-control">Telefone </label>
-            <input type="text" class="form-control" name="telefone" id="telefone"  placeholder="+55(XX)XXXX-XXXX" required>
+            <input type="text" class="form-control" name="telefone" id="telefone" placeholder="+55(XX)XXXX-XXXX" required>
             <div class="invalid-feedback"> Campo Obrigatório </div>
           </div>
 
           <div class="col-sm-6 camposform">
             <label for="telefone" class="form-control">Whatsapp </label>
-            <input type="text" class="form-control" name="zap" id="telefone"  placeholder="+55(XX)XXXX-XXXX">
+            <input type="text" class="form-control" name="zap" id="telefone" placeholder="+55(XX)XXXX-XXXX">
 
           </div>
 
@@ -116,7 +116,7 @@ include "header.php"
             <button class="btn btn-primary bgcinza" name="button" onclick="semservico()" value="nao" type="button">Não</button>
           </div>
         </div>
-        
+
       </form>
     </div>
   </div>
@@ -144,17 +144,23 @@ include "footer.php"
 
 
   }
+
   function semservico() {
 
-$('#cadastrosenha').html(' ')
-$("#cadastrosenha").show()
-$('#cadastrosenha').append('<label for="senha" class="form-control">Digite a sua senha </label><br />')
-$('#cadastrosenha').append('<input type="password" name="senha" class="form-control input-group-lg"  id="senha" value="" /><br />')
-$('#cadastrosenha').append('<input type="hidden" name="teste" class="form-control input-group-lg"  id="teste" value="nao" /><br />')
-$('#cadastrosenha').append('<button class="btn btn-primary" name="button" type="submit">Salvar</button>')
-$('#cadastrosenha').append('<button class="btn btn-primary bgcinza" name="button" href="#" type="submit">Canselar</button><br />')
-// document.getElementById(cadastrosenha).appendChild(cadastrosenha);
+    $('#cadastrosenha').html(' ')
+    $("#cadastrosenha").show()
+    $("#cadastrosenha").append('<div class="col-sm-6 camposform" id="image">')
+    $("#image").append('<div class="row" id="image2">')
+    $("#image2").append('<label for="e-mail" class="form-label">Exemplos </label>')
+    $("#image2").append('<p><img src="https://c.superprof.com/static/img/ok-photo-1.64dfba7a.png" > <img src="https://c.superprof.com/static/img/ok-photo-2.07a75de7.png"> <img src="https://c.superprof.com/static/img/ok-photo-3.ccfd4b68.png"> </p>')
+    $("#image2").append('<input class="form-control" type="file" name="file" id="formFile"></div></div><br>')
+    $('#cadastrosenha').append('<label for="senha" class="form-control">Digite a sua senha </label><br />')
+    $('#cadastrosenha').append('<input type="password" name="senha" class="form-control input-group-lg"  id="senha" value="" /><br />')
+    $('#cadastrosenha').append('<input type="hidden" name="teste" class="form-control input-group-lg"  id="teste" value="nao" /><br />')
+    $('#cadastrosenha').append('<button class="btn btn-primary" name="button" type="submit">Salvar</button>')
+    $('#cadastrosenha').append('<button class="btn btn-primary bgcinza" name="button" href="#" type="submit">Canselar</button><br />')
+    // document.getElementById(cadastrosenha).appendChild(cadastrosenha);
 
 
-}
+  }
 </script>

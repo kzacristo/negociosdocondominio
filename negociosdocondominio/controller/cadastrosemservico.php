@@ -31,6 +31,11 @@ if ($tipe == 1) {
         if (isset($reuslt) && sizeof($reuslt) > 0) {
             $idcadastro = $result[0]['id'];
 
+            salvararquivoAction($result[0]['id']);
+
+            $image =  salvararquivoAction($result[0]['id']);
+            if ($image) array_push($set, 'imagem = ' . $image);
+
             $stmt = $pdo->prepare("INSERT INTO `morador`(`idcadastro` ,`bloco`, `torre`, `nome`, `sobrenome`, `email`, `data_nascimento`, `telefone`, `genero`, `whatsapp`) VALUES (?,?,?,?,?,?,?,?,?)")->execute([$idcadastro, $bloco, $torre, $nome, $sobrenome, $email, $datanascimento, $telefone, $genero, $zap]);
         } else {
             $insertcadastro = $pdo->prepare("INSERT INTO `cadastro`(`email`, `senha`, `nome`, `sobrenome`, `genero`) VALUES (?,?,?,?,?)")->execute([$email, $senha, $nome, $sobrenome, $genero]);
@@ -43,11 +48,16 @@ if ($tipe == 1) {
 
             $idcadastro = $result[0]['id'];
 
+            salvararquivoAction($result[0]['id']);
+
+            $image =  salvararquivoAction($result[0]['id']);
+            if ($image) array_push($set, 'imagem = ' . $image);
+
             $stmt = $pdo->prepare("INSERT INTO `morador`(`idcadastro` ,`bloco`, `torre`, `nome`, `sobrenome`, `email`, `data_nascimento`, `telefone`, `genero`, `whatsapp`) VALUES (?,?,?,?,?,?,?,?,?,?)")->execute([$idcadastro, $bloco, $torre, $nome, $sobrenome, $email, $datanascimento, $telefone, $genero, $zap]);
         }
         session_start();
         $_SESSION['login'] = $email;
-        $_SESSION['id'] = (isset($result[0]['id'])) ? $result[0]['id'] : $idcadastro; 
+        $_SESSION['id'] = (isset($result[0]['id'])) ? $result[0]['id'] : $idcadastro;
         // die($_SESSION['login']);
         if ($value == 'sim') {
             header('Location: ../cadastro-servicos.php');
