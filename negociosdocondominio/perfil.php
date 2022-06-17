@@ -2,13 +2,19 @@
 
 require_once('./controller/conect.php');
 
+session_start();
+
+$email = $_SESSION['login'];
+$id = $_SESSION['id'];
+
 try {
-  $stmt = $pdo->prepare("SELECT m.* , s.*  FROM morador m LEFT JOIN servicos s ON s.id_morador = m.id WHERE 1 ORDER BY m.id DESC ");
+  $stmt = $pdo->prepare("SELECT m.* , s.*  FROM morador m LEFT JOIN servicos s ON s.id_morador = m.id WHERE m.email LIKE '%$email%' AND m.idcadastro = $id ORDER BY m.id DESC ");
   $stmt->execute();
 
   $row = $stmt->fetchAll();
+  // var_dump($row); die();
 
-  
+
   if (!isset($row) && sizeof($row) <= 0) {
     header('location:index.php');
   }
@@ -16,9 +22,12 @@ try {
   echo 'ERROR: ' . $e->getMessage();
 }
 
-$trabalho = $row[0]['data_atendimento'];
-$trabalho = explode(',', $trabalho);
-// var_dump($trabalho); die();
+$trabalho = (isset($row[0]['data_atendimento']) && sizeof($row[0]['data_atendimento']) > 0) ? $row[0]['data_atendimento'] : false;
+if ($trabalho) $trabalho = explode(',', $trabalho);
+
+$redesocial = (isset($row[0]['redes_socieais']) && sizeof($row[0]['redes_socieais']) > 0) ? explode(';', $row[0]['redes_socieais']) : false;
+// var_dump($redesocial); die();
+if ($redesocial) $redesocial = explode(';', $row[0]['redes_socieais']);
 
 include "header.php";
 
@@ -39,54 +48,59 @@ include "header.php";
           <h2><?php echo $row[0]['nome'] ?></h2>
           <p><?php echo $row[0]['titulo_anuncio'] ?></p>
           <br>
-          <h2>Valor</h2>
-          <?php
-          switch ($row[0]['tipo_valor']) {
-            case 1:
-              $tipo_valor = 'Por Hora';
-              break;
-            case 2:
-              $tipo_valor = 'Por Dia';
-              break;
-            case 3:
-              $tipo_valor = 'Por Serviço';
-              break;
-            default:
-              $tipo_valor = 'A combinar';
-              break;
-          }
+          <?php if ($row[0]['valor']) : ?>
+            <h2>Valor</h2>
+            <?php
+            switch ($row[0]['tipo_valor']) {
+              case 1:
+                $tipo_valor = 'Por Hora';
+                break;
+              case 2:
+                $tipo_valor = 'Por Dia';
+                break;
+              case 3:
+                $tipo_valor = 'Por Serviço';
+                break;
+              default:
+                $tipo_valor = 'A combinar';
+                break;
+            }
 
-          ?>
-          <p><?php $valor =  $tipo_valor . ' :' . ' R$. ' . $row[0]['valor'];
-              echo $valor ?></p>
-          <br>
+            ?>
+            <p><?php $valor =  $tipo_valor . ' :' . ' R$. ' . $row[0]['valor'];
+                echo $valor ?></p>
+            <br>
+          <?php endif ?>
           <h2>Informações de contato</h2>
           <p>Telefone: <?php echo $row[0]['telefone'] ?></p>
           <p>Whatsapp: <?php echo $row[0]['whatsapp'] ?></p>
           <p>E-mail: <?php echo $row[0]['email'] ?></p>
           <br>
-          <h2>Horário de funcionamento</h2>
-          <?php foreach ($trabalho as $key => $semanal) : ?>
-            <p><?php echo $semanal ?></p>
-          <?php endforeach ?>
+          <?php if (isset($trabalho) && $trabalho != '') : ?>
+            <h2>Horário de funcionamento</h2>
+            <?php foreach ($trabalho as $key => $semanal) : ?>
+              <p><?php echo $semanal ?></p>
+            <?php endforeach ?>
+          <?php endif ?>
           <br>
           <h2>Redes socias</h2>
-          <?php $redesocial = explode(';', $row[0]['redes_socieais']) ?>
-          <?php foreach ($redesocial as $key => $link) : ?>
-            <?php if (strchr($link, 'LinkedIn') || strchr($link, 'linkedin')) : ?>
-              <p>LinkedIn: <a href="<?php echo $link ?>">LinkedIn</a> </p>
-            <?php elseif (strchr($link, 'Facebook') || strchr($link, 'facebook')) : ?>
-              <p>Facebook:<a href="<?php if (strchr($link, 'Facebook')) echo $link ?>">Facebook</a></p>
-            <?php elseif (strchr($link, 'Twitter') || strchr($link, 'twitter')) : ?>
-              <p>Twitter:<a href="<?php if (strchr($link, 'Twitter')) echo $link ?>">Twitter</a></p>
-            <?php elseif (strchr($link, 'Google+') || strchr($link, 'google+')) : ?>
-              <p>Google+:<a href="<?php if (strchr($link, 'Google+')) echo $link ?>"></a></p>
-            <?php elseif (strchr($link, 'YouTube') || strchr($link, 'youtube')) : ?>
-              <p>YouTube:<a href="<?php if (strchr($link, 'YouTube')) echo $link ?>">YouTube</a></p>
-            <?php elseif (strchr($link, 'Instagram') || strchr($link, 'instagram')) : ?>
-              <p>Instagram:<a href="<?php if (strchr($link, 'Instagram ')) echo $link ?>">Instagram</a></p>
-            <?php endif ?>
-          <?php endforeach ?>
+          <?php if ($redesocial) : ?>
+            <?php foreach ($redesocial as $key => $link) : ?>
+              <?php if (strchr($link, 'LinkedIn') || strchr($link, 'linkedin')) : ?>
+                <p>LinkedIn: <a href="<?php echo $link ?>">LinkedIn</a> </p>
+              <?php elseif (strchr($link, 'Facebook') || strchr($link, 'facebook')) : ?>
+                <p>Facebook:<a href="<?php if (strchr($link, 'Facebook')) echo $link ?>">Facebook</a></p>
+              <?php elseif (strchr($link, 'Twitter') || strchr($link, 'twitter')) : ?>
+                <p>Twitter:<a href="<?php if (strchr($link, 'Twitter')) echo $link ?>">Twitter</a></p>
+              <?php elseif (strchr($link, 'Google+') || strchr($link, 'google+')) : ?>
+                <p>Google+:<a href="<?php if (strchr($link, 'Google+')) echo $link ?>"></a></p>
+              <?php elseif (strchr($link, 'YouTube') || strchr($link, 'youtube')) : ?>
+                <p>YouTube:<a href="<?php if (strchr($link, 'YouTube')) echo $link ?>">YouTube</a></p>
+              <?php elseif (strchr($link, 'Instagram') || strchr($link, 'instagram')) : ?>
+                <p>Instagram:<a href="<?php if (strchr($link, 'Instagram ')) echo $link ?>">Instagram</a></p>
+              <?php endif ?>
+            <?php endforeach ?>
+          <?php endif ?>
         </div>
       </div>
       <div class="col-sm-8">

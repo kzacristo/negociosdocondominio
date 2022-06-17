@@ -110,10 +110,10 @@ include "header.php"
         <div class="row">
           <div class="col-sm-6 camposform" id="cadastrosenha">
             <h4>Deseja incluir serviços?</h4>
-            <button class="btn btn-primary" name="button" onclick="cadastrosenha()" type="button">Sim</button>
+            <button class="btn btn-primary" name="button" onclick="comservico()" value="sim" type="button">Sim</button>
             <!-- <a class="btn btn-primary" role="button" onclick="cadastrosenha()"  type="button">Sim</a> -->
             <!-- <a class="btn btn-primary bgcinza" onclick="cadastrosenha()" type="button">Não</a> -->
-            <button class="btn btn-primary bgcinza" name="button" onclick="cadastrosenha()"  type="button">Não</button>
+            <button class="btn btn-primary bgcinza" name="button" onclick="semservico()" value="nao" type="button">Não</button>
           </div>
         </div>
         
@@ -131,16 +131,30 @@ include "footer.php"
 
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script type="text/javascript">
-  function cadastrosenha() {
+  function comservico() {
 
     $('#cadastrosenha').html(' ')
     $("#cadastrosenha").show()
     $('#cadastrosenha').append('<label for="senha" class="form-control">Digite a sua senha </label><br />')
     $('#cadastrosenha').append('<input type="password" name="senha" class="form-control input-group-lg"  id="senha" value="" /><br />')
+    $('#cadastrosenha').append('<input type="hidden" name="teste" class="form-control input-group-lg"  id="teste" value="sim" /><br />')
     $('#cadastrosenha').append('<button class="btn btn-primary" name="button" type="submit">Salvar</button>')
     $('#cadastrosenha').append('<button class="btn btn-primary bgcinza" name="button" href="#" type="submit">Canselar</button><br />')
     // document.getElementById(cadastrosenha).appendChild(cadastrosenha);
 
 
   }
+  function semservico() {
+
+$('#cadastrosenha').html(' ')
+$("#cadastrosenha").show()
+$('#cadastrosenha').append('<label for="senha" class="form-control">Digite a sua senha </label><br />')
+$('#cadastrosenha').append('<input type="password" name="senha" class="form-control input-group-lg"  id="senha" value="" /><br />')
+$('#cadastrosenha').append('<input type="hidden" name="teste" class="form-control input-group-lg"  id="teste" value="nao" /><br />')
+$('#cadastrosenha').append('<button class="btn btn-primary" name="button" type="submit">Salvar</button>')
+$('#cadastrosenha').append('<button class="btn btn-primary bgcinza" name="button" href="#" type="submit">Canselar</button><br />')
+// document.getElementById(cadastrosenha).appendChild(cadastrosenha);
+
+
+}
 </script>

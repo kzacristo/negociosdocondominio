@@ -19,8 +19,9 @@ try {
   if ($result) {
     // var_dump($result); die();
     // $read_file = 'consulta-morador.php';
+    session_start();
     $_SESSION['login'] = $email;
-    $_SESSION['senha'] = $senha;  
+    $_SESSION['id'] = $result[0]['id'] ;
   
     header('Location: ../consulta-morador.php ' . $url, true, $statusCode);
     die();

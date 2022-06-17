@@ -3,6 +3,7 @@
 require_once('conect.php');
 
 $tipe = $_POST['primeirocadastro'];
+$value = $_POST['button'];
 
 if ($tipe == 1) {
 
@@ -44,8 +45,15 @@ if ($tipe == 1) {
 
             $stmt = $pdo->prepare("INSERT INTO `morador`(`idcadastro` ,`bloco`, `torre`, `nome`, `sobrenome`, `email`, `data_nascimento`, `telefone`, `genero`, `whatsapp`) VALUES (?,?,?,?,?,?,?,?,?,?)")->execute([$idcadastro, $bloco, $torre, $nome, $sobrenome, $email, $datanascimento, $telefone, $genero, $zap]);
         }
-
-        header('Location: ../cadastro-servicos.php');
+        session_start();
+        $_SESSION['login'] = $email;
+        $_SESSION['id'] = (isset($result[0]['id'])) ? $result[0]['id'] : $idcadastro; 
+        // die($_SESSION['login']);
+        if ($value == 'sim') {
+            header('Location: ../cadastro-servicos.php');
+        } else {
+            header('Location: ../perfil.php');
+        }
     } catch (PDOException $e) {
         echo 'ERROR: ' . $e->getMessage();
     }
@@ -121,43 +129,43 @@ if ($tipe == 1) {
 
     if (isset($_POST['horario1'])) {
         if ((isset($_POST['time1']) && $_POST['time1'] != '') && (isset($_POST['time11'])) && $_POST['time11'] != '') {
-            $time = 'Segunda'.'-'. $_POST['time1'] . '-' . $_POST['time11'];
+            $time = 'Segunda' . '-' . $_POST['time1'] . '-' . $_POST['time11'];
             array_push($data_atendimento, $time);
         }
     }
     if (isset($_POST['horario2'])) {
         if ((isset($_POST['time2']) && $_POST['time2'] != '') && (isset($_POST['time22'])) && $_POST['time22'] != '') {
-            $time = 'Terça'.'-'. $_POST['time2'] . '-' . $_POST['time22'];
+            $time = 'Terça' . '-' . $_POST['time2'] . '-' . $_POST['time22'];
             array_push($data_atendimento, $time);
         }
     }
     if (isset($_POST['horario3'])) {
         if ((isset($_POST['time3']) && $_POST['time3'] != '') && (isset($_POST['time33'])) && $_POST['time33'] != '') {
-            $time = 'Quarta'.'-'. $_POST['time3'] . '-' . $_POST['time33'];
+            $time = 'Quarta' . '-' . $_POST['time3'] . '-' . $_POST['time33'];
             array_push($data_atendimento, $time);
         }
     }
     if (isset($_POST['horario4'])) {
         if ((isset($_POST['time4']) && $_POST['time4'] != '') && (isset($_POST['time44'])) && $_POST['time44'] != '') {
-            $time = 'Quinta'.'-'. $_POST['time4'] . '-' . $_POST['time44'];
+            $time = 'Quinta' . '-' . $_POST['time4'] . '-' . $_POST['time44'];
             array_push($data_atendimento, $time);
         }
     }
     if (isset($_POST['horario5'])) {
         if ((isset($_POST['time5']) && $_POST['time5'] != '') && (isset($_POST['time55'])) && $_POST['time55'] != '') {
-            $time = 'Sexta'.'-'. $_POST['time5'] . '-' . $_POST['time55'];
+            $time = 'Sexta' . '-' . $_POST['time5'] . '-' . $_POST['time55'];
             array_push($data_atendimento, $time);
         }
     }
     if (isset($_POST['horario6'])) {
         if ((isset($_POST['time6']) && $_POST['time6'] != '') && (isset($_POST['time66'])) && $_POST['time66'] != '') {
-            $time = 'Sabado'.'-'. $_POST['time6'] . '-' . $_POST['time66'];
+            $time = 'Sabado' . '-' . $_POST['time6'] . '-' . $_POST['time66'];
             array_push($data_atendimento, $time);
         }
     }
     if (isset($_POST['horario7'])) {
         if ((isset($_POST['time7']) && $_POST['time7'] != '') && (isset($_POST['time77'])) && $_POST['time77'] != '') {
-            $time = 'Domingo'.'-'. $_POST['time7'] . '-' . $_POST['time77'];
+            $time = 'Domingo' . '-' . $_POST['time7'] . '-' . $_POST['time77'];
             array_push($data_atendimento, $time);
         }
     }
@@ -165,11 +173,11 @@ if ($tipe == 1) {
         array_push($data_atendimento, $_POST['horario8']);
     }
 
-    
+
     $data_atendimento = implode(',', $data_atendimento);
     // var_dump($data_atendimento); die();
-    
-    
+
+
 
     salvararquivoAction($result[0]['id']);
 
