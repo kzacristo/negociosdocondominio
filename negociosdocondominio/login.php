@@ -25,7 +25,7 @@ include "headerlogin.php";
             <div style="text-align: center">
               <label style="font-size: 12px;"> <span>
                 <input type="checkbox" value="remember-me" >
-                LEMBRAR DE MIM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span><a href="#">ESQUECI A SENHA</a></span></label>
+                LEMBRAR DE MIM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span><a href="esqueciasenha.php">ESQUECI A SENHA</a></span></label>
               <button class="w-100 btn btn-lg btn-primary" type="submit">Entrar</button>
               <?php if (isset($_GET['erro']) && ($_GET['erro'] == "dadoserrado")) { echo "login ou senha estão incorreto!"; } ?>
               <div class="checkbox mb-3 text-center" >

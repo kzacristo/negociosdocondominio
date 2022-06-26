@@ -1,4 +1,5 @@
 <?php
+ session_start();
 
 require_once('conect.php');
 
@@ -17,7 +18,9 @@ if ($tipe == 1) {
     $email = (isset($_POST['email'])) ? $_POST['email'] : '';
     $telefone = (isset($_POST['telefone'])) ? $_POST['telefone'] : '';
     $zap = (isset($_POST['zap'])) ? $_POST['zap'] : '';
-
+    $pergunta = (isset($_POST['pergunta'])) ? $_POST['pergunta'] : '';
+    $resposta = (isset($_POST['resposta'])) ? $_POST['resposta'] : '';
+ 
 
     try {
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -36,9 +39,9 @@ if ($tipe == 1) {
             $image =  salvararquivoAction($result[0]['id']);
             if ($image) array_push($set, 'imagem = ' . $image);
 
-            $stmt = $pdo->prepare("INSERT INTO `morador`(`idcadastro` ,`bloco`, `torre`, `nome`, `sobrenome`, `email`, `data_nascimento`, `telefone`, `genero`, `whatsapp`) VALUES (?,?,?,?,?,?,?,?,?)")->execute([$idcadastro, $bloco, $torre, $nome, $sobrenome, $email, $datanascimento, $telefone, $genero, $zap]);
+            $stmt = $pdo->prepare("INSERT INTO `morador`(`idcadastro`, `bloco`, `torre`, `nome`, `sobrenome`, `email`, `data_nascimento`, `telefone`, `whatsapp`, `genero`, `imagem`) VALUES (?,?,?,?,?,?,?,?,?,?,?)")->execute([$idcadastro, $bloco, $torre, $nome, $sobrenome, $email, $datanascimento, $telefone, $genero, $zap, $image]);
         } else {
-            $insertcadastro = $pdo->prepare("INSERT INTO `cadastro`(`email`, `senha`, `nome`, `sobrenome`, `genero`) VALUES (?,?,?,?,?)")->execute([$email, $senha, $nome, $sobrenome, $genero]);
+            $insertcadastro = $pdo->prepare("INSERT INTO `cadastro`(`email`, `senha`, `perguntasecreta`, `resposta`, `nome`, `sobrenome`, `genero`) VALUES (?,?,?,?,?,?,?)")->execute([$email, $senha, $pergunta, $resposta, $nome, $sobrenome, $genero]);
 
             $consultacadastro = $pdo->prepare("SELECT c.* FROM cadastro c WHERE c.nome LIKE '%$nome%' AND c.email LIKE '%$email%'");
 
@@ -53,9 +56,9 @@ if ($tipe == 1) {
             $image =  salvararquivoAction($result[0]['id']);
             if ($image) array_push($set, 'imagem = ' . $image);
 
-            $stmt = $pdo->prepare("INSERT INTO `morador`(`idcadastro` ,`bloco`, `torre`, `nome`, `sobrenome`, `email`, `data_nascimento`, `telefone`, `genero`, `whatsapp`) VALUES (?,?,?,?,?,?,?,?,?,?)")->execute([$idcadastro, $bloco, $torre, $nome, $sobrenome, $email, $datanascimento, $telefone, $genero, $zap]);
+            $stmt = $pdo->prepare("INSERT INTO `morador`(`idcadastro`, `bloco`, `torre`, `nome`, `sobrenome`, `email`, `data_nascimento`, `telefone`, `whatsapp`, `genero`, `imagem`) VALUES (?,?,?,?,?,?,?,?,?,?,?)")->execute([$idcadastro, $bloco, $torre, $nome, $sobrenome, $email, $datanascimento, $telefone, $genero, $zap, $image]);
         }
-        session_start();
+       
         $_SESSION['login'] = $email;
         $_SESSION['id'] = (isset($result[0]['id'])) ? $result[0]['id'] : $idcadastro;
         // die($_SESSION['login']);

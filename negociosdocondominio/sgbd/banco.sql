@@ -6,6 +6,8 @@ CREATE TABLE cadastro(
 	id bigint AUTO_INCREMENT,
     email VARCHAR(50),
     senha VARCHAR(50),
+    perguntasecreta VARCHAR(50),
+    resposta VARCHAR(50),
   	nome VARCHAR(50),
     sobrenome VARCHAR(50),
     genero int,

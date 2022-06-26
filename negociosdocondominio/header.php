@@ -1,3 +1,17 @@
+<?php
+session_start();
+$email = $_SESSION['login'];
+$id = $_SESSION['id'];
+
+require_once('./controller/conect.php');
+
+$stmt = $pdo->prepare("SELECT m.* , s.*  FROM morador m LEFT JOIN servicos s ON s.id_morador = m.id WHERE m.email LIKE '%$email%' AND m.idcadastro = $id ORDER BY m.id DESC ");
+$stmt->execute();
+
+$row = $stmt->fetchAll();
+
+?>
+
 <!doctype html>
 <html lang="pt-br">
 <head>
@@ -19,7 +33,7 @@
   <div class="container">
     <div class="row ">
       <div class="col-sm-6 logo"> <a class="nav-link active" aria-current="page" href="login.php"><img src="images/logo.svg" class="logo">
-        <h1 class="logotexto">Negócios do condominio</h1>
+        <h1 class="logotexto">Negócios do condominio XXX</h1>
         </a></div>
       <div class="col-sm-6 align-self-end">
         <nav class="navbar navbar-expand-lg navbar-dark" >
@@ -32,7 +46,7 @@
                 <a class="btn me-2 btn btn-primary" href="busca.php">Buscar</a>
               </ul>
             </div>
-            <div class="dropdown text-end"> <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle text-white" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false"> <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle"> </a>
+            <div class="dropdown text-end"> <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle text-white" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false"> <img src="<?php echo $row[0]['imagem'] ?>" alt="mdo" width="32" height="32" class="rounded-circle"> </a>
               <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1" style="">
                 <li><a class="dropdown-item" href="cadastro.php">Cadastro Morador</a></li>
                 <li><a class="dropdown-item" href="cadastro-servicos.php">Cadastro Serviços</a></li>

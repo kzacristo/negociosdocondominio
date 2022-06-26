@@ -1,11 +1,11 @@
 <?php
+session_start();
+$email = $_SESSION['login'];
+$id = $_SESSION['id'];
 
 require_once('./controller/conect.php');
 
-session_start();
 
-$email = $_SESSION['login'];
-$id = $_SESSION['id'];
 
 try {
   $stmt = $pdo->prepare("SELECT m.* , s.*  FROM morador m LEFT JOIN servicos s ON s.id_morador = m.id WHERE m.email LIKE '%$email%' AND m.idcadastro = $id ORDER BY m.id DESC ");

@@ -137,9 +137,11 @@ include "footer.php"
     $("#cadastrosenha").show()
     $('#cadastrosenha').append('<label for="senha" class="form-control">Digite a sua senha </label><br />')
     $('#cadastrosenha').append('<input type="password" name="senha" class="form-control input-group-lg"  id="senha" value="" /><br />')
+    $('#cadastrosenha').append('<input type="text" name="pergunta" class="form-control input-group-lg"  id="pergunta" value="" /><br />')
+    $('#cadastrosenha').append('<input type="text" name="resposta" class="form-control input-group-lg"  id="resposta" value="" /><br />')
     $('#cadastrosenha').append('<input type="hidden" name="teste" class="form-control input-group-lg"  id="teste" value="sim" /><br />')
     $('#cadastrosenha').append('<button class="btn btn-primary" name="button" type="submit">Salvar</button>')
-    $('#cadastrosenha').append('<button class="btn btn-primary bgcinza" name="button" href="#" type="submit">Canselar</button><br />')
+    $('#cadastrosenha').append('<button class="btn btn-primary bgcinza" name="button" href="#" type="submit">Cancelar</button><br />')
     // document.getElementById(cadastrosenha).appendChild(cadastrosenha);
 
 
@@ -156,9 +158,11 @@ include "footer.php"
     $("#image2").append('<input class="form-control" type="file" name="file" id="formFile"></div></div><br>')
     $('#cadastrosenha').append('<label for="senha" class="form-control">Digite a sua senha </label><br />')
     $('#cadastrosenha').append('<input type="password" name="senha" class="form-control input-group-lg"  id="senha" value="" /><br />')
+    $('#cadastrosenha').append('<input type="text" name="pergunta" class="form-control input-group-lg"  id="pergunta" value="" /><br />')
+    $('#cadastrosenha').append('<input type="text" name="resposta" class="form-control input-group-lg"  id="resposta" value="" /><br />')
     $('#cadastrosenha').append('<input type="hidden" name="teste" class="form-control input-group-lg"  id="teste" value="nao" /><br />')
     $('#cadastrosenha').append('<button class="btn btn-primary" name="button" type="submit">Salvar</button>')
-    $('#cadastrosenha').append('<button class="btn btn-primary bgcinza" name="button" href="#" type="submit">Canselar</button><br />')
+    $('#cadastrosenha').append('<button class="btn btn-primary bgcinza" name="button" href="#" type="submit">Cancelar</button><br />')
     // document.getElementById(cadastrosenha).appendChild(cadastrosenha);
 
 
