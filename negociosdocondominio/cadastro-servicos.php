@@ -222,20 +222,20 @@ include "header.php"
       <br/>
       <div class="row">
         <div class="col-sm-4 ">
-          <div class="info ">
+          <!-- <div class="info ">
             <h2>Sua foto</h2>
             <p>A foto é a primeira coisa que o aluno verá. Inspire confiança e mostre sua cara. </p>
             <p><b>Sorridente</b>: está perfeito<br>
               <b>Criativa</b>, de destaque<br>
               <b>Apenas você</b> e mais ninguém na foto</p>
-          </div>
+          </div> -->
         </div>
-        <div class="col-sm-6 camposform">
+        <!-- <div class="col-sm-6 camposform">
           <div class="row">
             <label for="e-mail" class="form-label">Exemplos </label>
             <p><img src="https://c.superprof.com/static/img/ok-photo-1.64dfba7a.png" > <img src="https://c.superprof.com/static/img/ok-photo-2.07a75de7.png"> <img src="https://c.superprof.com/static/img/ok-photo-3.ccfd4b68.png"> </p>
             <input class="form-control" type="file" name="file" id="formFile">
-          </div>
+          </div> -->
           <br>
           <br>
           <button class="btn btn-primary" type="submit" >Salvar</button> <a class="btn btn-primary bgcinza" href="#" role="button">Voltar</a> </div>

@@ -189,10 +189,10 @@ if ($tipe == 1) {
     // var_dump($data_atendimento); die();
 
 
-    salvararquivoAction($result[0]['id']);
+    // salvararquivoAction($result[0]['id']);
 
-    $image =  salvararquivoAction($result[0]['id']);
-    if ($image) array_push($set, 'imagem = ' . $image);
+    // $image =  salvararquivoAction($result[0]['id']);
+    // if ($image) array_push($set, 'imagem = ' . $image);
 
     $w = "";
     foreach ($set as $k => $v) {
@@ -203,7 +203,7 @@ if ($tipe == 1) {
     // die($data_atendimento);
 
     try {
-        $stmt = $pdo->prepare("INSERT INTO `servicos`(`id_morador`, `area_de_atuacao`, `outra_area`, `atendimento`, `servicos_ofertados`, `data_atendimento`, `titulo_anuncio`, `text_experiencia`, `redes_socieais`, `sobre_voce`, `sobre_oque_faz`, `valor`, `tipo_valor`, `imagem`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)")->execute([$id_morador, $areadeatuacao, $outraarea, $tipodeatendimento, $servicos_ofertados, $data_atendimento, $titulo_anuncio, $oquefaz, $links, $sobrevc, $oquefaz, $valor, $tipovalor, $image]);
+        $stmt = $pdo->prepare("INSERT INTO `servicos`(`id_morador`, `area_de_atuacao`, `outra_area`, `atendimento`, `servicos_ofertados`, `data_atendimento`, `titulo_anuncio`, `text_experiencia`, `redes_socieais`, `sobre_voce`, `sobre_oque_faz`, `valor`, `tipo_valor`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)")->execute([$id_morador, $areadeatuacao, $outraarea, $tipodeatendimento, $servicos_ofertados, $data_atendimento, $titulo_anuncio, $oquefaz, $links, $sobrevc, $oquefaz, $valor, $tipovalor]);
 
         header('Location: ../perfil.php');
     } catch (PDOException $e) {
