@@ -47,7 +47,7 @@ $row = $stmt->fetchAll();
               </ul>
             </div>
             <div class="dropdown text-end"> <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle text-white" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false"> <img src="<?php echo $row[0]['imagem'] ?>" alt="mdo" width="32" height="32" class="rounded-circle"> </a>
-              <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1" style="">
+              <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
                 <li><a class="dropdown-item" href="cadastro.php">Cadastro Morador</a></li>
                 <li><a class="dropdown-item" href="cadastro-servicos.php">Cadastro Serviços</a></li>
                 <li><a class="dropdown-item"  href="perfil.php">Perfil</a></li>

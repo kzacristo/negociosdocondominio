@@ -51,7 +51,6 @@ CREATE TABLE servicos(
   sobre_oque_faz  TEXT,
   valor VARCHAR(30),
   tipo_valor INT,
-  imagem VARCHAR(255),
 
   PRIMARY KEY (id),
   FOREIGN KEY (id_morador) REFERENCES morador(id)

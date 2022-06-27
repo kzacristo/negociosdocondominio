@@ -4,7 +4,7 @@
 require_once('conect.php');
 
 $tipe = $_POST['primeirocadastro'];
-$value = $_POST['button'];
+$value = $_POST['teste'];
 
 if ($tipe == 1) {
 
@@ -34,10 +34,9 @@ if ($tipe == 1) {
         if (isset($reuslt) && sizeof($reuslt) > 0) {
             $idcadastro = $result[0]['id'];
 
-            salvararquivoAction($result[0]['id']);
+            
 
-            $image =  salvararquivoAction($result[0]['id']);
-            if ($image) array_push($set, 'imagem = ' . $image);
+            $image = salvararquivoAction($idcadastro);
 
             $stmt = $pdo->prepare("INSERT INTO `morador`(`idcadastro`, `bloco`, `torre`, `nome`, `sobrenome`, `email`, `data_nascimento`, `telefone`, `whatsapp`, `genero`, `imagem`) VALUES (?,?,?,?,?,?,?,?,?,?,?)")->execute([$idcadastro, $bloco, $torre, $nome, $sobrenome, $email, $datanascimento, $telefone, $genero, $zap, $image]);
         } else {
@@ -51,10 +50,9 @@ if ($tipe == 1) {
 
             $idcadastro = $result[0]['id'];
 
-            salvararquivoAction($result[0]['id']);
+            
 
-            $image =  salvararquivoAction($result[0]['id']);
-            if ($image) array_push($set, 'imagem = ' . $image);
+            $image = salvararquivoAction($idcadastro);
 
             $stmt = $pdo->prepare("INSERT INTO `morador`(`idcadastro`, `bloco`, `torre`, `nome`, `sobrenome`, `email`, `data_nascimento`, `telefone`, `whatsapp`, `genero`, `imagem`) VALUES (?,?,?,?,?,?,?,?,?,?,?)")->execute([$idcadastro, $bloco, $torre, $nome, $sobrenome, $email, $datanascimento, $telefone, $genero, $zap, $image]);
         }
@@ -191,7 +189,6 @@ if ($tipe == 1) {
     // var_dump($data_atendimento); die();
 
 
-
     salvararquivoAction($result[0]['id']);
 
     $image =  salvararquivoAction($result[0]['id']);
@@ -218,6 +215,7 @@ if ($tipe == 1) {
 function salvararquivoAction($id)
 {
     $file = (isset($_FILES['file'])) ? $_FILES['file'] : false;
+   
 
     $_UP['pasta'] = '../images/';
     $_UP['tamanho'] = 1024 * 1024 * 2;
