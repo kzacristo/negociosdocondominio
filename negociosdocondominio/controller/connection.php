@@ -23,7 +23,7 @@ try {
     $_SESSION['login'] = $email;
     $_SESSION['id'] = $result[0]['id'] ;
   
-    header('Location: ../consulta-morador.php ' . $url, true, $statusCode);
+    header('Location: ../perfil.php ' . $url, true, $statusCode);
     die();
   } else {
     unset($_SESSION['login']);

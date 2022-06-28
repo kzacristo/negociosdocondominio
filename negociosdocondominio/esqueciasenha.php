@@ -1,9 +1,7 @@
 <?php
-
-include "headerlogin.php";
 require_once('./controller/conect.php');
 
-
+include "headerlogin.php";
 
 ?>
 <div class="container">
@@ -26,7 +24,7 @@ require_once('./controller/conect.php');
                 <button class="btn btn-primary" name="button" onclick="pesquisar()" value="sim" type="button">Pesquisar</button>
                 <!-- <a class="btn btn-primary" role="button" onclick="cadastrosenha()"  type="button">Sim</a> -->
                 <!-- <a class="btn btn-primary bgcinza" onclick="cadastrosenha()" type="button">Não</a> -->
-                <button class="btn btn-primary bgcinza" name="button" onclick="naopesquisar()" value="nao" type="button">Cancelar</button>
+                <button class="btn btn-primary bgcinza" name="button" onclick="goBack()" value="nao" type="button">Cancelar</button>
 
               </div>
             </div>
@@ -108,4 +106,8 @@ include "footer.php"
     console.log(senha)
     
   }
+
+  function goBack() {
+    window.history.back()
+}
 </script>

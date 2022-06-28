@@ -215,7 +215,6 @@ if ($tipe == 1) {
 function salvararquivoAction($id)
 {
     $file = (isset($_FILES['file'])) ? $_FILES['file'] : false;
-   
 
     $_UP['pasta'] = '../images/';
     $_UP['tamanho'] = 1024 * 1024 * 2;
@@ -235,7 +234,7 @@ function salvararquivoAction($id)
     if ($_FILES['file']['error'] != 0) {
         $nome_final = $id . '_usuario' . '.jpg';
         $caminho = $_UP['pasta'] . $nome_final;
-        return $caminho;
+        return '';
         // die("Não foi possível fazer o upload, " . $_UP['erros'][$_FILES['file']['error']]);
         // exit; // Para a execução do script
     }

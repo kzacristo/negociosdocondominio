@@ -44,7 +44,12 @@ include "header.php";
   <div class="container">
     <div class="row">
       <div class="col-sm-4">
-        <div class="destaqueperfil"> <img src="<?php echo $row[0]['imagem'] ?>" height="100">
+        <div class="destaqueperfil"> 
+        <?php if (isset($row[0]['imagem']) && $row[0]['imagem'] != '' ) : ?>
+            <img src="<?php echo $row[0]['imagem'] ?>" height="100">
+          <?php else : ?>
+            <img src="./images/images.jpeg" height="100">
+          <?php endif ?>
           <h2><?php echo $row[0]['nome'] ?></h2>
           <p><?php echo $row[0]['titulo_anuncio'] ?></p>
           <br>
@@ -83,8 +88,8 @@ include "header.php";
             <?php endforeach ?>
           <?php endif ?>
           <br>
-          <h2>Redes socias</h2>
           <?php if ($redesocial) : ?>
+            <h2>Redes socias</h2>
             <?php foreach ($redesocial as $key => $link) : ?>
               <?php if (strchr($link, 'LinkedIn') || strchr($link, 'linkedin')) : ?>
                 <p>LinkedIn: <a href="<?php echo $link ?>">LinkedIn</a> </p>
@@ -101,22 +106,26 @@ include "header.php";
               <?php endif ?>
             <?php endforeach ?>
           <?php endif ?>
-        </div>
+          </div>
       </div>
       <div class="col-sm-8">
         <div class="frasedestaque">
           <h1 class="display-6 branco"><?php echo $row[0]['titulo_anuncio'] ?></h1>
         </div>
-        <h1 class="titulo">Sobre seu trabalho e experiência</h1>
-        <?php echo $row[0]['sobre_oque_faz'] ?>
-        <h1 class="titulo">Mais sobre informaçoes sobre Lucia Costa </h1>
-        <?php echo $row[0]['sobre_voce'] ?>
-        <h1 class="titulo">Recomendações</h1>
-        <div class="recomendacoes">
-
-          <p><strong>Rosana</strong></p>
-          <p><?php echo $row[0]['text_experiencia'] ?></p>
-        </div>
+        <?php if ($row[0]['sobre_oque_faz']) : ?>
+          <h1 class="titulo">Sobre seu trabalho e experiência</h1>
+          <?php echo $row[0]['sobre_oque_faz'] ?>
+        <?php endif ?>
+        <?php if ($row[0]['sobre_voce']) : ?>
+          <h1 class="titulo">Mais sobre informaçoes sobre Lucia Costa </h1>
+          <?php echo $row[0]['sobre_voce'] ?>
+        <?php endif ?>
+        <?php if ($row[0]['text_experiencia']) : ?>
+          <h1 class="titulo">Recomendações</h1>
+          <div class="recomendacoes">
+            <p><?php echo $row[0]['text_experiencia'] ?></p>
+          <?php endif ?>
+          </div>
       </div>
     </div>
   </div>
