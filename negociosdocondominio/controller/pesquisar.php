@@ -1,4 +1,7 @@
 <?php
+session_start();
+$email = $_SESSION['login'];
+$id = $_SESSION['id'];
 
 require_once('conect.php');
 
@@ -13,11 +16,21 @@ $where = array();
 // if ($torre) array_push($where, " s.torre = $torre");
 
 $texto = (isset($_GET["texto"])) ? $_GET['texto'] : false;
-if ($texto) array_push($where, " s.area_de_atuacao = $texto");
 
-$titulo = (isset($_GET["titulo"])) ? $_GET['titulo'] : false;
-if ($titulo) array_push($where, " s.titulo_anuncio = $titulo");
-// var_dump($_GET["destinatario"], $_GET["bloco"], $_GET['torre']); die();  
+if($texto == 'alimentacao'){
+    if ($texto) array_push($where, " s.area_de_atuacao = 1");
+}elseif($texto == 'beleza'){
+    if ($texto) array_push($where, " s.area_de_atuacao = 2");
+}elseif($texto == 'educacao'){
+    if ($texto) array_push($where, " s.area_de_atuacao = 3");
+}elseif($texto == 'saude'){
+    if ($texto) array_push($where, " s.area_de_atuacao = 4");
+}elseif($texto == 'servicosgerais'){
+    if ($texto) array_push($where, " s.area_de_atuacao = 5");
+}else{
+    if ($texto) array_push($where, " s.area_de_atuacao = 6");
+}
+
 
 $w = "";
 foreach ($where as $k => $v) {
@@ -26,7 +39,7 @@ foreach ($where as $k => $v) {
 }
 
 try {
-    $stmt = $pdo->prepare("SELECT s.* FROM servicos s WHERE $w ");
+    $stmt = $pdo->prepare("SELECT s.*, m.nome, m.email, m.telefone, m.whatsapp FROM servicos s LEFT JOIN morador m ON m.id = s.id_morador WHERE $w ");
     $stmt->execute();
 
     $row = $stmt->fetchAll();
@@ -36,21 +49,31 @@ try {
         "<table class='table table-striped table-sm'>
         <thead>
           <tr>
+            <th scopt='col'>Imagem</th>
             <th scope='col'>Nome</th>
             <th scope='col'>E-mail</th>
-            <th scope='col'>Telefone</th>
+            <th scope='col'>Telefone/whatsapp</th>
+            <th scope='col'>area_de_atuacao</th>
+            <th scope='col'>titulo_anuncio</th>
             <th scope='col'>Ação</th>
           </tr>
         </thead>
         <tbody>
         <tr>";
         $result = $table;
+        // var_dump($row); die();
 
         foreach($row as $key => $value){
+            $email = $value['email'];
+            $idmorador = $value['id_morador'];
+            $imagem = $value['imagem'];
+            $result .= "<td>"."<a class='nav-link active' aria-current='page' href='login.php'><img src='<?php echo $imagem?>' class='logo'>"."</td>";
             $result .= "<td>".$value['nome']."</td>";
             $result .= "<td>".$value['email']."</td>";
-            $result .= "<td>".$value['telefone']."</td>";
-            $result .= "<td>"."<button type='button' class='btn btn-danger' data-bs-toggle='modal' data-bs-target='#deletarmorador'>Deletar</button>"."</td>";
+            $result .= "<td>".$value['telefone']."/".$value['whatsapp']."</td>";
+            $result .= "<td>".$value['area_de_atuacao']."</td>";
+            $result .= "<td>".$value['titulo_anuncio']."</td>";
+            $result .= "<td>"."<form action='../controller/cadastrosemservico.php' method='post' enctype='multipart/form-data'> <input type='hidden' class='form-control' id='email' name='email' value='<?php echo $email ?>' <td>"." <input type='hidden' class='form-control' id='id' name='id' value='<?php echo $id ?>' />"."<button  type='submit' class='btn btn-danger' data-bs-toggle='modal' data-bs-target='#visitarperfil' >Visitar Perfil</button>,</form>"."</td>";
             $result .="</tr>";
         }
         echo $result .="</tbody></table>";

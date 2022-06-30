@@ -1,3 +1,4 @@
+DROP TABLE IF EXISTS redes_sociais;
 DROP TABLE IF EXISTS servicos;
 DROP TABLE IF EXISTS morador;
 DROP TABLE IF EXISTS cadastro;
@@ -40,18 +41,32 @@ CREATE TABLE servicos(
   id bigint AUTO_INCREMENT,
   id_morador bigint,
   area_de_atuacao VARCHAR(50),
-  outra_area VARCHAR(50),
+  descricao VARCHAR(255),
   atendimento VARCHAR(255),
   servicos_ofertados TEXT,
   data_atendimento VARCHAR(255),
   titulo_anuncio VARCHAR(255),
   text_experiencia TEXT,
-  redes_socieais VARCHAR(255),
+  redes_sociais VARCHAR(255),
   sobre_voce TEXT,
   sobre_oque_faz  TEXT,
   valor VARCHAR(30),
   tipo_valor INT,
 
   PRIMARY KEY (id),
+  FOREIGN KEY (id_morador) REFERENCES morador(id)
+);
+
+CREATE TABLE redes_sociais(
+  id bigint AUTO_INCREMENT,
+  id_morador bigint,
+  linkedin VARCHAR(255),
+  facebook VARCHAR(255),
+  twitter VARCHAR(255),
+  googleplus VARCHAR(255),
+  youtube VARCHAR(255),
+  instagram VARCHAR(255),
+
+  PRIMARY KEY(id),
   FOREIGN KEY (id_morador) REFERENCES morador(id)
 );

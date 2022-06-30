@@ -78,13 +78,13 @@ include "headerlogin.php"
 
         <div class="col-sm-6 camposform">
           <label for="telefone" class="form-control">Telefone </label>
-          <input type="text" class="form-control" name="telefone" id="telefone" max="15" placeholder="+55(XX)XXXX-XXXX" required>
+          <input type="text" class="form-control" name="telefone" id="telefone" max="17" placeholder="+55(XX)XXXX-XXXX" required>
           <div class="invalid-feedback"> Campo Obrigatório </div>
         </div>
 
         <div class="col-sm-6 camposform">
           <label for="telefone" class="form-control">Whatsapp </label>
-          <input type="text" class="form-control" name="zap" id="telefone" max="15 placeholder="+55(XX)XXXX-XXXX">
+          <input type="text" class="form-control" name="zap" id="telefone" max="17" placeholder="+55(XX)XXXX-XXXX">
 
         </div>
 

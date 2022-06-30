@@ -1,4 +1,7 @@
 <?php
+session_start();
+$email = $_SESSION['login'];
+$id = $_SESSION['id'];
 
 include "header.php"
 
@@ -12,13 +15,13 @@ include "header.php"
           <label for="bloco" class="form-label">Área de atuação</label>
           <select class="form-select" required name="areadeatuacao">
             <option value="0">Selecionar</option>
-            <option value="1">Administrativo e Financeiro</option>
-            <option value="2">Análise e Gestão de Dados</option>
-            <option value="3">Atendimento Publicitário</option>
-            <option value="4">Comercial</option>
-            <option value="5">Criação</option>
-            <option value="6">Customer Success</option>
-            <option value="7">Design</option>
+            <option value="1">alimentacao</option>
+            <option value="2">Beleza</option>
+            <option value="3">Educação</option>
+            <option value="4">Saúde/Bem-Estar</option>
+            <option value="5">Serviços Gerais</option>
+            <option value="6">Outros</option>
+            <!-- <option value="7">Design</option>
             <option value="8">Diversidade, Inclusão e Acessibilidade</option>
             <option value="9">Educação e Treinamento</option>
             <option value="10">Jornalismo</option>
@@ -33,12 +36,14 @@ include "header.php"
             <option value="19">Rádio e TV</option>
             <option value="20">Social Media</option>
             <option value="21">Tecnologia da Informação</option>
+            <option value="22">Bife</option>
+            <option value="23">Restaurante</option> -->
           </select>
         </div>
-        <div class="col-sm-3 camposform ">
-          <label for="destinatario" class="form-label">Outra área de atuação</label>
+        <!-- <div class="col-sm-3 camposform ">
+          <label for="destinatario" class="form-label">Descrição área de atuação</label>
           <input type="text" class="form-control" name="outraarea"  value="">
-        </div>
+        </div> -->
         <div class="col-sm-3 camposform">
           <label for="sobrenome" class="form-label" required >Tipo de atendimento</label>
           <select class="form-select" name="tipodeatendimento">
@@ -236,6 +241,8 @@ include "header.php"
             <p><img src="https://c.superprof.com/static/img/ok-photo-1.64dfba7a.png" > <img src="https://c.superprof.com/static/img/ok-photo-2.07a75de7.png"> <img src="https://c.superprof.com/static/img/ok-photo-3.ccfd4b68.png"> </p>
             <input class="form-control" type="file" name="file" id="formFile">
           </div> -->
+          <input type="hidden" id="email" name="email" value="<?php echo $email ?>" />
+          <input type="hidden" id="id_morador" name="id_morador" value="<?php echo $id ?>" />
           <br>
           <br>
           <button class="btn btn-primary" type="submit" >Salvar</button> <a class="btn btn-primary bgcinza" href="#" role="button">Voltar</a> </div>

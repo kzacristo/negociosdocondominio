@@ -1,56 +1,52 @@
 <?php
 
-include "header.php"
+include "header.php";
+require_once('./controller/conect.php');
 
 ?>
 <div class="container">
   <div class="row">
     <div class="col-sm-12">
-      <h1 class="titulo">Contrate freelancers perto de você</h1>
-      <p>Encontre oportunidades ou divulgue a sua vaga para centenas de profissionais.</p>
+      <h1 class="titulo">Encontre profissionais ou serviços perto de você</h1>
     </div>
-    <form action="../controller/pesquisar.php" method="POST">
-      <div class="col-sm-5">
-        <div class="form-floating">
-          <input type="text" class="form-control" name="texto" id="floatingInputGrid" placeholder="Professor de português">
-          <label for="floatingInputGrid">Palavra Chave</label>
+    <div class="servicos">
+      <div class="row">
+        <div class="col-6 col-sm-6 col-md-2 col-lg-2 bgservicos">
+          <button class="btservicos alimentacao" id="alimentacao" name="alimentacao" value="alimentacao" onclick="pesquisar(this.value)"><img src="images/alimentacao.jpeg">
+            <p>Alimentação</p>
+          </button>
+        </div>
+        <div class="col-6 col-sm-6 col-md-2 col-lg-2 bgservicos">
+          <button class="btservicos beleza" id="beleza" name="beleza" value="beleza" onclick="pesquisar(this.value)"><img src="images/beleza.jpeg">
+            <p>Beleza</p>
+          </button>
+        </div>
+        <div class="col-6 col-sm-6 col-md-2 col-lg-2 bgservicos">
+          <button class="btservicos educacao" id="educacao" name="educacao" value="educacao" onclick="pesquisar(this.value)"><img src="images/educacao.jpeg">
+            <p>Educação</p>
+          </button>
+        </div>
+        <div class="col-6 col-sm-6 col-md-2 col-lg-2 bgservicos">
+          <button class="btservicos saude" id="saude" name="saude" value="saude" onclick="pesquisar(this.value)"> <img src="images/saude.jpeg">
+            <p>Saúde/Bem-Estar</p>
+          </button>
+        </div>
+        <div class="col-6 col-sm-6 col-md-2 col-lg-2 bgservicos">
+          <button class="btservicos servicosgerais" id="servicosgerais" value="servicosgerais" name="servicosgerais" onclick="pesquisar(this.value)"><img src="images/servicosgerais.jpeg">
+            <p>Serviços Gerais</p>
+          </button>
+        </div>
+        <div class="col-6 col-sm-6 col-md-2 col-lg-2 bgservicos">
+          <button class="btservicos outros" id="outros" name="outros" value="outros" onclick="pesquisar(this.value)"><img src="images/outros.jpeg">
+            <p>Outros</p>
+          </button>
         </div>
       </div>
-      <div class="col-sm-5">
-        <div class="form-floating">
-          <select class="form-select" id="floatingSelectGrid" name="titulo">
-            <option value="0">Todas as categorias</option>
-            <option value="1">Administrativo e Financeiro</option>
-            <option value="2">Análise e Gestão de Dados</option>
-            <option value="3">Atendimento Publicitário</option>
-            <option value="4">Comercial</option>
-            <option value="5">Criação</option>
-            <option value="6">Customer Success</option>
-            <option value="7">Design</option>
-            <option value="8">Diversidade, Inclusão e Acessibilidade</option>
-            <option value="9">Educação e Treinamento</option>
-            <option value="10">Jornalismo</option>
-            <option value="11">Marketing</option>
-            <option value="12">Mídia</option>
-            <option value="13">Planejamento</option>
-            <option value="14">Produção</option>
-            <option value="15">Programação</option>
-            <option value="16">Projetos e Operações</option>
-            <option value="17">Recursos Humanos</option>
-            <option value="18">Relações Públicas</option>
-            <option value="19">Rádio e TV</option>
-            <option value="20">Social Media</option>
-            <option value="21">Tecnologia da Informação</option>
-          </select>
-          <label for="floatingSelectGrid">Categorias</label>
-        </div>
-      </div>
-      <div class="col-sm-2 "> <span class="align-middle"> <a class="btn bg-success text-white" onclick="pesquisar()" role="button" target="_blank">Buscar</a> </span> </div>
-    </form>
+    </div>
   </div>
-  <br><br>
+  <br>
+  <br>
 </div>
-
 <div class="container">
   <!-- <hr>
   <div class="row">
@@ -83,67 +79,70 @@ include "header.php"
 
   ?>
   <script type="text/javascript">
-  /**
-   * Função para criar um objeto XMLHTTPRequest
-   */
-  function CriaRequest() {
-    try {
-      request = new XMLHttpRequest();
-    } catch (IEAtual) {
-
+    /**
+     * Função para criar um objeto XMLHTTPRequest
+     */
+    function CriaRequest() {
       try {
-        request = new ActiveXObject("Msxml2.XMLHTTP");
-      } catch (IEAntigo) {
+        request = new XMLHttpRequest();
+      } catch (IEAtual) {
 
         try {
-          request = new ActiveXObject("Microsoft.XMLHTTP");
-        } catch (falha) {
-          request = false;
+          request = new ActiveXObject("Msxml2.XMLHTTP");
+        } catch (IEAntigo) {
+
+          try {
+            request = new ActiveXObject("Microsoft.XMLHTTP");
+          } catch (falha) {
+            request = false;
+          }
         }
       }
+
+      if (!request)
+        alert("Seu Navegador não suporta Ajax!");
+      else
+        return request;
     }
 
-    if (!request)
-      alert("Seu Navegador não suporta Ajax!");
-    else
-      return request;
-  }
+    /**
+     * Função para enviar os dados
+     */
+    function pesquisar(dados = false) {
 
-  /**
-   * Função para enviar os dados
-   */
-  function pesquisar() {
+      var valor = dados
+      console.log(valor)
 
-    // Declaração de Variáveis
-    var texto = document.getElementById("floatingInputGrid").value;
-    //  nome = nome.valeu;
-    var titulo = document.getElementById("floatingSelectGrid");
-    titulo = titulo.value;
-    // var torre = document.getElementById("torre");
-    // torre = torre.value;
-    // console.log(nome, bloco, torre)
-    var xmlreq = CriaRequest();
+      // var alimentacao = document.getElementById("alimentacao").value;
+      // var beleza = document.getElementById("beleza").value;
+      // var educacao = document.getElementById("educacao").value;
+      // var saude = document.getElementById("saude").value;
+      // var servicosgerais = document.getElementById("servicosgerais").value;
+      // var outros = document.getElementById("outros").value;
 
-    // Exibi a imagem de progresso
-    result.innerHTML = '<img src="Progresso1.gif"/>';
+      // console.log(alimentacao, beleza, educacao, saude, servicosgerais, outros )
 
-    // Iniciar uma requisição
-    xmlreq.open("GET", "../controller/pesquisar.php?texto=" + texto + "&titulo=" + titulo , true);
+      var xmlreq = CriaRequest();
 
-    // Atribui uma função para ser executada sempre que houver uma mudança de ado
-    xmlreq.onreadystatechange = function() {
+      // Exibi a imagem de progresso
+      // result.innerHTML = '<img src="Progresso1.gif"/>';
 
-      // Verifica se foi concluído com sucesso e a conexão fechada (readyState=4)
-      if (xmlreq.readyState == 4) {
+      // Iniciar uma requisição
+      xmlreq.open("GET", "../controller/pesquisar.php?texto=" + valor, true);
+      // Atribui uma função para ser executada sempre que houver uma mudança de ado
+      xmlreq.onreadystatechange = function() {
 
-        // Verifica se o arquivo foi encontrado com sucesso
-        if (xmlreq.status == 200) {
-          result.innerHTML = xmlreq.responseText;
-        } else {
-          result.innerHTML = "Erro: " + xmlreq.statusText;
+        // Verifica se foi concluído com sucesso e a conexão fechada (readyState=4)
+        if (xmlreq.readyState == 4) {
+
+          // Verifica se o arquivo foi encontrado com sucesso
+          if (xmlreq.status == 200) {
+            result.innerHTML = xmlreq.responseText;
+          } else {
+            result.innerHTML = "Erro: " + xmlreq.statusText;
+          }
         }
-      }
-    };
-    xmlreq.send(null);
-  }
-</script>
+      };
+      xmlreq.send(null);
+    }
+  </script>

@@ -1,14 +1,14 @@
 <?php
 session_start();
-$email = $_SESSION['login'];
-$id = $_SESSION['id'];
+$email = (isset($_SESSION['login'])) ? $_SESSION['login'] : $_POST['email'] ;
+$id = (isset($_SESSION['id'])) ?  $_SESSION['id'] : $_POST['id'];
 
 require_once('./controller/conect.php');
 
 
 
 try {
-  $stmt = $pdo->prepare("SELECT m.* , s.*  FROM morador m LEFT JOIN servicos s ON s.id_morador = m.id WHERE m.email LIKE '%$email%' AND m.idcadastro = $id ORDER BY m.id DESC ");
+  $stmt = $pdo->prepare("SELECT m.* , s.*  FROM morador m LEFT JOIN servicos s ON s.id_morador = m.id WHERE m.email LIKE '%$email%' AND m.id = $id ORDER BY m.id DESC ");
   $stmt->execute();
 
   $row = $stmt->fetchAll();
@@ -21,13 +21,21 @@ try {
 } catch (PDOException $e) {
   echo 'ERROR: ' . $e->getMessage();
 }
+$idmorador = (isset($row) && (int)$row[0]['id'] > 0 ) ? $row[0]['id'] : 0;
 
-$trabalho = (isset($row[0]['data_atendimento']) && sizeof($row[0]['data_atendimento']) > 0) ? $row[0]['data_atendimento'] : false;
+$dataatendimento = (isset($row[0]['data_atendimento'])) ? explode(',',$row[0]['data_atendimento']) : false;
+
+$trabalho = (isset($row[0]['data_atendimento']) && sizeof($dataatendimento) > 0) ? $row[0]['data_atendimento'] : false;
 if ($trabalho) $trabalho = explode(',', $trabalho);
 
-$redesocial = (isset($row[0]['redes_socieais']) && sizeof($row[0]['redes_socieais']) > 0) ? explode(';', $row[0]['redes_socieais']) : false;
 // var_dump($redesocial); die();
-if ($redesocial) $redesocial = explode(';', $row[0]['redes_socieais']);
+// var_dump($row); die();
+if ($row[0]['redes_sociai'] = 'sim'){
+  $query = $pdo->prepare("SELECT r.* FROM redes_sociais r WHERE r.id_morador = $idmorador");
+  $query->execute();
+
+  $redesocial= $query->fetchAll();
+} 
 
 include "header.php";
 
@@ -91,19 +99,12 @@ include "header.php";
           <?php if ($redesocial) : ?>
             <h2>Redes socias</h2>
             <?php foreach ($redesocial as $key => $link) : ?>
-              <?php if (strchr($link, 'LinkedIn') || strchr($link, 'linkedin')) : ?>
-                <p>LinkedIn: <a href="<?php echo $link ?>">LinkedIn</a> </p>
-              <?php elseif (strchr($link, 'Facebook') || strchr($link, 'facebook')) : ?>
-                <p>Facebook:<a href="<?php if (strchr($link, 'Facebook')) echo $link ?>">Facebook</a></p>
-              <?php elseif (strchr($link, 'Twitter') || strchr($link, 'twitter')) : ?>
-                <p>Twitter:<a href="<?php if (strchr($link, 'Twitter')) echo $link ?>">Twitter</a></p>
-              <?php elseif (strchr($link, 'Google+') || strchr($link, 'google+')) : ?>
-                <p>Google+:<a href="<?php if (strchr($link, 'Google+')) echo $link ?>"></a></p>
-              <?php elseif (strchr($link, 'YouTube') || strchr($link, 'youtube')) : ?>
-                <p>YouTube:<a href="<?php if (strchr($link, 'YouTube')) echo $link ?>">YouTube</a></p>
-              <?php elseif (strchr($link, 'Instagram') || strchr($link, 'instagram')) : ?>
-                <p>Instagram:<a href="<?php if (strchr($link, 'Instagram ')) echo $link ?>">Instagram</a></p>
-              <?php endif ?>
+                <p>LinkedIn: <a href="<?php echo $link['linkedin'] ?>">LinkedIn</a> </p>
+                <p>Facebook:<a href="<?php echo $link['facebook'] ?>">Facebook</a></p>
+                <p>Twitter:<a href="<?php echo $link['twitter'] ?>">Twitter</a></p>
+                <p>Google+:<a href="<?php echo $link['googleplus'] ?>">Google+</a></p>
+                <p>YouTube:<a href="<?php echo $link['youtube'] ?>">YouTube</a></p>
+                <p>Instagram:<a href="<?php echo $link['instagram'] ?>">Instagram</a></p>
             <?php endforeach ?>
           <?php endif ?>
           </div>

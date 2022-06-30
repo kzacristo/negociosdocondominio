@@ -34,8 +34,6 @@ if ($tipe == 1) {
         if (isset($reuslt) && sizeof($reuslt) > 0) {
             $idcadastro = $result[0]['id'];
 
-            
-
             $image = salvararquivoAction($idcadastro);
 
             $stmt = $pdo->prepare("INSERT INTO `morador`(`idcadastro`, `bloco`, `torre`, `nome`, `sobrenome`, `email`, `data_nascimento`, `telefone`, `whatsapp`, `genero`, `imagem`) VALUES (?,?,?,?,?,?,?,?,?,?,?)")->execute([$idcadastro, $bloco, $torre, $nome, $sobrenome, $email, $datanascimento, $telefone, $genero, $zap, $image]);
@@ -70,12 +68,17 @@ if ($tipe == 1) {
     }
 } else {
     // href="perfil.php" 
-    $query = $pdo->prepare("SELECT m.* FROM morador m WHERE m.nome LIKE '%$nome%' AND m.email LIKE '%$email%' ORDER BY m.id DESC;");
+    $email = $_POST['email'];
+    $id = $_POST['id_morador'];
+
+    $query = $pdo->prepare("SELECT m.* FROM morador m WHERE m.id = $id AND m.email LIKE '%$email%' ORDER BY m.id DESC;");
     $query->execute();
 
     $result = $query->fetchAll();
 
     $id_morador = $result[0]['id'];
+
+    // var_dump($id_morador, $result); die();
 
     $set = array();
     $link = array();
@@ -110,9 +113,13 @@ if ($tipe == 1) {
     $instagram = (isset($_POST['instagram'])) ? $_POST['instagram'] : false;
     if ($instagram) array_push($link, strval($instagram));
 
+    if($link){
+        $redeSocial = 'sim';
+    }else{
+        $redeSocial = 'nao';
+    }
 
-    if ($link) $links =  implode(';', $link);
-    array_push($set, "redes_socieais = $links");
+    if ($redeSocial) array_push($set, "redes_socieais = $redeSocial");
 
     $titulo_anuncio = (isset($_POST['titulo_anuncio'])) ? $_POST['titulo_anuncio'] : false;
     if ($titulo_anuncio) array_push($set, "titulo_anuncio = '$titulo_anuncio'");
@@ -203,7 +210,10 @@ if ($tipe == 1) {
     // die($data_atendimento);
 
     try {
-        $stmt = $pdo->prepare("INSERT INTO `servicos`(`id_morador`, `area_de_atuacao`, `outra_area`, `atendimento`, `servicos_ofertados`, `data_atendimento`, `titulo_anuncio`, `text_experiencia`, `redes_socieais`, `sobre_voce`, `sobre_oque_faz`, `valor`, `tipo_valor`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)")->execute([$id_morador, $areadeatuacao, $outraarea, $tipodeatendimento, $servicos_ofertados, $data_atendimento, $titulo_anuncio, $oquefaz, $links, $sobrevc, $oquefaz, $valor, $tipovalor]);
+        $stmt = $pdo->prepare("INSERT INTO `servicos`(`id_morador`, `area_de_atuacao`, `outra_area`, `atendimento`, `servicos_ofertados`, `data_atendimento`, `titulo_anuncio`, `text_experiencia`, `redes_sociais`, `sobre_voce`, `sobre_oque_faz`, `valor`, `tipo_valor`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)")->execute([$id_morador, $areadeatuacao, $outraarea, $tipodeatendimento, $servicos_ofertados, $data_atendimento, $titulo_anuncio, $oquefaz, $redeSocial, $sobrevc, $oquefaz, $valor, $tipovalor]);
+        
+        $query = $pdo->prepare("INSERT INTO `redes_sociais`(`id_morador`, `linkedin`, `facebook`, `twitter`, `googleplus`, `youtube`, `instagram`)VALUE(?,?,?,?,?,?,?)")->execute([$id_morador,$linckdin,$facebook,$twitter, $googleplus, $youtube, $instagram]);
+
 
         header('Location: ../perfil.php');
     } catch (PDOException $e) {

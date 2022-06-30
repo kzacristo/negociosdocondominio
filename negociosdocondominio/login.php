@@ -5,10 +5,10 @@ include "headerlogin.php";
 ?>
 <div class="container">
   <div class="row justify-content-center">
-    <form action="../controller/connection.php" method="post">
-    <div class="col-sm-6 "><br><br>
+    <form action="../controller/connection.php" method="post" class="col-6">
+    <div class=" "><br><br>
       <div class="branco">
-        <div class="text-center"> <img src="images/logo.svg" alt="" width="72" height="57"> </div>
+        <div class="text-center"> <img src="images/logocolorido.svg" alt="" width="130" > </div>
         <h1 class="h3 fw-normal text-center">Faça seu login</h1>
         <br>
         <div class="form-floating">

@@ -32,7 +32,7 @@ $row = $stmt->fetchAll();
 <div class="header ">
   <div class="container">
     <div class="row ">
-      <div class="col-sm-6 logo"> <a class="nav-link active" aria-current="page" href="login.php"><img src="images/logo.svg" class="logo">
+      <div class="col-sm-6 logo"> <a class="nav-link active" aria-current="page" href="login.php"><img src="images/logo.jpeg" class="logo">
         <h1 class="logotexto">Negócios do condominio </h1>
         </a></div>
       <div class="col-sm-6 align-self-end">
