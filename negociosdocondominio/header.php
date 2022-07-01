@@ -1,14 +1,14 @@
 <?php
-session_start();
-$email = $_SESSION['login'];
-$id = $_SESSION['id'];
+// session_start();
+// $email = $_SESSION['login'];
+// $id = $_SESSION['id'];
 
-require_once('./controller/conect.php');
+// require_once('./controller/conect.php');
 
-$stmt = $pdo->prepare("SELECT m.* , s.*  FROM morador m LEFT JOIN servicos s ON s.id_morador = m.id WHERE m.email LIKE '%$email%' AND m.idcadastro = $id ORDER BY m.id DESC ");
-$stmt->execute();
+// $stmt = $pdo->prepare("SELECT m.* , s.*  FROM morador m LEFT JOIN servicos s ON s.id_morador = m.id WHERE m.email LIKE '%$email%' AND m.idcadastro = $id ORDER BY m.id DESC ");
+// $stmt->execute();
 
-$row = $stmt->fetchAll();
+// $row = $stmt->fetchAll();
 
 ?>
 
@@ -32,7 +32,7 @@ $row = $stmt->fetchAll();
 <div class="header ">
   <div class="container">
     <div class="row ">
-      <div class="col-sm-6 logo"> <a class="nav-link active" aria-current="page" href="login.php"><img src="images/logo.jpeg" class="logo">
+      <div class="col-sm-6 logo"> <a class="nav-link active" aria-current="page" href="login.php"><img src="images/logo.svg" class="logo">
         <h1 class="logotexto">Negócios do condominio </h1>
         </a></div>
       <div class="col-sm-6 align-self-end">

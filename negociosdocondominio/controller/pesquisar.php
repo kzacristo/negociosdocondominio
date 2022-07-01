@@ -73,7 +73,7 @@ try {
             $result .= "<td>".$value['telefone']."/".$value['whatsapp']."</td>";
             $result .= "<td>".$value['area_de_atuacao']."</td>";
             $result .= "<td>".$value['titulo_anuncio']."</td>";
-            $result .= "<td>"."<form action='../controller/cadastrosemservico.php' method='post' enctype='multipart/form-data'> <input type='hidden' class='form-control' id='email' name='email' value='<?php echo $email ?>' <td>"." <input type='hidden' class='form-control' id='id' name='id' value='<?php echo $id ?>' />"."<button  type='submit' class='btn btn-danger' data-bs-toggle='modal' data-bs-target='#visitarperfil' >Visitar Perfil</button>,</form>"."</td>";
+            $result .= "<td>"."<form action='../controller/cadastrosemservico.php' method='post' enctype='multipart/form-data'> <input type='hidden' class='form-control' id='email' name='email' value='<?php echo $email ?>' <td>"." <input type='hidden' class='form-control' id='id' name='id' value='<?php echo $id ?>' />"."<button  type='submit' class='btn btn-danger' data-bs-toggle='modal' data-bs-target='#visitarperfil' >Visitar Perfil</button></form>"."</td>";
             $result .="</tr>";
         }
         echo $result .="</tbody></table>";

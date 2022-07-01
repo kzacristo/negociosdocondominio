@@ -210,7 +210,7 @@ if ($tipe == 1) {
     // die($data_atendimento);
 
     try {
-        $stmt = $pdo->prepare("INSERT INTO `servicos`(`id_morador`, `area_de_atuacao`, `outra_area`, `atendimento`, `servicos_ofertados`, `data_atendimento`, `titulo_anuncio`, `text_experiencia`, `redes_sociais`, `sobre_voce`, `sobre_oque_faz`, `valor`, `tipo_valor`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)")->execute([$id_morador, $areadeatuacao, $outraarea, $tipodeatendimento, $servicos_ofertados, $data_atendimento, $titulo_anuncio, $oquefaz, $redeSocial, $sobrevc, $oquefaz, $valor, $tipovalor]);
+        $stmt = $pdo->prepare("INSERT INTO `servicos`(`id_morador`, `area_de_atuacao`, `descricao`, `atendimento`, `servicos_ofertados`, `data_atendimento`, `titulo_anuncio`, `text_experiencia`, `redes_sociais`, `sobre_voce`, `sobre_oque_faz`, `valor`, `tipo_valor`) VALUES  (?,?,?,?,?,?,?,?,?,?,?,?,?)")->execute([$id_morador, $areadeatuacao, $outraarea, $tipodeatendimento, $servicos_ofertados, $data_atendimento, $titulo_anuncio, $oquefaz, $redeSocial, $sobrevc, $oquefaz, $valor, $tipovalor]);
         
         $query = $pdo->prepare("INSERT INTO `redes_sociais`(`id_morador`, `linkedin`, `facebook`, `twitter`, `googleplus`, `youtube`, `instagram`)VALUE(?,?,?,?,?,?,?)")->execute([$id_morador,$linckdin,$facebook,$twitter, $googleplus, $youtube, $instagram]);
 

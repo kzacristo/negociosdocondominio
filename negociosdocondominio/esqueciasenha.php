@@ -110,4 +110,11 @@ include "footer.php"
   function goBack() {
     window.history.back()
 }
+
+function resposta(){
+
+    var resposta = document.getElementById("resposta").value;
+    console.log(resposta)
+
+}
 </script>

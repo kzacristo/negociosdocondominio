@@ -1,7 +1,6 @@
 <?php
 
 include "header.php";
-require_once('./controller/conect.php');
 
 ?>
 <div class="container">
@@ -48,24 +47,7 @@ require_once('./controller/conect.php');
   <br>
 </div>
 <div class="container">
-  <!-- <hr>
-  <div class="row">
-    <h2 class="titulo">Resultado da Busca para: Professor</h2>
-    <div class="col-sm-4">
-      <div class="card">
-        <div class="card-body">
-          <div><img src="https://c.superprof.com/static/img/ok-photo-2.07a75de7.png"></div>
-          <br>
-          <h5 class="card-title">LUCIA COSTA</h5>
-          <p class="card-text">Professora de Língua Portuguesa, Especialista em Metodologia do Ensino de leitura, interpretação de textos diversificados...</p>
-          <span class="text">57 avaliações</span>
-          <p>Revisão, Reforço</p>
-        </div>
-        <div class="card-body"> <a class="btn btn-primary" href="perfil.php" role="button">Ver perfil</a> </div>
-      </div>
-    </div>
-  </div>
-</div> -->
+
   <div class="row">
     <div class="col-sm-12">
       <div class="table-responsive" id="result">

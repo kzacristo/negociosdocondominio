@@ -30,8 +30,8 @@
 
         foreach($row as $key => $value){
             $result .= "<td>".$value['perguntasecreta']."</td>";
-            $result .= "<td>"."<div class='form-floating'><input type='text' name='resposta' class='form-control' id='resposta' value='$resposta'><label for='floatingInput'>Resposta:</label></div>"."</td>";
-            $result .= "<td>"."<button type='button' class='btn btn-danger'data-bs-toggle='modal' data-bs-target='#deletarmorador'>Ver Senha</button>"."</td>";
+            $result .= "<td>"."<div class='form-floating'> <form action='../controller/versenha.php' method='get' enctype='multipart/form-data'> <input type='text' name='minharesposta' class='form-control' id='minharesposta' value=''><label for='floatingInput'>Resposta:</label></div>"."</td>";
+            $result .= "<td>"."<button  type='submit' class='btn btn-danger'  data-bs-toggle='modal' data-bs-target='#visitarperfil'>Ver Senha</button></form>"."</td>";
             $result .="</tr>";
         }
         echo $result .="</tbody></table>";

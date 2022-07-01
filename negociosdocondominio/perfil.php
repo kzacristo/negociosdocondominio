@@ -5,8 +5,6 @@ $id = (isset($_SESSION['id'])) ?  $_SESSION['id'] : $_POST['id'];
 
 require_once('./controller/conect.php');
 
-
-
 try {
   $stmt = $pdo->prepare("SELECT m.* , s.*  FROM morador m LEFT JOIN servicos s ON s.id_morador = m.id WHERE m.email LIKE '%$email%' AND m.id = $id ORDER BY m.id DESC ");
   $stmt->execute();
