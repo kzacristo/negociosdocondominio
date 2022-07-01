@@ -116,14 +116,14 @@ include "header.php";
           <?php echo $row[0]['sobre_oque_faz'] ?>
         <?php endif ?>
         <?php if ($row[0]['sobre_voce']) : ?>
-          <h1 class="titulo">Mais sobre informaçoes sobre Lucia Costa </h1>
-          <?php echo $row[0]['sobre_voce'] ?>
+          <h1 class="titulo">Mais sobre informações sobre <?php echo $row[0]['nome'] ?> </h1>
+          <?php echo $row2[0]['sobre_voce'] ?>
         <?php endif ?>
-        <?php if ($row[0]['text_experiencia']) : ?>
+        <!-- <?php if ($row[0]['text_experiencia']) : ?>
           <h1 class="titulo">Recomendações</h1>
           <div class="recomendacoes">
             <p><?php echo $row[0]['text_experiencia'] ?></p>
-          <?php endif ?>
+          <?php endif ?> -->
           </div>
       </div>
     </div>

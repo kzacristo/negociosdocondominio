@@ -49,13 +49,10 @@ try {
         "<table class='table table-striped table-sm'>
         <thead>
           <tr>
-            <th scopt='col'>Imagem</th>
+            <th scopt='col'></th>
             <th scope='col'>Nome</th>
-            <th scope='col'>E-mail</th>
-            <th scope='col'>Telefone/whatsapp</th>
-            <th scope='col'>area_de_atuacao</th>
-            <th scope='col'>titulo_anuncio</th>
-            <th scope='col'>Ação</th>
+            <th scope='col'>Titulo do Anuncio</th>
+            <th scope='col'></th>
           </tr>
         </thead>
         <tbody>
@@ -70,9 +67,6 @@ try {
             //var_dump($value['id_morador']); 
             $result .= "<td>"."<img src='$imagem' width='32' height='32' class='rounded-circle'>"."</td>";
             $result .= "<td>".$value['nome']."</td>";
-            $result .= "<td>".$value['email']."</td>";
-            $result .= "<td>".$value['telefone']."/".$value['whatsapp']."</td>";
-            $result .= "<td>".$value['area_de_atuacao']."</td>";
             $result .= "<td>".$value['titulo_anuncio']."</td>";
             $result .= "<td>"."<form action='../buscarperfil.php' method='post' enctype='multipart/form-data'> <input type='hidden' class='form-control' id='email' name='email' value='$email' <td>"." <input type='hidden' class='form-control' id='id' name='id' value='$idmorador' />"."<button  type='submit' class='btn btn-danger' data-bs-toggle='modal' data-bs-target='#visitarperfil' >Visitar Perfil</button></form>"."</td>";
             $result .="</tr>";

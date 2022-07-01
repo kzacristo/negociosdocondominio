@@ -18,8 +18,8 @@
 <div class="header ">
   <div class="container">
     <div class="row ">
-      <div class="col-sm-6 logo"> <a class="nav-link active" aria-current="page" href="login.php"><img src="images/logo.svg" class="logo">
-        <h1 class="logotexto">Negócios do condominio</h1>
+      <div class="col-sm-6 logo"> <a class="nav-link active" aria-current="page" href="login.php"><img src="images/logo.svg" class="logo" width="130px">
+        <!-- <h1 class="logotexto">Negócios do condominio</h1> -->
         </a></div>
       <div class="col-sm-6 align-self-end">
         <nav class="navbar navbar-expand-lg navbar-dark" >
